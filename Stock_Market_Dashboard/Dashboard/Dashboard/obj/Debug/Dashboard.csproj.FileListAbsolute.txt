@@ -1,0 +1,134 @@
+C:\Users\Faslam maX\Documents\visual studio 2015 projects\Dashboard\Dashboard\bin\Debug\Dashboard.exe.config
+C:\Users\Faslam maX\Documents\visual studio 2015 projects\Dashboard\Dashboard\bin\Debug\Dashboard.exe
+C:\Users\Faslam maX\Documents\visual studio 2015 projects\Dashboard\Dashboard\bin\Debug\Dashboard.pdb
+C:\Users\Faslam maX\Documents\visual studio 2015 projects\Dashboard\Dashboard\obj\Debug\Dashboard.csprojResolveAssemblyReference.cache
+C:\Users\Faslam maX\Documents\visual studio 2015 projects\Dashboard\Dashboard\obj\Debug\Dashboard.Form1.resources
+C:\Users\Faslam maX\Documents\visual studio 2015 projects\Dashboard\Dashboard\obj\Debug\Dashboard.Properties.Resources.resources
+C:\Users\Faslam maX\Documents\visual studio 2015 projects\Dashboard\Dashboard\obj\Debug\Dashboard.csproj.GenerateResource.Cache
+C:\Users\Faslam maX\Documents\visual studio 2015 projects\Dashboard\Dashboard\obj\Debug\Dashboard.exe
+C:\Users\Faslam maX\Documents\visual studio 2015 projects\Dashboard\Dashboard\obj\Debug\Dashboard.pdb
+C:\Users\Faslam maX\Documents\visual studio 2015 projects\Dashboard\Dashboard\bin\Debug\CircularProgressBar.dll
+C:\Users\Faslam maX\Documents\visual studio 2015 projects\Dashboard\Dashboard\bin\Debug\WinFormAnimation.dll
+C:\Users\Faslam maX\Documents\visual studio 2015 projects\Dashboard\Dashboard\bin\Debug\CircularProgressBar.xml
+C:\Users\Faslam maX\Documents\visual studio 2015 projects\Dashboard\Dashboard\bin\Debug\WinFormAnimation.xml
+B:\Downloads\dashboard-resource-pack-by-iweb-makers\Dashboard Resource pack By Iweb Makers\Dashboard\Dashboard\bin\Debug\Dashboard.exe.config
+B:\Downloads\dashboard-resource-pack-by-iweb-makers\Dashboard Resource pack By Iweb Makers\Dashboard\Dashboard\bin\Debug\Dashboard.exe
+B:\Downloads\dashboard-resource-pack-by-iweb-makers\Dashboard Resource pack By Iweb Makers\Dashboard\Dashboard\bin\Debug\Dashboard.pdb
+B:\Downloads\dashboard-resource-pack-by-iweb-makers\Dashboard Resource pack By Iweb Makers\Dashboard\Dashboard\bin\Debug\CircularProgressBar.dll
+B:\Downloads\dashboard-resource-pack-by-iweb-makers\Dashboard Resource pack By Iweb Makers\Dashboard\Dashboard\bin\Debug\WinFormAnimation.dll
+B:\Downloads\dashboard-resource-pack-by-iweb-makers\Dashboard Resource pack By Iweb Makers\Dashboard\Dashboard\bin\Debug\CircularProgressBar.xml
+B:\Downloads\dashboard-resource-pack-by-iweb-makers\Dashboard Resource pack By Iweb Makers\Dashboard\Dashboard\bin\Debug\WinFormAnimation.xml
+B:\Downloads\dashboard-resource-pack-by-iweb-makers\Dashboard Resource pack By Iweb Makers\Dashboard\Dashboard\obj\Debug\Dashboard.csprojAssemblyReference.cache
+B:\Downloads\dashboard-resource-pack-by-iweb-makers\Dashboard Resource pack By Iweb Makers\Dashboard\Dashboard\obj\Debug\Dashboard.Form1.resources
+B:\Downloads\dashboard-resource-pack-by-iweb-makers\Dashboard Resource pack By Iweb Makers\Dashboard\Dashboard\obj\Debug\Dashboard.Properties.Resources.resources
+B:\Downloads\dashboard-resource-pack-by-iweb-makers\Dashboard Resource pack By Iweb Makers\Dashboard\Dashboard\obj\Debug\Dashboard.csproj.GenerateResource.cache
+B:\Downloads\dashboard-resource-pack-by-iweb-makers\Dashboard Resource pack By Iweb Makers\Dashboard\Dashboard\obj\Debug\Dashboard.csproj.CoreCompileInputs.cache
+B:\Downloads\dashboard-resource-pack-by-iweb-makers\Dashboard Resource pack By Iweb Makers\Dashboard\Dashboard\obj\Debug\Dashboard.csproj.CopyComplete
+B:\Downloads\dashboard-resource-pack-by-iweb-makers\Dashboard Resource pack By Iweb Makers\Dashboard\Dashboard\obj\Debug\Dashboard.exe
+B:\Downloads\dashboard-resource-pack-by-iweb-makers\Dashboard Resource pack By Iweb Makers\Dashboard\Dashboard\obj\Debug\Dashboard.pdb
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\Dashboard.exe.config
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\Dashboard.exe
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\Dashboard.pdb
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\CircularProgressBar.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\DevExpress.Data.Desktop.v20.2.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\DevExpress.Data.v20.2.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\DevExpress.Utils.v20.2.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\DevExpress.XtraBars.v20.2.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\DevExpress.XtraDialogs.v20.2.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\WinFormAnimation.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\DevExpress.Printing.v20.2.Core.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\DevExpress.XtraEditors.v20.2.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\DevExpress.XtraTreeList.v20.2.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\DevExpress.Dialogs.v20.2.Core.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\DevExpress.XtraLayout.v20.2.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\DevExpress.XtraGrid.v20.2.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\DevExpress.Pdf.v20.2.Core.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\DevExpress.Pdf.v20.2.Drawing.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\DevExpress.Sparkline.v20.2.Core.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\DevExpress.XtraPrinting.v20.2.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\DevExpress.RichEdit.v20.2.Core.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\DevExpress.Office.v20.2.Core.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\CircularProgressBar.xml
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\DevExpress.Data.Desktop.v20.2.xml
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\DevExpress.Data.v20.2.xml
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\DevExpress.Utils.v20.2.xml
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\DevExpress.XtraBars.v20.2.xml
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\DevExpress.XtraDialogs.v20.2.xml
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\WinFormAnimation.xml
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\DevExpress.Printing.v20.2.Core.xml
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\DevExpress.XtraEditors.v20.2.xml
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\DevExpress.XtraTreeList.v20.2.xml
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\DevExpress.XtraLayout.v20.2.xml
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\DevExpress.XtraGrid.v20.2.xml
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\DevExpress.Pdf.v20.2.Core.xml
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\DevExpress.Pdf.v20.2.Drawing.xml
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\DevExpress.Sparkline.v20.2.Core.xml
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\DevExpress.XtraPrinting.v20.2.xml
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\DevExpress.RichEdit.v20.2.Core.xml
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\DevExpress.Office.v20.2.Core.xml
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\de\DevExpress.Data.v20.2.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\es\DevExpress.Data.v20.2.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\ja\DevExpress.Data.v20.2.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\ru\DevExpress.Data.v20.2.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\de\DevExpress.Utils.v20.2.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\es\DevExpress.Utils.v20.2.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\ja\DevExpress.Utils.v20.2.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\ru\DevExpress.Utils.v20.2.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\de\DevExpress.XtraBars.v20.2.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\es\DevExpress.XtraBars.v20.2.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\ja\DevExpress.XtraBars.v20.2.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\ru\DevExpress.XtraBars.v20.2.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\de\DevExpress.Printing.v20.2.Core.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\es\DevExpress.Printing.v20.2.Core.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\ja\DevExpress.Printing.v20.2.Core.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\ru\DevExpress.Printing.v20.2.Core.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\de\DevExpress.XtraEditors.v20.2.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\es\DevExpress.XtraEditors.v20.2.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\ja\DevExpress.XtraEditors.v20.2.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\ru\DevExpress.XtraEditors.v20.2.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\de\DevExpress.XtraTreeList.v20.2.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\es\DevExpress.XtraTreeList.v20.2.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\ja\DevExpress.XtraTreeList.v20.2.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\ru\DevExpress.XtraTreeList.v20.2.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\de\DevExpress.Dialogs.v20.2.Core.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\es\DevExpress.Dialogs.v20.2.Core.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\ja\DevExpress.Dialogs.v20.2.Core.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\ru\DevExpress.Dialogs.v20.2.Core.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\de\DevExpress.XtraLayout.v20.2.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\es\DevExpress.XtraLayout.v20.2.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\ja\DevExpress.XtraLayout.v20.2.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\ru\DevExpress.XtraLayout.v20.2.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\de\DevExpress.XtraGrid.v20.2.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\es\DevExpress.XtraGrid.v20.2.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\ja\DevExpress.XtraGrid.v20.2.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\ru\DevExpress.XtraGrid.v20.2.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\de\DevExpress.Pdf.v20.2.Core.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\es\DevExpress.Pdf.v20.2.Core.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\ja\DevExpress.Pdf.v20.2.Core.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\ru\DevExpress.Pdf.v20.2.Core.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\de\DevExpress.Sparkline.v20.2.Core.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\es\DevExpress.Sparkline.v20.2.Core.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\ja\DevExpress.Sparkline.v20.2.Core.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\ru\DevExpress.Sparkline.v20.2.Core.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\de\DevExpress.XtraPrinting.v20.2.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\es\DevExpress.XtraPrinting.v20.2.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\ja\DevExpress.XtraPrinting.v20.2.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\ru\DevExpress.XtraPrinting.v20.2.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\de\DevExpress.RichEdit.v20.2.Core.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\es\DevExpress.RichEdit.v20.2.Core.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\ja\DevExpress.RichEdit.v20.2.Core.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\ru\DevExpress.RichEdit.v20.2.Core.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\de\DevExpress.Office.v20.2.Core.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\es\DevExpress.Office.v20.2.Core.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\ja\DevExpress.Office.v20.2.Core.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\bin\Debug\ru\DevExpress.Office.v20.2.Core.resources.dll
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\obj\Debug\Dashboard.csprojAssemblyReference.cache
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\obj\Debug\Dashboard.Form1.resources
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\obj\Debug\Dashboard.Properties.Resources.resources
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\obj\Debug\Dashboard.ucMaximizedContent.resources
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\obj\Debug\Dashboard.ucPreview.resources
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\obj\Debug\Dashboard.csproj.GenerateResource.cache
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\obj\Debug\Dashboard.csproj.CoreCompileInputs.cache
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\obj\Debug\Dashboard.csproj.CopyComplete
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\obj\Debug\Dashboard.exe
+C:\Users\twili\Desktop\Dash_copy\Dashboard\Dashboard\obj\Debug\Dashboard.pdb
