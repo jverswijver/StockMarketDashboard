@@ -133,7 +133,7 @@ namespace Dashboard
             this.panel1.Controls.Add(this.btnSignin);
             this.panel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.panel1.ForeColor = System.Drawing.Color.Transparent;
-            this.panel1.Location = new System.Drawing.Point(188, 62);
+            this.panel1.Location = new System.Drawing.Point(183, 62);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(359, 409);
             this.panel1.TabIndex = 19;
