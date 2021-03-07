@@ -28,28 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-
-
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
-            this.SuspendLayout();
-            // 
-            // defaultLookAndFeel1
-            // 
-            this.defaultLookAndFeel1.LookAndFeel.SkinName = "Office 2013";
-            // 
-            // Form1
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(670, 403);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.ResumeLayout(false);
-
-
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnlNav = new System.Windows.Forms.Panel();
             this.btnsettings = new System.Windows.Forms.Button();
@@ -100,6 +81,10 @@
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
+            // 
+            // defaultLookAndFeel1
+            // 
+            this.defaultLookAndFeel1.LookAndFeel.SkinName = "Office 2013";
             // 
             // panel1
             // 
@@ -377,7 +362,7 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::Dashboard.Properties.Resources.chart_diagram1;
+           // this.pictureBox4.Image = global::Dashboard.Properties.Resources.chart_diagram1;
             this.pictureBox4.Location = new System.Drawing.Point(23, 69);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(380, 135);
@@ -476,7 +461,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::Dashboard.Properties.Resources.downloads;
+           // this.pictureBox3.Image = global::Dashboard.Properties.Resources.downloads;
             this.pictureBox3.Location = new System.Drawing.Point(155, 3);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(100, 92);
@@ -531,7 +516,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::Dashboard.Properties.Resources.money_bag;
+            //this.pictureBox2.Image = global::Dashboard.Properties.Resources.money_bag;
             this.pictureBox2.Location = new System.Drawing.Point(142, 22);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(100, 92);

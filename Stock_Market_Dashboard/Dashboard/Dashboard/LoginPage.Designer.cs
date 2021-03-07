@@ -48,12 +48,12 @@ namespace Dashboard
             this.txtUsername.AcceptsReturn = true;
             this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtUsername.Font = new System.Drawing.Font("Arial", 12F);
+            this.txtUsername.Font = new System.Drawing.Font("Nirmala UI", 12F);
             this.txtUsername.ForeColor = System.Drawing.Color.DimGray;
-            this.txtUsername.Location = new System.Drawing.Point(75, 185);
+            this.txtUsername.Location = new System.Drawing.Point(83, 206);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(0);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(203, 26);
+            this.txtUsername.Size = new System.Drawing.Size(203, 29);
             this.txtUsername.TabIndex = 8;
             this.txtUsername.TabStop = false;
             this.txtUsername.Text = "Username";
@@ -63,11 +63,11 @@ namespace Dashboard
             // txtPassword
             // 
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtPassword.Font = new System.Drawing.Font("Arial", 12F);
+            this.txtPassword.Font = new System.Drawing.Font("Nirmala UI", 12F);
             this.txtPassword.ForeColor = System.Drawing.Color.DimGray;
-            this.txtPassword.Location = new System.Drawing.Point(75, 228);
+            this.txtPassword.Location = new System.Drawing.Point(83, 249);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(203, 26);
+            this.txtPassword.Size = new System.Drawing.Size(203, 29);
             this.txtPassword.TabIndex = 8;
             this.txtPassword.Text = "Password";
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -81,12 +81,12 @@ namespace Dashboard
             this.btnSignin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.btnSignin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnSignin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSignin.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.btnSignin.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSignin.ForeColor = System.Drawing.Color.White;
             this.btnSignin.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnSignin.Location = new System.Drawing.Point(111, 278);
+            this.btnSignin.Location = new System.Drawing.Point(109, 310);
             this.btnSignin.Name = "btnSignin";
-            this.btnSignin.Size = new System.Drawing.Size(135, 26);
+            this.btnSignin.Size = new System.Drawing.Size(144, 26);
             this.btnSignin.TabIndex = 9;
             this.btnSignin.Text = "Log in";
             this.btnSignin.UseVisualStyleBackColor = false;
@@ -102,7 +102,7 @@ namespace Dashboard
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.btnExit.ForeColor = System.Drawing.SystemColors.Window;
             this.btnExit.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnExit.Location = new System.Drawing.Point(603, 0);
+            this.btnExit.Location = new System.Drawing.Point(708, 1);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(26, 26);
             this.btnExit.TabIndex = 18;
@@ -114,7 +114,7 @@ namespace Dashboard
             this.lblWelcome.AutoSize = true;
             this.lblWelcome.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold);
             this.lblWelcome.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblWelcome.Location = new System.Drawing.Point(51, 133);
+            this.lblWelcome.Location = new System.Drawing.Point(59, 154);
             this.lblWelcome.Name = "lblWelcome";
             this.lblWelcome.Size = new System.Drawing.Size(253, 32);
             this.lblWelcome.TabIndex = 14;
@@ -133,9 +133,9 @@ namespace Dashboard
             this.panel1.Controls.Add(this.btnSignin);
             this.panel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.panel1.ForeColor = System.Drawing.Color.Transparent;
-            this.panel1.Location = new System.Drawing.Point(154, 36);
+            this.panel1.Location = new System.Drawing.Point(188, 62);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(341, 361);
+            this.panel1.Size = new System.Drawing.Size(359, 409);
             this.panel1.TabIndex = 19;
             // 
             // btnSignup
@@ -147,10 +147,10 @@ namespace Dashboard
             this.btnSignup.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnSignup.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnSignup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSignup.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.btnSignup.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSignup.ForeColor = System.Drawing.Color.White;
             this.btnSignup.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnSignup.Location = new System.Drawing.Point(203, 323);
+            this.btnSignup.Location = new System.Drawing.Point(225, 360);
             this.btnSignup.Name = "btnSignup";
             this.btnSignup.Size = new System.Drawing.Size(91, 26);
             this.btnSignup.TabIndex = 16;
@@ -161,11 +161,11 @@ namespace Dashboard
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 12F);
+            this.label1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(40, 327);
+            this.label1.Location = new System.Drawing.Point(62, 364);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(169, 18);
+            this.label1.Size = new System.Drawing.Size(161, 17);
             this.label1.TabIndex = 15;
             this.label1.Text = "Don\'t have an account?";
             // 
@@ -174,7 +174,7 @@ namespace Dashboard
             this.smdLogo.BackColor = System.Drawing.Color.Transparent;
             this.smdLogo.Image = ((System.Drawing.Image)(resources.GetObject("smdLogo.Image")));
             this.smdLogo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.smdLogo.Location = new System.Drawing.Point(111, 17);
+            this.smdLogo.Location = new System.Drawing.Point(109, 24);
             this.smdLogo.Name = "smdLogo";
             this.smdLogo.Size = new System.Drawing.Size(135, 113);
             this.smdLogo.TabIndex = 12;
@@ -186,16 +186,21 @@ namespace Dashboard
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(633, 442);
+            this.ClientSize = new System.Drawing.Size(733, 552);
+            this.ControlBox = false;
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.panel1);
+            this.ForeColor = System.Drawing.Color.Transparent;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "LoginPage";
             this.Opacity = 0.98D;
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "LoginPage";
+            this.TransparencyKey = System.Drawing.Color.Transparent;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.smdLogo)).EndInit();

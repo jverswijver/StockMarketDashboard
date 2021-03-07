@@ -73,6 +73,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SignupPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignupPage.Designer.cs">
+      <DependentUpon>SignupPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="ucMaximizedContent.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -93,14 +104,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
+    <EmbeddedResource Include="SignupPage.resx">
+      <DependentUpon>SignupPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ucMaximizedContent.resx">
       <DependentUpon>ucMaximizedContent.cs</DependentUpon>
     </EmbeddedResource>
@@ -153,6 +162,12 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SMD_logo_white120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SMD_LoginBG.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
