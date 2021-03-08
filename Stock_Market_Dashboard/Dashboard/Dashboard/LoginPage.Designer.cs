@@ -33,12 +33,12 @@ namespace Dashboard
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnSignin = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
             this.lblWelcome = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnSignup = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.smdLogo = new System.Windows.Forms.PictureBox();
+            this.btnExit = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.smdLogo)).BeginInit();
             this.SuspendLayout();
@@ -59,6 +59,7 @@ namespace Dashboard
             this.txtUsername.Text = "Username";
             this.txtUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtUsername.WordWrap = false;
+            this.txtUsername.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtUsername_MouseClick);
             // 
             // txtPassword
             // 
@@ -69,60 +70,45 @@ namespace Dashboard
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(203, 29);
             this.txtPassword.TabIndex = 8;
+            this.txtPassword.TabStop = false;
             this.txtPassword.Text = "Password";
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtPassword.WordWrap = false;
+            this.txtPassword.Click += new System.EventHandler(this.txtPassword_Click);
+            this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             // 
             // btnSignin
             // 
             this.btnSignin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(159)))), ((int)(((byte)(253)))));
             this.btnSignin.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnSignin.FlatAppearance.BorderSize = 0;
-            this.btnSignin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.btnSignin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.btnSignin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSignin.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSignin.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.btnSignin.ForeColor = System.Drawing.Color.White;
             this.btnSignin.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnSignin.Location = new System.Drawing.Point(109, 310);
+            this.btnSignin.Location = new System.Drawing.Point(127, 309);
+            this.btnSignin.Margin = new System.Windows.Forms.Padding(2);
             this.btnSignin.Name = "btnSignin";
-            this.btnSignin.Size = new System.Drawing.Size(144, 26);
+            this.btnSignin.Size = new System.Drawing.Size(104, 29);
             this.btnSignin.TabIndex = 9;
             this.btnSignin.Text = "Log in";
             this.btnSignin.UseVisualStyleBackColor = false;
-            // 
-            // btnExit
-            // 
-            this.btnExit.BackColor = System.Drawing.Color.Transparent;
-            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.btnExit.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnExit.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnExit.Location = new System.Drawing.Point(708, 1);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(26, 26);
-            this.btnExit.TabIndex = 18;
-            this.btnExit.Text = "X";
-            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnSignin.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnSignin_MouseClick);
             // 
             // lblWelcome
             // 
             this.lblWelcome.AutoSize = true;
-            this.lblWelcome.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold);
+            this.lblWelcome.Font = new System.Drawing.Font("Nirmala UI", 20.25F, System.Drawing.FontStyle.Bold);
             this.lblWelcome.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblWelcome.Location = new System.Drawing.Point(59, 154);
+            this.lblWelcome.Location = new System.Drawing.Point(58, 149);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(253, 32);
+            this.lblWelcome.Size = new System.Drawing.Size(258, 37);
             this.lblWelcome.TabIndex = 14;
             this.lblWelcome.Text = "WELCOME to SMD ";
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.btnSignup);
             this.panel1.Controls.Add(this.label1);
@@ -132,8 +118,8 @@ namespace Dashboard
             this.panel1.Controls.Add(this.txtPassword);
             this.panel1.Controls.Add(this.btnSignin);
             this.panel1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.panel1.ForeColor = System.Drawing.Color.Transparent;
-            this.panel1.Location = new System.Drawing.Point(183, 62);
+            this.panel1.ForeColor = System.Drawing.Color.White;
+            this.panel1.Location = new System.Drawing.Point(189, 67);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(359, 409);
             this.panel1.TabIndex = 19;
@@ -142,30 +128,31 @@ namespace Dashboard
             // 
             this.btnSignup.BackColor = System.Drawing.Color.Transparent;
             this.btnSignup.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnSignup.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnSignup.FlatAppearance.BorderSize = 0;
+            this.btnSignup.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnSignup.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnSignup.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnSignup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSignup.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSignup.ForeColor = System.Drawing.Color.White;
             this.btnSignup.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnSignup.Location = new System.Drawing.Point(225, 360);
+            this.btnSignup.Location = new System.Drawing.Point(235, 358);
+            this.btnSignup.Margin = new System.Windows.Forms.Padding(1);
             this.btnSignup.Name = "btnSignup";
-            this.btnSignup.Size = new System.Drawing.Size(91, 26);
+            this.btnSignup.Size = new System.Drawing.Size(85, 31);
             this.btnSignup.TabIndex = 16;
             this.btnSignup.Text = "Sign up";
             this.btnSignup.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.btnSignup.UseVisualStyleBackColor = false;
+            this.btnSignup.Click += new System.EventHandler(this.btnSignup_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(62, 364);
+            this.label1.Location = new System.Drawing.Point(52, 364);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(161, 17);
+            this.label1.Size = new System.Drawing.Size(169, 18);
             this.label1.TabIndex = 15;
             this.label1.Text = "Don\'t have an account?";
             // 
@@ -180,27 +167,45 @@ namespace Dashboard
             this.smdLogo.TabIndex = 12;
             this.smdLogo.TabStop = false;
             // 
+            // btnExit
+            // 
+            this.btnExit.BackColor = System.Drawing.Color.Transparent;
+            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnExit.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnExit.Location = new System.Drawing.Point(703, 1);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(29, 29);
+            this.btnExit.TabIndex = 39;
+            this.btnExit.Text = "X";
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // LoginPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(733, 552);
             this.ControlBox = false;
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.panel1);
-            this.ForeColor = System.Drawing.Color.Transparent;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "LoginPage";
-            this.Opacity = 0.98D;
             this.ShowIcon = false;
-            this.ShowInTaskbar = false;
-            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.TransparencyKey = System.Drawing.Color.Transparent;
+            this.TopMost = true;
+            this.Load += new System.EventHandler(this.LoginPage_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.smdLogo)).EndInit();
@@ -213,11 +218,11 @@ namespace Dashboard
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button btnSignin;
-        private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label lblWelcome;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnSignup;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox smdLogo;
+        private System.Windows.Forms.Button btnExit;
     }
 }

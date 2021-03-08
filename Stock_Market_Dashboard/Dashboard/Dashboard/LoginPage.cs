@@ -29,18 +29,21 @@ namespace Dashboard
             InitializeComponent();
         }
 
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         private void LoginPage_Load(object sender, EventArgs e)
         {
             txtUsername.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, txtUsername.Width, txtUsername.Height, 15, 15));
             txtPassword.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, txtPassword.Width, txtPassword.Height, 15, 15));
             btnSignin.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnSignin.Width, btnSignin.Height, 15, 15));
-            btnSignup.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnSignup.Width, btnSignup.Height, 15, 15));
-
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
+        private void txtUsername_MouseClick(object sender, MouseEventArgs e)
         {
-            this.Close();
+            txtUsername.Text = "";
         }
 
         private void btnSignin_MouseClick(object sender, MouseEventArgs e)
@@ -48,19 +51,21 @@ namespace Dashboard
             btnSignin.BackColor = System.Drawing.Color.MediumSeaGreen;
         }
 
-        private void txtPassword_TextChanged(object sender, EventArgs e)
-        {
-            txtPassword.UseSystemPasswordChar = true;
-        }
-
         private void txtPassword_Click(object sender, EventArgs e)
         {
             txtPassword.Text = "";
         }
 
-        private void txtUsername_MouseClick(object sender, MouseEventArgs e)
+        private void txtPassword_TextChanged(object sender, EventArgs e)
         {
-            txtUsername.Text = "";
+            txtPassword.UseSystemPasswordChar = true;
+        }
+
+        private void btnSignup_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            SignupPage signup = new SignupPage();
+            signup.Show();
         }
     }
 }

@@ -40,5 +40,19 @@ namespace Dashboard
         {
             this.Close();
         }
+
+        private void btnGoBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginPage signup = new LoginPage();
+            signup.Show();
+        }
+
+        private void btnSignup_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 signup = new Form1();
+            signup.Show();
+        }
     }
 }

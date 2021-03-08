@@ -29,6 +29,7 @@ namespace Dashboard
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.Button btnGoBack;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignupPage));
             this.button1 = new System.Windows.Forms.Button();
             this.lbltitle = new System.Windows.Forms.Label();
@@ -39,18 +40,38 @@ namespace Dashboard
             this.txtReenterPass = new System.Windows.Forms.TextBox();
             this.lblPassword = new System.Windows.Forms.Label();
             this.lblReenterPass = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblDOB = new System.Windows.Forms.Label();
+            this.lblOptional = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.Button();
             this.lblGoBack = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.smdLogo = new System.Windows.Forms.PictureBox();
+            btnGoBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.smdLogo)).BeginInit();
             this.SuspendLayout();
+            // 
+            // btnGoBack
+            // 
+            btnGoBack.BackColor = System.Drawing.Color.Transparent;
+            btnGoBack.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            btnGoBack.FlatAppearance.BorderSize = 0;
+            btnGoBack.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            btnGoBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            btnGoBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnGoBack.Font = new System.Drawing.Font("Arial Black", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            btnGoBack.ForeColor = System.Drawing.Color.Transparent;
+            btnGoBack.Image = ((System.Drawing.Image)(resources.GetObject("btnGoBack.Image")));
+            btnGoBack.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            btnGoBack.Location = new System.Drawing.Point(27, 392);
+            btnGoBack.Name = "btnGoBack";
+            btnGoBack.Size = new System.Drawing.Size(70, 81);
+            btnGoBack.TabIndex = 42;
+            btnGoBack.TabStop = false;
+            btnGoBack.UseMnemonic = false;
+            btnGoBack.UseVisualStyleBackColor = false;
+            btnGoBack.Click += new System.EventHandler(this.btnGoBack_Click);
             // 
             // button1
             // 
@@ -70,11 +91,11 @@ namespace Dashboard
             // 
             this.lbltitle.AutoSize = true;
             this.lbltitle.BackColor = System.Drawing.Color.Transparent;
-            this.lbltitle.Font = new System.Drawing.Font("Nirmala UI", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltitle.Font = new System.Drawing.Font("Nirmala UI", 32.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltitle.ForeColor = System.Drawing.Color.DarkSeaGreen;
-            this.lbltitle.Location = new System.Drawing.Point(190, 28);
+            this.lbltitle.Location = new System.Drawing.Point(196, 40);
             this.lbltitle.Name = "lbltitle";
-            this.lbltitle.Size = new System.Drawing.Size(361, 54);
+            this.lbltitle.Size = new System.Drawing.Size(387, 59);
             this.lbltitle.TabIndex = 20;
             this.lbltitle.Text = "Create an account";
             // 
@@ -86,7 +107,7 @@ namespace Dashboard
             this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtUsername.Font = new System.Drawing.Font("Nirmala UI", 12F);
             this.txtUsername.ForeColor = System.Drawing.Color.DimGray;
-            this.txtUsername.Location = new System.Drawing.Point(274, 131);
+            this.txtUsername.Location = new System.Drawing.Point(285, 131);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(0);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(203, 29);
@@ -101,7 +122,7 @@ namespace Dashboard
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPassword.Font = new System.Drawing.Font("Nirmala UI", 12F);
             this.txtPassword.ForeColor = System.Drawing.Color.DimGray;
-            this.txtPassword.Location = new System.Drawing.Point(274, 192);
+            this.txtPassword.Location = new System.Drawing.Point(285, 192);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(203, 29);
             this.txtPassword.TabIndex = 24;
@@ -112,19 +133,20 @@ namespace Dashboard
             // 
             this.btnSignup.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.btnSignup.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnSignup.FlatAppearance.BorderSize = 2;
-            this.btnSignup.FlatAppearance.MouseDownBackColor = System.Drawing.Color.ForestGreen;
-            this.btnSignup.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnSignup.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSignup.Font = new System.Drawing.Font("Arial Black", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignup.FlatAppearance.BorderSize = 0;
+            this.btnSignup.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnSignup.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSeaGreen;
+            this.btnSignup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSignup.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSignup.ForeColor = System.Drawing.Color.Black;
             this.btnSignup.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnSignup.Location = new System.Drawing.Point(274, 389);
+            this.btnSignup.Location = new System.Drawing.Point(285, 389);
             this.btnSignup.Name = "btnSignup";
             this.btnSignup.Size = new System.Drawing.Size(200, 32);
             this.btnSignup.TabIndex = 25;
             this.btnSignup.Text = "SIGN UP";
             this.btnSignup.UseVisualStyleBackColor = false;
+            this.btnSignup.Click += new System.EventHandler(this.btnSignup_Click);
             // 
             // lblUsername
             // 
@@ -132,7 +154,7 @@ namespace Dashboard
             this.lblUsername.BackColor = System.Drawing.Color.Transparent;
             this.lblUsername.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsername.ForeColor = System.Drawing.Color.LightSkyBlue;
-            this.lblUsername.Location = new System.Drawing.Point(163, 141);
+            this.lblUsername.Location = new System.Drawing.Point(174, 141);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(97, 19);
             this.lblUsername.TabIndex = 28;
@@ -144,7 +166,7 @@ namespace Dashboard
             this.txtReenterPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtReenterPass.Font = new System.Drawing.Font("Nirmala UI", 12F);
             this.txtReenterPass.ForeColor = System.Drawing.Color.DimGray;
-            this.txtReenterPass.Location = new System.Drawing.Point(274, 251);
+            this.txtReenterPass.Location = new System.Drawing.Point(285, 251);
             this.txtReenterPass.Name = "txtReenterPass";
             this.txtReenterPass.Size = new System.Drawing.Size(203, 29);
             this.txtReenterPass.TabIndex = 30;
@@ -157,7 +179,7 @@ namespace Dashboard
             this.lblPassword.BackColor = System.Drawing.Color.Transparent;
             this.lblPassword.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassword.ForeColor = System.Drawing.Color.LightSkyBlue;
-            this.lblPassword.Location = new System.Drawing.Point(162, 196);
+            this.lblPassword.Location = new System.Drawing.Point(173, 196);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(96, 19);
             this.lblPassword.TabIndex = 31;
@@ -169,54 +191,45 @@ namespace Dashboard
             this.lblReenterPass.BackColor = System.Drawing.Color.Transparent;
             this.lblReenterPass.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblReenterPass.ForeColor = System.Drawing.Color.LightSkyBlue;
-            this.lblReenterPass.Location = new System.Drawing.Point(98, 255);
+            this.lblReenterPass.Location = new System.Drawing.Point(109, 255);
             this.lblReenterPass.Name = "lblReenterPass";
             this.lblReenterPass.Size = new System.Drawing.Size(165, 19);
             this.lblReenterPass.TabIndex = 32;
             this.lblReenterPass.Text = "Re-enter Password *";
             // 
-            // label2
+            // lblDOB
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.LightSkyBlue;
-            this.label2.Location = new System.Drawing.Point(146, 316);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 19);
-            this.label2.TabIndex = 34;
-            this.label2.Text = "Date of birth";
+            this.lblDOB.AutoSize = true;
+            this.lblDOB.BackColor = System.Drawing.Color.Transparent;
+            this.lblDOB.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDOB.ForeColor = System.Drawing.Color.LightSkyBlue;
+            this.lblDOB.Location = new System.Drawing.Point(157, 316);
+            this.lblDOB.Name = "lblDOB";
+            this.lblDOB.Size = new System.Drawing.Size(102, 19);
+            this.lblDOB.TabIndex = 34;
+            this.lblDOB.Text = "Date of birth";
             // 
-            // label3
+            // lblOptional
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.LightSkyBlue;
-            this.label3.Location = new System.Drawing.Point(489, 321);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 19);
-            this.label3.TabIndex = 35;
-            this.label3.Text = "(Optional)";
+            this.lblOptional.AutoSize = true;
+            this.lblOptional.BackColor = System.Drawing.Color.Transparent;
+            this.lblOptional.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOptional.ForeColor = System.Drawing.Color.LightSkyBlue;
+            this.lblOptional.Location = new System.Drawing.Point(500, 321);
+            this.lblOptional.Name = "lblOptional";
+            this.lblOptional.Size = new System.Drawing.Size(83, 19);
+            this.lblOptional.TabIndex = 35;
+            this.lblOptional.Text = "(Optional)";
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Nirmala UI", 8.25F);
             this.dateTimePicker1.CalendarMonthBackground = System.Drawing.Color.WhiteSmoke;
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(274, 320);
+            this.dateTimePicker1.Location = new System.Drawing.Point(285, 320);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(203, 20);
             this.dateTimePicker1.TabIndex = 36;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Location = new System.Drawing.Point(27, 28);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(130, 117);
-            this.pictureBox1.TabIndex = 37;
-            this.pictureBox1.TabStop = false;
             // 
             // btnExit
             // 
@@ -225,13 +238,13 @@ namespace Dashboard
             this.btnExit.FlatAppearance.BorderSize = 0;
             this.btnExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.btnExit.ForeColor = System.Drawing.SystemColors.Window;
             this.btnExit.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnExit.Location = new System.Drawing.Point(690, -1);
+            this.btnExit.Location = new System.Drawing.Point(688, 1);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(26, 26);
+            this.btnExit.Size = new System.Drawing.Size(29, 29);
             this.btnExit.TabIndex = 38;
             this.btnExit.Text = "X";
             this.btnExit.UseVisualStyleBackColor = false;
@@ -257,29 +270,32 @@ namespace Dashboard
             this.pictureBox2.TabIndex = 39;
             this.pictureBox2.TabStop = false;
             // 
-            // pictureBox3
+            // smdLogo
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Location = new System.Drawing.Point(27, 402);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(70, 71);
-            this.pictureBox3.TabIndex = 41;
-            this.pictureBox3.TabStop = false;
+            this.smdLogo.BackColor = System.Drawing.Color.Transparent;
+            this.smdLogo.Image = ((System.Drawing.Image)(resources.GetObject("smdLogo.Image")));
+            this.smdLogo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.smdLogo.Location = new System.Drawing.Point(27, 28);
+            this.smdLogo.Name = "smdLogo";
+            this.smdLogo.Size = new System.Drawing.Size(135, 113);
+            this.smdLogo.TabIndex = 41;
+            this.smdLogo.TabStop = false;
             // 
             // SignupPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(717, 513);
-            this.Controls.Add(this.pictureBox3);
+            this.ControlBox = false;
+            this.Controls.Add(btnGoBack);
+            this.Controls.Add(this.smdLogo);
             this.Controls.Add(this.lblGoBack);
             this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblOptional);
+            this.Controls.Add(this.lblDOB);
             this.Controls.Add(this.lblReenterPass);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.txtReenterPass);
@@ -292,15 +308,13 @@ namespace Dashboard
             this.ForeColor = System.Drawing.Color.Transparent;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SignupPage";
-            this.Opacity = 0.98D;
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.SignupPage_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.smdLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -317,13 +331,12 @@ namespace Dashboard
         private System.Windows.Forms.TextBox txtReenterPass;
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Label lblReenterPass;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblDOB;
+        private System.Windows.Forms.Label lblOptional;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label lblGoBack;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox smdLogo;
     }
 }

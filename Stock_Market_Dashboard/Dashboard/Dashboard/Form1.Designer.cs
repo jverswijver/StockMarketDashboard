@@ -246,6 +246,7 @@
             // 
             // button1
             // 
+            this.button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -362,7 +363,7 @@
             // 
             // pictureBox4
             // 
-           // this.pictureBox4.Image = global::Dashboard.Properties.Resources.chart_diagram1;
+            this.pictureBox4.Image = global::Dashboard.Properties.Resources.chart_diagram1;
             this.pictureBox4.Location = new System.Drawing.Point(23, 69);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(380, 135);
@@ -461,7 +462,7 @@
             // 
             // pictureBox3
             // 
-           // this.pictureBox3.Image = global::Dashboard.Properties.Resources.downloads;
+            this.pictureBox3.Image = global::Dashboard.Properties.Resources.downloads;
             this.pictureBox3.Location = new System.Drawing.Point(155, 3);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(100, 92);
@@ -516,7 +517,7 @@
             // 
             // pictureBox2
             // 
-            //this.pictureBox2.Image = global::Dashboard.Properties.Resources.money_bag;
+            this.pictureBox2.Image = global::Dashboard.Properties.Resources.money_bag;
             this.pictureBox2.Location = new System.Drawing.Point(142, 22);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(100, 92);
@@ -562,6 +563,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.CancelButton = this.button1;
             this.ClientSize = new System.Drawing.Size(919, 552);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);

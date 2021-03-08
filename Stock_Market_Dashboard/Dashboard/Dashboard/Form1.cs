@@ -33,7 +33,7 @@ namespace Dashboard
         public Form1()
         {
             InitializeComponent();
-            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
             pnlNav.Height = btnDashbord.Height;
             pnlNav.Top = btnDashbord.Top;
             pnlNav.Left = btnDashbord.Left;
