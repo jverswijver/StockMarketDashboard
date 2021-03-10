@@ -219,9 +219,11 @@
             this.lblUserId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
             this.lblUserId.Location = new System.Drawing.Point(21, 128);
             this.lblUserId.Name = "lblUserId";
+            this.lblUserId.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblUserId.Size = new System.Drawing.Size(128, 13);
             this.lblUserId.TabIndex = 2;
             this.lblUserId.Text = "Some User Text Here";
+            this.lblUserId.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblUsername
             // 
@@ -233,6 +235,7 @@
             this.lblUsername.Size = new System.Drawing.Size(86, 16);
             this.lblUsername.TabIndex = 1;
             this.lblUsername.Text = "User Name";
+            this.lblUsername.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // pictureBox1
             // 
