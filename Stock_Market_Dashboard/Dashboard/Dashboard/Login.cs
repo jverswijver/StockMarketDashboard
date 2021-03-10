@@ -67,5 +67,14 @@ namespace Dashboard
             Signup signup = new Signup();
             signup.Show();
         }
+
+        private void btnSignin_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MainDashboard dashboard = new MainDashboard();
+            dashboard.lblUsername.Text = txtUsername.Text; // Had to change dashboard.lblUsername to PUBLIC to make this work
+            dashboard.lblUserId.Text = txtPassword.Text; // Had to change dashboard.lblUserId to PUBLIC to make this work
+            dashboard.Show();
+        }
     }
 }

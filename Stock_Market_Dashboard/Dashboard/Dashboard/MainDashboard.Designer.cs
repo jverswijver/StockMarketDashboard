@@ -560,7 +560,7 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Earnings";
             // 
-            // Form1
+            // MainDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -579,7 +579,7 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "MainDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -612,8 +612,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnDashbord;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label lblUserId;
-        private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnsettings;
         private System.Windows.Forms.Button btnContactUs;
@@ -646,6 +644,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
+        public System.Windows.Forms.Label lblUsername;
+        public System.Windows.Forms.Label lblUserId;
     }
 }
 

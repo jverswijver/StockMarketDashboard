@@ -27,7 +27,6 @@ namespace Dashboard
                int nBottomRect,
                int nWidthEllipse,
                int nHeightEllipse
-
          );
 
         public MainDashboard()
