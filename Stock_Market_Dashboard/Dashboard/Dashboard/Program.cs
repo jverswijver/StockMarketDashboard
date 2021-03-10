@@ -6,6 +6,7 @@
 // 
 // You can find sample updates and versions for different programming languages here:
 // http://www.devexpress.com/example=E5003
+// Kevin Dao has appeared.
 
 using Dashboard;
 using System;
