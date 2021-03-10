@@ -11,7 +11,7 @@ using System.Runtime.InteropServices;
 
 namespace Dashboard
 {
-    public partial class LoginPage : Form
+    public partial class Login : Form
     {
 
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
@@ -24,7 +24,7 @@ namespace Dashboard
                 int nWidthEllipse, // width of ellipse
                 int nHeightEllipse // height of ellipse
         );
-        public LoginPage()
+        public Login()
         {
             InitializeComponent();
         }
@@ -48,7 +48,7 @@ namespace Dashboard
 
         private void btnSignin_MouseClick(object sender, MouseEventArgs e)
         {
-            btnSignin.BackColor = System.Drawing.Color.MediumSeaGreen;
+            btnSignin.BackColor = System.Drawing.Color.MediumSpringGreen;
         }
 
         private void txtPassword_Click(object sender, EventArgs e)
@@ -64,7 +64,7 @@ namespace Dashboard
         private void btnSignup_Click(object sender, EventArgs e)
         {
             this.Hide();
-            SignupPage signup = new SignupPage();
+            Signup signup = new Signup();
             signup.Show();
         }
     }

@@ -11,7 +11,7 @@ using System.Runtime.InteropServices;
 
 namespace Dashboard
 {
-    public partial class SignupPage : Form
+    public partial class Signup : Form
     {
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
@@ -23,7 +23,7 @@ namespace Dashboard
                 int nWidthEllipse, // width of ellipse
                 int nHeightEllipse // height of ellipse
         );
-        public SignupPage()
+        public Signup()
         {
             InitializeComponent();
         }
@@ -44,15 +44,16 @@ namespace Dashboard
         private void btnGoBack_Click(object sender, EventArgs e)
         {
             this.Hide();
-            LoginPage signup = new LoginPage();
+            Login signup = new Login();
             signup.Show();
         }
 
         private void btnSignup_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form1 signup = new Form1();
+            MainDashboard signup = new MainDashboard();
             signup.Show();
         }
+
     }
 }

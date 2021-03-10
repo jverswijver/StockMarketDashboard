@@ -429,10 +429,7 @@ C:\Users\FuNkiN\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboa
 C:\Users\FuNkiN\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\ja\DevExpress.Office.v20.2.Core.resources.dll
 C:\Users\FuNkiN\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\ru\DevExpress.Office.v20.2.Core.resources.dll
 C:\Users\FuNkiN\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.csprojAssemblyReference.cache
-C:\Users\FuNkiN\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.Form1.resources
-C:\Users\FuNkiN\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.LoginPage.resources
 C:\Users\FuNkiN\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.Properties.Resources.resources
-C:\Users\FuNkiN\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.SignupPage.resources
 C:\Users\FuNkiN\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.ucMaximizedContent.resources
 C:\Users\FuNkiN\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.ucPreview.resources
 C:\Users\FuNkiN\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.csproj.GenerateResource.cache
@@ -440,3 +437,6 @@ C:\Users\FuNkiN\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboa
 C:\Users\FuNkiN\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.csproj.CopyComplete
 C:\Users\FuNkiN\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.exe
 C:\Users\FuNkiN\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.pdb
+C:\Users\FuNkiN\source\repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.MainDashboard.resources
+C:\Users\FuNkiN\source\repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.Login.resources
+C:\Users\FuNkiN\source\repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.Signup.resources

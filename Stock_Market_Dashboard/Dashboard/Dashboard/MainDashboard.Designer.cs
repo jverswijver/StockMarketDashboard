@@ -1,6 +1,6 @@
 ﻿namespace Dashboard
 {
-    partial class Form1
+    partial class MainDashboard
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainDashboard));
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnlNav = new System.Windows.Forms.Panel();
@@ -39,11 +39,11 @@
             this.btnAnalytics = new System.Windows.Forms.Button();
             this.btnDashbord = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblUserId = new System.Windows.Forms.Label();
+            this.lblUsername = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.lbltitle = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.circularProgressBar1 = new CircularProgressBar.CircularProgressBar();
@@ -99,7 +99,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(186, 552);
+            this.panel1.Size = new System.Drawing.Size(165, 552);
             this.panel1.TabIndex = 0;
             // 
             // pnlNav
@@ -120,7 +120,7 @@
             this.btnsettings.Image = global::Dashboard.Properties.Resources.settings;
             this.btnsettings.Location = new System.Drawing.Point(0, 510);
             this.btnsettings.Name = "btnsettings";
-            this.btnsettings.Size = new System.Drawing.Size(186, 42);
+            this.btnsettings.Size = new System.Drawing.Size(165, 42);
             this.btnsettings.TabIndex = 1;
             this.btnsettings.Text = "Settings";
             this.btnsettings.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -138,9 +138,9 @@
             this.btnContactUs.Image = global::Dashboard.Properties.Resources.Conact;
             this.btnContactUs.Location = new System.Drawing.Point(0, 280);
             this.btnContactUs.Name = "btnContactUs";
-            this.btnContactUs.Size = new System.Drawing.Size(186, 42);
+            this.btnContactUs.Size = new System.Drawing.Size(165, 42);
             this.btnContactUs.TabIndex = 1;
-            this.btnContactUs.Text = "Contact Us";
+            this.btnContactUs.Text = "Account";
             this.btnContactUs.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnContactUs.UseVisualStyleBackColor = true;
             this.btnContactUs.Click += new System.EventHandler(this.btnContactUs_Click);
@@ -156,9 +156,9 @@
             this.btnCalender.Image = global::Dashboard.Properties.Resources.calendar;
             this.btnCalender.Location = new System.Drawing.Point(0, 238);
             this.btnCalender.Name = "btnCalender";
-            this.btnCalender.Size = new System.Drawing.Size(186, 42);
+            this.btnCalender.Size = new System.Drawing.Size(165, 42);
             this.btnCalender.TabIndex = 1;
-            this.btnCalender.Text = "Calendar";
+            this.btnCalender.Text = "Watchlist";
             this.btnCalender.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnCalender.UseVisualStyleBackColor = true;
             this.btnCalender.Click += new System.EventHandler(this.btnCalender_Click);
@@ -174,9 +174,9 @@
             this.btnAnalytics.Image = global::Dashboard.Properties.Resources.diagram;
             this.btnAnalytics.Location = new System.Drawing.Point(0, 196);
             this.btnAnalytics.Name = "btnAnalytics";
-            this.btnAnalytics.Size = new System.Drawing.Size(186, 42);
+            this.btnAnalytics.Size = new System.Drawing.Size(165, 42);
             this.btnAnalytics.TabIndex = 1;
-            this.btnAnalytics.Text = "Analytics";
+            this.btnAnalytics.Text = "Portfolio";
             this.btnAnalytics.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnAnalytics.UseVisualStyleBackColor = true;
             this.btnAnalytics.Click += new System.EventHandler(this.btnAnalytics_Click);
@@ -188,11 +188,11 @@
             this.btnDashbord.FlatAppearance.BorderSize = 0;
             this.btnDashbord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDashbord.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDashbord.ForeColor = System.Drawing.Color.DarkSeaGreen;
+            this.btnDashbord.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnDashbord.Image = global::Dashboard.Properties.Resources.home;
             this.btnDashbord.Location = new System.Drawing.Point(0, 154);
             this.btnDashbord.Name = "btnDashbord";
-            this.btnDashbord.Size = new System.Drawing.Size(186, 42);
+            this.btnDashbord.Size = new System.Drawing.Size(165, 42);
             this.btnDashbord.TabIndex = 1;
             this.btnDashbord.Text = "Dashboard";
             this.btnDashbord.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -203,36 +203,36 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.lblUserId);
+            this.panel2.Controls.Add(this.lblUsername);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(186, 154);
+            this.panel2.Size = new System.Drawing.Size(165, 154);
             this.panel2.TabIndex = 0;
             // 
-            // label2
+            // lblUserId
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.label2.Location = new System.Drawing.Point(33, 119);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 12);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Some User Text Here";
+            this.lblUserId.AutoSize = true;
+            this.lblUserId.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.lblUserId.Location = new System.Drawing.Point(21, 128);
+            this.lblUserId.Name = "lblUserId";
+            this.lblUserId.Size = new System.Drawing.Size(128, 13);
+            this.lblUserId.TabIndex = 2;
+            this.lblUserId.Text = "Some User Text Here";
             // 
-            // label1
+            // lblUsername
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.label1.Location = new System.Drawing.Point(48, 97);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 16);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "User Name";
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.lblUsername.Location = new System.Drawing.Point(48, 97);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(86, 16);
+            this.lblUsername.TabIndex = 1;
+            this.lblUsername.Text = "User Name";
             // 
             // pictureBox1
             // 
@@ -260,26 +260,26 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // textBox1
+            // txtSearch
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(79)))), ((int)(((byte)(99)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(563, 23);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(292, 25);
-            this.textBox1.TabIndex = 11;
-            this.textBox1.Text = "  Search for something...\r\n";
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(79)))), ((int)(((byte)(99)))));
+            this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.ForeColor = System.Drawing.Color.White;
+            this.txtSearch.Location = new System.Drawing.Point(563, 23);
+            this.txtSearch.Multiline = true;
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(292, 25);
+            this.txtSearch.TabIndex = 11;
+            this.txtSearch.Text = "  Search for something...\r\n";
+            this.txtSearch.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // lbltitle
             // 
             this.lbltitle.AutoSize = true;
             this.lbltitle.BackColor = System.Drawing.Color.Transparent;
             this.lbltitle.Font = new System.Drawing.Font("Impact", 21F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltitle.ForeColor = System.Drawing.Color.DarkSeaGreen;
+            this.lbltitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.lbltitle.Location = new System.Drawing.Point(197, 23);
             this.lbltitle.Name = "lbltitle";
             this.lbltitle.Size = new System.Drawing.Size(140, 35);
@@ -569,7 +569,7 @@
             this.CancelButton = this.button1;
             this.ClientSize = new System.Drawing.Size(919, 552);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.lbltitle);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel7);
@@ -612,8 +612,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnDashbord;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblUserId;
+        private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnsettings;
         private System.Windows.Forms.Button btnContactUs;
@@ -621,7 +621,7 @@
         private System.Windows.Forms.Button btnAnalytics;
         private System.Windows.Forms.Panel pnlNav;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Label lbltitle;
         private System.Windows.Forms.Panel panel6;
         private CircularProgressBar.CircularProgressBar circularProgressBar1;

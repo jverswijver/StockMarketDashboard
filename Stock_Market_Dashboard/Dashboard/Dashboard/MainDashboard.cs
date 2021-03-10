@@ -13,7 +13,7 @@ using DevExpress.XtraBars.Docking2010.Views.Widget;
 using DevExpress.XtraEditors;
 namespace Dashboard
 {
-    public partial class Form1 : Form
+    public partial class MainDashboard : Form
     {
         WidgetView view;
         StackGroup group1, group2;
@@ -30,7 +30,7 @@ namespace Dashboard
 
          );
 
-        public Form1()
+        public MainDashboard()
         {
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));

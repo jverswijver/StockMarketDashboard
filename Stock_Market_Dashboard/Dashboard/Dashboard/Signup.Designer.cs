@@ -1,7 +1,7 @@
 ﻿
 namespace Dashboard
 {
-    partial class SignupPage
+    partial class Signup
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace Dashboard
         private void InitializeComponent()
         {
             System.Windows.Forms.Button btnGoBack;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignupPage));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Signup));
             this.button1 = new System.Windows.Forms.Button();
             this.lbltitle = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.TextBox();
@@ -92,7 +92,7 @@ namespace Dashboard
             this.lbltitle.AutoSize = true;
             this.lbltitle.BackColor = System.Drawing.Color.Transparent;
             this.lbltitle.Font = new System.Drawing.Font("Nirmala UI", 32.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltitle.ForeColor = System.Drawing.Color.DarkSeaGreen;
+            this.lbltitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(226)))), ((int)(((byte)(178)))));
             this.lbltitle.Location = new System.Drawing.Point(196, 40);
             this.lbltitle.Name = "lbltitle";
             this.lbltitle.Size = new System.Drawing.Size(387, 59);
@@ -131,7 +131,7 @@ namespace Dashboard
             // 
             // btnSignup
             // 
-            this.btnSignup.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.btnSignup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(226)))), ((int)(((byte)(178)))));
             this.btnSignup.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnSignup.FlatAppearance.BorderSize = 0;
             this.btnSignup.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MediumSeaGreen;
