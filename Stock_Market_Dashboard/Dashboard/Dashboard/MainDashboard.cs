@@ -107,7 +107,17 @@ namespace Dashboard
             pnlNav.Height = btnsettings.Height;
             pnlNav.Top = btnsettings.Top;
             btnsettings.BackColor = Color.FromArgb(46, 51, 73);
-            btnQuit.Visible = true;
+            if (btnQuit.Visible == false)
+            {
+                btnBack.Visible = true;
+                btnQuit.Visible = true;
+
+            }
+            else
+            {
+                btnBack.Visible = false;
+                btnQuit.Visible = false;
+            }
         }
 
         private void btnDashbord_Leave(object sender, EventArgs e)
@@ -145,9 +155,15 @@ namespace Dashboard
             Application.Exit();
         }
 
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login logger = new Login();
+            logger.Show();
+        }
+
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
         }
     }
 }

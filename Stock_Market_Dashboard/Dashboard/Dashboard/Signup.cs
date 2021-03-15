@@ -38,14 +38,14 @@ namespace Dashboard
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void btnGoBack_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Login signup = new Login();
-            signup.Show();
+            Login logger = new Login();
+            logger.Show();
         }
 
         private void btnSignup_Click(object sender, EventArgs e)

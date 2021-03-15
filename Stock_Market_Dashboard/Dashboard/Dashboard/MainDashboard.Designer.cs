@@ -69,6 +69,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnBack = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -90,6 +91,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.btnBack);
             this.panel1.Controls.Add(this.btnQuit);
             this.panel1.Controls.Add(this.pnlNav);
             this.panel1.Controls.Add(this.btnsettings);
@@ -583,6 +585,24 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Earnings";
             // 
+            // btnBack
+            // 
+            this.btnBack.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnBack.FlatAppearance.BorderSize = 0;
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnBack.Image = global::Dashboard.Properties.Resources.settings;
+            this.btnBack.Location = new System.Drawing.Point(0, 426);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(165, 42);
+            this.btnBack.TabIndex = 4;
+            this.btnBack.Text = "Back to Log-in";
+            this.btnBack.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Visible = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // MainDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -670,6 +690,7 @@
         public System.Windows.Forms.Label lblUsername;
         public System.Windows.Forms.Label lblUserId;
         private System.Windows.Forms.Button btnQuit;
+        private System.Windows.Forms.Button btnBack;
     }
 }
 
