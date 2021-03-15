@@ -107,6 +107,7 @@ namespace Dashboard
             pnlNav.Height = btnsettings.Height;
             pnlNav.Top = btnsettings.Top;
             btnsettings.BackColor = Color.FromArgb(46, 51, 73);
+            btnQuit.Visible = true;
         }
 
         private void btnDashbord_Leave(object sender, EventArgs e)
@@ -135,6 +136,11 @@ namespace Dashboard
         }
 
         private void button1_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnQuit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }

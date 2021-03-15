@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainDashboard));
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnQuit = new System.Windows.Forms.Button();
             this.pnlNav = new System.Windows.Forms.Panel();
             this.btnsettings = new System.Windows.Forms.Button();
             this.btnContactUs = new System.Windows.Forms.Button();
@@ -89,6 +90,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.btnQuit);
             this.panel1.Controls.Add(this.pnlNav);
             this.panel1.Controls.Add(this.btnsettings);
             this.panel1.Controls.Add(this.btnContactUs);
@@ -101,6 +103,24 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(165, 552);
             this.panel1.TabIndex = 0;
+            // 
+            // btnQuit
+            // 
+            this.btnQuit.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnQuit.FlatAppearance.BorderSize = 0;
+            this.btnQuit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQuit.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuit.ForeColor = System.Drawing.Color.Red;
+            this.btnQuit.Image = global::Dashboard.Properties.Resources.settings;
+            this.btnQuit.Location = new System.Drawing.Point(0, 468);
+            this.btnQuit.Name = "btnQuit";
+            this.btnQuit.Size = new System.Drawing.Size(165, 42);
+            this.btnQuit.TabIndex = 3;
+            this.btnQuit.Text = "Quit";
+            this.btnQuit.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnQuit.UseVisualStyleBackColor = true;
+            this.btnQuit.Visible = false;
+            this.btnQuit.Click += new System.EventHandler(this.btnQuit_Click);
             // 
             // pnlNav
             // 
@@ -649,6 +669,7 @@
         private System.Windows.Forms.Label label4;
         public System.Windows.Forms.Label lblUsername;
         public System.Windows.Forms.Label lblUserId;
+        private System.Windows.Forms.Button btnQuit;
     }
 }
 
