@@ -543,3 +543,4 @@ C:\Users\Luka\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard
 C:\Users\Luka\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.csproj.CopyComplete
 C:\Users\Luka\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.exe
 C:\Users\Luka\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.pdb
+C:\Users\FuNkiN\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.PorfolioWidget.resources

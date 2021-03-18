@@ -32,12 +32,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainDashboard));
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnBack = new System.Windows.Forms.Button();
             this.btnQuit = new System.Windows.Forms.Button();
             this.pnlNav = new System.Windows.Forms.Panel();
             this.btnsettings = new System.Windows.Forms.Button();
-            this.btnContactUs = new System.Windows.Forms.Button();
-            this.btnCalender = new System.Windows.Forms.Button();
-            this.btnAnalytics = new System.Windows.Forms.Button();
+            this.btnAccount = new System.Windows.Forms.Button();
+            this.btnWatchlist = new System.Windows.Forms.Button();
+            this.btnPortfolio = new System.Windows.Forms.Button();
             this.btnDashbord = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblUserId = new System.Windows.Forms.Label();
@@ -69,7 +70,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnBack = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -95,9 +95,9 @@
             this.panel1.Controls.Add(this.btnQuit);
             this.panel1.Controls.Add(this.pnlNav);
             this.panel1.Controls.Add(this.btnsettings);
-            this.panel1.Controls.Add(this.btnContactUs);
-            this.panel1.Controls.Add(this.btnCalender);
-            this.panel1.Controls.Add(this.btnAnalytics);
+            this.panel1.Controls.Add(this.btnAccount);
+            this.panel1.Controls.Add(this.btnWatchlist);
+            this.panel1.Controls.Add(this.btnPortfolio);
             this.panel1.Controls.Add(this.btnDashbord);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -105,6 +105,24 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(165, 552);
             this.panel1.TabIndex = 0;
+            // 
+            // btnBack
+            // 
+            this.btnBack.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnBack.FlatAppearance.BorderSize = 0;
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnBack.Image = global::Dashboard.Properties.Resources.settings;
+            this.btnBack.Location = new System.Drawing.Point(0, 426);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(165, 42);
+            this.btnBack.TabIndex = 4;
+            this.btnBack.Text = "Back to Log-in";
+            this.btnBack.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Visible = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btnQuit
             // 
@@ -150,59 +168,58 @@
             this.btnsettings.Click += new System.EventHandler(this.btnsettings_Click);
             this.btnsettings.Leave += new System.EventHandler(this.btnsettings_Leave);
             // 
-            // btnContactUs
+            // btnAccount
             // 
-            this.btnContactUs.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnContactUs.FlatAppearance.BorderSize = 0;
-            this.btnContactUs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnContactUs.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnContactUs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnContactUs.Image = global::Dashboard.Properties.Resources.Conact;
-            this.btnContactUs.Location = new System.Drawing.Point(0, 280);
-            this.btnContactUs.Name = "btnContactUs";
-            this.btnContactUs.Size = new System.Drawing.Size(165, 42);
-            this.btnContactUs.TabIndex = 1;
-            this.btnContactUs.Text = "Account";
-            this.btnContactUs.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnContactUs.UseVisualStyleBackColor = true;
-            this.btnContactUs.Click += new System.EventHandler(this.btnContactUs_Click);
-            this.btnContactUs.Leave += new System.EventHandler(this.btnContactUs_Leave);
+            this.btnAccount.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAccount.FlatAppearance.BorderSize = 0;
+            this.btnAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAccount.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnAccount.Image = global::Dashboard.Properties.Resources.Conact;
+            this.btnAccount.Location = new System.Drawing.Point(0, 280);
+            this.btnAccount.Name = "btnAccount";
+            this.btnAccount.Size = new System.Drawing.Size(165, 42);
+            this.btnAccount.TabIndex = 1;
+            this.btnAccount.Text = "Account";
+            this.btnAccount.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnAccount.UseVisualStyleBackColor = true;
+            this.btnAccount.Click += new System.EventHandler(this.btnAccount_Click);
+            this.btnAccount.Leave += new System.EventHandler(this.btnContactUs_Leave);
             // 
-            // btnCalender
+            // btnWatchlist
             // 
-            this.btnCalender.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCalender.FlatAppearance.BorderSize = 0;
-            this.btnCalender.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCalender.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnCalender.Image = global::Dashboard.Properties.Resources.calendar;
-            this.btnCalender.Location = new System.Drawing.Point(0, 238);
-            this.btnCalender.Name = "btnCalender";
-            this.btnCalender.Size = new System.Drawing.Size(165, 42);
-            this.btnCalender.TabIndex = 1;
-            this.btnCalender.Text = "Watchlist";
-            this.btnCalender.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnCalender.UseVisualStyleBackColor = true;
-            this.btnCalender.Click += new System.EventHandler(this.btnCalender_Click);
-            this.btnCalender.Leave += new System.EventHandler(this.btnCalender_Leave);
+            this.btnWatchlist.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnWatchlist.FlatAppearance.BorderSize = 0;
+            this.btnWatchlist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnWatchlist.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnWatchlist.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnWatchlist.Image = global::Dashboard.Properties.Resources.calendar;
+            this.btnWatchlist.Location = new System.Drawing.Point(0, 238);
+            this.btnWatchlist.Name = "btnWatchlist";
+            this.btnWatchlist.Size = new System.Drawing.Size(165, 42);
+            this.btnWatchlist.TabIndex = 1;
+            this.btnWatchlist.Text = "Watchlist";
+            this.btnWatchlist.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnWatchlist.UseVisualStyleBackColor = true;
+            this.btnWatchlist.Click += new System.EventHandler(this.btnWatchlist_Click);
+            this.btnWatchlist.Leave += new System.EventHandler(this.btnCalender_Leave);
             // 
-            // btnAnalytics
+            // btnPortfolio
             // 
-            this.btnAnalytics.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAnalytics.FlatAppearance.BorderSize = 0;
-            this.btnAnalytics.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAnalytics.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnalytics.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnAnalytics.Image = global::Dashboard.Properties.Resources.diagram;
-            this.btnAnalytics.Location = new System.Drawing.Point(0, 196);
-            this.btnAnalytics.Name = "btnAnalytics";
-            this.btnAnalytics.Size = new System.Drawing.Size(165, 42);
-            this.btnAnalytics.TabIndex = 1;
-            this.btnAnalytics.Text = "Portfolio";
-            this.btnAnalytics.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnAnalytics.UseVisualStyleBackColor = true;
-            this.btnAnalytics.Click += new System.EventHandler(this.btnAnalytics_Click);
-            this.btnAnalytics.Leave += new System.EventHandler(this.btnAnalytics_Leave);
+            this.btnPortfolio.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPortfolio.FlatAppearance.BorderSize = 0;
+            this.btnPortfolio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPortfolio.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPortfolio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnPortfolio.Image = global::Dashboard.Properties.Resources.diagram;
+            this.btnPortfolio.Location = new System.Drawing.Point(0, 196);
+            this.btnPortfolio.Name = "btnPortfolio";
+            this.btnPortfolio.Size = new System.Drawing.Size(165, 42);
+            this.btnPortfolio.TabIndex = 1;
+            this.btnPortfolio.Text = "Portfolio";
+            this.btnPortfolio.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnPortfolio.UseVisualStyleBackColor = true;
+            this.btnPortfolio.Click += new System.EventHandler(this.btnPortfolio_Click);
             // 
             // btnDashbord
             // 
@@ -297,7 +314,6 @@
             this.txtSearch.Size = new System.Drawing.Size(292, 25);
             this.txtSearch.TabIndex = 11;
             this.txtSearch.Text = "  Search for something...\r\n";
-            this.txtSearch.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // lbltitle
             // 
@@ -585,24 +601,6 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Earnings";
             // 
-            // btnBack
-            // 
-            this.btnBack.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnBack.FlatAppearance.BorderSize = 0;
-            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBack.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnBack.Image = global::Dashboard.Properties.Resources.settings;
-            this.btnBack.Location = new System.Drawing.Point(0, 426);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(165, 42);
-            this.btnBack.TabIndex = 4;
-            this.btnBack.Text = "Back to Log-in";
-            this.btnBack.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnBack.UseVisualStyleBackColor = true;
-            this.btnBack.Visible = false;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-            // 
             // MainDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -657,9 +655,9 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnsettings;
-        private System.Windows.Forms.Button btnContactUs;
-        private System.Windows.Forms.Button btnCalender;
-        private System.Windows.Forms.Button btnAnalytics;
+        private System.Windows.Forms.Button btnAccount;
+        private System.Windows.Forms.Button btnWatchlist;
+        private System.Windows.Forms.Button btnPortfolio;
         private System.Windows.Forms.Panel pnlNav;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtSearch;
