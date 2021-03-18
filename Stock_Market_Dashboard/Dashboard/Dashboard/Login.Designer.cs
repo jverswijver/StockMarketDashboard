@@ -231,6 +231,9 @@ namespace Dashboard
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.TopMost = true;
             this.Load += new System.EventHandler(this.LoginPage_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.smdTopbar_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.smdTopbar_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.smdTopbar_MouseUp);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.smdLogo)).EndInit();

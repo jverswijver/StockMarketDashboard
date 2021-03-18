@@ -56,6 +56,7 @@ namespace Dashboard
             dashboard.lblUserId.Text = txtPassword.Text; // Had to change dashboard.lblUserId to PUBLIC to make this work
             dashboard.Show();
         }
+
         // Kevin's DRAG BAR BLOCK
 
         public bool mouseDown;
@@ -83,5 +84,7 @@ namespace Dashboard
         }
 
         // Kevin's DRAG BAR BLOCK END
+
+
     }
 }

@@ -35,9 +35,10 @@ namespace Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.Name = "ucPreview";
-            this.Size = new System.Drawing.Size(742, 384);
+            this.Size = new System.Drawing.Size(487, 379);
             this.ResumeLayout(false);
 
         }

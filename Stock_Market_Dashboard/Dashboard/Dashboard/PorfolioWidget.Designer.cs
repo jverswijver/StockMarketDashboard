@@ -29,6 +29,7 @@ namespace Dashboard
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PorfolioWidget));
             this.lblPortfolio = new System.Windows.Forms.Label();
             this.TotalValue = new System.Windows.Forms.Label();
             this.TodayGainLoss = new System.Windows.Forms.Label();
@@ -38,119 +39,137 @@ namespace Dashboard
             this.lblTotalGain = new System.Windows.Forms.Label();
             this.TotalGainLoss = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.tbPortfolio = new System.Windows.Forms.TableLayoutPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblPrice = new System.Windows.Forms.Label();
+            this.lblPercentage = new System.Windows.Forms.Label();
+            this.tbPortfolio.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblPortfolio
             // 
-            this.lblPortfolio.AutoSize = true;
+            resources.ApplyResources(this.lblPortfolio, "lblPortfolio");
             this.lblPortfolio.BackColor = System.Drawing.Color.Transparent;
-            this.lblPortfolio.Font = new System.Drawing.Font("Impact", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPortfolio.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.lblPortfolio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.lblPortfolio.Location = new System.Drawing.Point(13, 20);
             this.lblPortfolio.Name = "lblPortfolio";
-            this.lblPortfolio.Size = new System.Drawing.Size(151, 35);
-            this.lblPortfolio.TabIndex = 11;
-            this.lblPortfolio.Text = "My Portfolio";
             // 
             // TotalValue
             // 
-            this.TotalValue.AutoSize = true;
+            resources.ApplyResources(this.TotalValue, "TotalValue");
             this.TotalValue.BackColor = System.Drawing.Color.Transparent;
-            this.TotalValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.TotalValue.ForeColor = System.Drawing.Color.DarkGray;
-            this.TotalValue.Location = new System.Drawing.Point(201, 67);
             this.TotalValue.Name = "TotalValue";
-            this.TotalValue.Size = new System.Drawing.Size(101, 20);
-            this.TotalValue.TabIndex = 12;
-            this.TotalValue.Text = "Total Value : ";
             // 
             // TodayGainLoss
             // 
-            this.TodayGainLoss.AutoSize = true;
+            resources.ApplyResources(this.TodayGainLoss, "TodayGainLoss");
             this.TodayGainLoss.BackColor = System.Drawing.Color.Transparent;
-            this.TodayGainLoss.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TodayGainLoss.ForeColor = System.Drawing.Color.DarkGray;
-            this.TodayGainLoss.Location = new System.Drawing.Point(41, 118);
             this.TodayGainLoss.Name = "TodayGainLoss";
-            this.TodayGainLoss.Size = new System.Drawing.Size(147, 16);
-            this.TodayGainLoss.TabIndex = 13;
-            this.TodayGainLoss.Text = "Today Gain/ Loss (%) : ";
             // 
             // lblTotalNum
             // 
-            this.lblTotalNum.AutoSize = true;
+            resources.ApplyResources(this.lblTotalNum, "lblTotalNum");
             this.lblTotalNum.BackColor = System.Drawing.Color.Transparent;
-            this.lblTotalNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalNum.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.lblTotalNum.Location = new System.Drawing.Point(320, 57);
             this.lblTotalNum.Name = "lblTotalNum";
-            this.lblTotalNum.Size = new System.Drawing.Size(170, 31);
-            this.lblTotalNum.TabIndex = 14;
-            this.lblTotalNum.Text = "lblTotalNum";
             // 
             // lblUsername
             // 
-            this.lblUsername.AutoSize = true;
+            resources.ApplyResources(this.lblUsername, "lblUsername");
             this.lblUsername.BackColor = System.Drawing.Color.Transparent;
-            this.lblUsername.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsername.ForeColor = System.Drawing.Color.White;
-            this.lblUsername.Location = new System.Drawing.Point(40, 55);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(81, 21);
-            this.lblUsername.TabIndex = 15;
-            this.lblUsername.Text = "Username";
             // 
             // lblTodayGain
             // 
-            this.lblTodayGain.AutoSize = true;
+            resources.ApplyResources(this.lblTodayGain, "lblTodayGain");
             this.lblTodayGain.BackColor = System.Drawing.Color.Transparent;
-            this.lblTodayGain.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTodayGain.ForeColor = System.Drawing.Color.White;
-            this.lblTodayGain.Location = new System.Drawing.Point(213, 116);
             this.lblTodayGain.Name = "lblTodayGain";
-            this.lblTodayGain.Size = new System.Drawing.Size(137, 18);
-            this.lblTodayGain.TabIndex = 16;
-            this.lblTodayGain.Text = "lblTodayGain (%)";
             // 
             // lblTotalGain
             // 
-            this.lblTotalGain.AutoSize = true;
+            resources.ApplyResources(this.lblTotalGain, "lblTotalGain");
             this.lblTotalGain.BackColor = System.Drawing.Color.Transparent;
-            this.lblTotalGain.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalGain.ForeColor = System.Drawing.Color.White;
-            this.lblTotalGain.Location = new System.Drawing.Point(555, 116);
             this.lblTotalGain.Name = "lblTotalGain";
-            this.lblTotalGain.Size = new System.Drawing.Size(129, 18);
-            this.lblTotalGain.TabIndex = 18;
-            this.lblTotalGain.Text = "lblTotalGain (%)";
             // 
             // TotalGainLoss
             // 
-            this.TotalGainLoss.AutoSize = true;
+            resources.ApplyResources(this.TotalGainLoss, "TotalGainLoss");
             this.TotalGainLoss.BackColor = System.Drawing.Color.Transparent;
-            this.TotalGainLoss.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TotalGainLoss.ForeColor = System.Drawing.Color.DarkGray;
-            this.TotalGainLoss.Location = new System.Drawing.Point(392, 118);
             this.TotalGainLoss.Name = "TotalGainLoss";
-            this.TotalGainLoss.Size = new System.Drawing.Size(138, 16);
-            this.TotalGainLoss.TabIndex = 17;
-            this.TotalGainLoss.Text = "Total Gain/ Loss (%) : ";
             // 
             // btnAdd
             // 
             this.btnAdd.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnAdd.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(424, 156);
+            this.btnAdd.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
+            resources.ApplyResources(this.btnAdd, "btnAdd");
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(66, 32);
-            this.btnAdd.TabIndex = 19;
-            this.btnAdd.Text = "+ Add";
-            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.UseVisualStyleBackColor = true;
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnDelete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
+            resources.ApplyResources(this.btnDelete, "btnDelete");
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.UseVisualStyleBackColor = false;
+            // 
+            // tbPortfolio
+            // 
+            resources.ApplyResources(this.tbPortfolio, "tbPortfolio");
+            this.tbPortfolio.Controls.Add(this.lblPrice, 2, 0);
+            this.tbPortfolio.Controls.Add(this.lblPercentage, 3, 0);
+            this.tbPortfolio.Controls.Add(this.label2, 1, 0);
+            this.tbPortfolio.Controls.Add(this.label1, 0, 0);
+            this.tbPortfolio.Name = "tbPortfolio";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Name = "label1";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Name = "label2";
+            // 
+            // lblPrice
+            // 
+            resources.ApplyResources(this.lblPrice, "lblPrice");
+            this.lblPrice.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.lblPrice.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblPrice.ForeColor = System.Drawing.Color.White;
+            this.lblPrice.Name = "lblPrice";
+            // 
+            // lblPercentage
+            // 
+            resources.ApplyResources(this.lblPercentage, "lblPercentage");
+            this.lblPercentage.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.lblPercentage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblPercentage.ForeColor = System.Drawing.Color.White;
+            this.lblPercentage.Name = "lblPercentage";
             // 
             // PorfolioWidget
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            this.BackColor = System.Drawing.Color.Transparent;
             this.BackgroundImage = global::Dashboard.Properties.Resources.SMD_LoginBG;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.tbPortfolio);
+            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.lblTotalGain);
             this.Controls.Add(this.TotalGainLoss);
@@ -160,9 +179,12 @@ namespace Dashboard
             this.Controls.Add(this.TodayGainLoss);
             this.Controls.Add(this.TotalValue);
             this.Controls.Add(this.lblPortfolio);
+            this.DoubleBuffered = true;
+            resources.ApplyResources(this, "$this");
             this.Name = "PorfolioWidget";
-            this.Size = new System.Drawing.Size(736, 554);
             this.Load += new System.EventHandler(this.PorfolioWidget_Load);
+            this.tbPortfolio.ResumeLayout(false);
+            this.tbPortfolio.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -179,5 +201,11 @@ namespace Dashboard
         private System.Windows.Forms.Label lblTotalGain;
         private System.Windows.Forms.Label TotalGainLoss;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.TableLayoutPanel tbPortfolio;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblPrice;
+        private System.Windows.Forms.Label lblPercentage;
     }
 }

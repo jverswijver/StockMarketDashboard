@@ -11,6 +11,7 @@ using System.Runtime.InteropServices;
 using DevExpress.XtraBars.Docking2010;
 using DevExpress.XtraBars.Docking2010.Views.Widget;
 using DevExpress.XtraEditors;
+
 namespace Dashboard
 {
     public partial class MainDashboard : Form
@@ -120,11 +121,6 @@ namespace Dashboard
             btnsettings.BackColor = Color.FromArgb(24, 30, 54);
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void btnQuit_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -137,12 +133,71 @@ namespace Dashboard
             logger.Show();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void btnPortfolio_Click(object sender, EventArgs e)
+        {
+            pnlNav.Height = btnAccount.Height;
+            pnlNav.Top = btnAccount.Top;
+            btnAccount.BackColor = Color.FromArgb(46, 51, 73);
+
+            AddDocumentManager();
+            for (int i = 0; i < 1; i++)
+            {
+                AddPortfolio();
+            }
+
+            group1.Items.AddRange(new Document[] { view.Documents[0] as Document });
+            Console.WriteLine("Just click the Portfolio");
+        }
+
+        private void btnWatchlist_Click(object sender, EventArgs e)
         {
             pnlNav.Height = btnAccount.Height;
             pnlNav.Top = btnAccount.Top;
             btnAccount.BackColor = Color.FromArgb(46, 51, 73);
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnAccount_Click(object sender, EventArgs e)
+        {
+            pnlNav.Height = btnAccount.Height;
+            pnlNav.Top = btnAccount.Top;
+            btnAccount.BackColor = Color.FromArgb(46, 51, 73);
+        }
+
+        // Kevin's DRAG BAR BLOCK
+
+        public bool mouseDown;
+        public Point lastLocation;
+
+
+        private void smdTopbar_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (mouseDown)
+            {
+                this.Location = new Point((this.Location.X - lastLocation.X) + e.X, (this.Location.Y - lastLocation.Y) + e.Y);
+
+                this.Update();
+            }
+        }
+
+        private void smdTopbar_MouseUp(object sender, MouseEventArgs e)
+        {
+            mouseDown = false;
+        }
+
+        private void smdTopbar_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseDown = true;
+            lastLocation = e.Location;
+        }
+
+
+
+        // Kevin's DRAG BAR BLOCK END
 
     }
 }
