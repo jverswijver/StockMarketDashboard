@@ -1,4 +1,7 @@
 ﻿
+using System.Drawing;
+using System.Windows.Forms;
+
 namespace Dashboard
 {
     partial class Login
@@ -39,6 +42,7 @@ namespace Dashboard
             this.label1 = new System.Windows.Forms.Label();
             this.smdLogo = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.Button();
+            this.smdTopbar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.smdLogo)).BeginInit();
             this.SuspendLayout();
@@ -188,6 +192,23 @@ namespace Dashboard
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // smdTopbar
+            // 
+            this.smdTopbar.BackColor = System.Drawing.Color.Transparent;
+            this.smdTopbar.FlatAppearance.BorderColor = Color.FromArgb(0, 255, 255, 255);
+            this.smdTopbar.FlatAppearance.BorderSize = 0;
+            this.smdTopbar.FlatAppearance.MouseDownBackColor = Color.FromArgb(0, 255, 255, 255);
+            this.smdTopbar.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 255, 255, 255);
+            this.smdTopbar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.smdTopbar.Location = new System.Drawing.Point(0, 1);
+            this.smdTopbar.Name = "smdTopbar";
+            this.smdTopbar.Size = new System.Drawing.Size(697, 23);
+            this.smdTopbar.TabIndex = 40;
+            this.smdTopbar.UseVisualStyleBackColor = false;
+            this.smdTopbar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.smdTopbar_MouseDown);
+            this.smdTopbar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.smdTopbar_MouseMove);
+            this.smdTopbar.MouseUp += new System.Windows.Forms.MouseEventHandler(this.smdTopbar_MouseUp);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -198,6 +219,7 @@ namespace Dashboard
             this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(733, 552);
             this.ControlBox = false;
+            this.Controls.Add(this.smdTopbar);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -205,6 +227,7 @@ namespace Dashboard
             this.MinimizeBox = false;
             this.Name = "Login";
             this.ShowIcon = false;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.TopMost = true;
             this.Load += new System.EventHandler(this.LoginPage_Load);
@@ -226,5 +249,6 @@ namespace Dashboard
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox smdLogo;
         private System.Windows.Forms.Button btnExit;
+        private Button smdTopbar;
     }
 }

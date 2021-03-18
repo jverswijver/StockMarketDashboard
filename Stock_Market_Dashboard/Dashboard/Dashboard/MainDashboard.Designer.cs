@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainDashboard));
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnBack = new System.Windows.Forms.Button();
             this.btnQuit = new System.Windows.Forms.Button();
             this.pnlNav = new System.Windows.Forms.Panel();
             this.btnsettings = new System.Windows.Forms.Button();
@@ -69,7 +70,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnBack = new System.Windows.Forms.Button();
+            this.smdTopbar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -105,6 +106,24 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(165, 552);
             this.panel1.TabIndex = 0;
+            // 
+            // btnBack
+            // 
+            this.btnBack.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnBack.FlatAppearance.BorderSize = 0;
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnBack.Image = global::Dashboard.Properties.Resources.settings;
+            this.btnBack.Location = new System.Drawing.Point(0, 426);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(165, 42);
+            this.btnBack.TabIndex = 4;
+            this.btnBack.Text = "Back to Log-in";
+            this.btnBack.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Visible = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btnQuit
             // 
@@ -585,23 +604,22 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Earnings";
             // 
-            // btnBack
+            // smdTopbar
             // 
-            this.btnBack.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnBack.FlatAppearance.BorderSize = 0;
-            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBack.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnBack.Image = global::Dashboard.Properties.Resources.settings;
-            this.btnBack.Location = new System.Drawing.Point(0, 426);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(165, 42);
-            this.btnBack.TabIndex = 4;
-            this.btnBack.Text = "Back to Log-in";
-            this.btnBack.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnBack.UseVisualStyleBackColor = true;
-            this.btnBack.Visible = false;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            this.smdTopbar.BackColor = System.Drawing.Color.Transparent;
+            this.smdTopbar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.smdTopbar.FlatAppearance.BorderSize = 0;
+            this.smdTopbar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.smdTopbar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.smdTopbar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.smdTopbar.Location = new System.Drawing.Point(3, 0);
+            this.smdTopbar.Name = "smdTopbar";
+            this.smdTopbar.Size = new System.Drawing.Size(906, 23);
+            this.smdTopbar.TabIndex = 44;
+            this.smdTopbar.UseVisualStyleBackColor = false;
+            this.smdTopbar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.smdTopbar_MouseDown);
+            this.smdTopbar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.smdTopbar_MouseMove);
+            this.smdTopbar.MouseUp += new System.Windows.Forms.MouseEventHandler(this.smdTopbar_MouseUp);
             // 
             // MainDashboard
             // 
@@ -611,6 +629,7 @@
             this.BackgroundImage = global::Dashboard.Properties.Resources.SMD_LoginBG;
             this.CancelButton = this.button1;
             this.ClientSize = new System.Drawing.Size(919, 552);
+            this.Controls.Add(this.smdTopbar);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.lbltitle);
@@ -691,6 +710,7 @@
         public System.Windows.Forms.Label lblUserId;
         private System.Windows.Forms.Button btnQuit;
         private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Button smdTopbar;
     }
 }
 

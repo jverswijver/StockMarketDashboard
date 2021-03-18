@@ -56,6 +56,32 @@ namespace Dashboard
             dashboard.lblUserId.Text = txtPassword.Text; // Had to change dashboard.lblUserId to PUBLIC to make this work
             dashboard.Show();
         }
+        // Kevin's DRAG BAR BLOCK
 
+        public bool mouseDown;
+        public Point lastLocation;
+
+        private void smdTopbar_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseDown = true;
+            lastLocation = e.Location;
+        }
+
+        private void smdTopbar_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (mouseDown)
+            {
+                this.Location = new Point((this.Location.X - lastLocation.X) + e.X, (this.Location.Y - lastLocation.Y) + e.Y);
+
+                this.Update();
+            }
+        }
+
+        private void smdTopbar_MouseUp(object sender, MouseEventArgs e)
+        {
+            mouseDown = false;
+        }
+
+        // Kevin's DRAG BAR BLOCK END
     }
 }
