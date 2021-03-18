@@ -41,14 +41,7 @@ namespace Dashboard
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            AddDocumentManager();
-            for (int i = 0; i < 6; i++)
-            {
-                AddDocuments();
-            }
-            //Adding Documents to group1 is not necessary, since all newly created Documents are automatically placed in the first StackGroup.
-            group1.Items.AddRange(new Document[] { view.Documents[0] as Document, view.Documents[1] as Document });
-            view.Controller.Dock(view.Documents[2] as Document, group2);
+  
         }
 
         void AddDocumentManager()
@@ -73,33 +66,19 @@ namespace Dashboard
             count++;
         }
 
+        void AddPortfolio()
+        {
+            Document document = view.AddDocument(new PorfolioWidget()) as Document;
+            document.MaximizedControl = new ucMaximizedContent();
+            count++;
+        }
+
         private void btnDashbord_Click(object sender, EventArgs e)
         {
             pnlNav.Height = btnDashbord.Height;
             pnlNav.Top = btnDashbord.Top;
             pnlNav.Left = btnDashbord.Left;
             btnDashbord.BackColor = Color.FromArgb(46, 51, 73);
-        }
-
-        private void btnAnalytics_Click(object sender, EventArgs e)
-        {
-            pnlNav.Height = btnAnalytics.Height;
-            pnlNav.Top = btnAnalytics.Top;
-            btnAnalytics.BackColor = Color.FromArgb(46, 51, 73);
-        }
-
-        private void btnCalender_Click(object sender, EventArgs e)
-        {
-            pnlNav.Height = btnCalender.Height;
-            pnlNav.Top = btnCalender.Top;
-            btnCalender.BackColor = Color.FromArgb(46, 51, 73);
-        }
-
-        private void btnContactUs_Click(object sender, EventArgs e)
-        {
-            pnlNav.Height = btnContactUs.Height;
-            pnlNav.Top = btnContactUs.Top;
-            btnContactUs.BackColor = Color.FromArgb(46, 51, 73);
         }
 
         private void btnsettings_Click(object sender, EventArgs e)
@@ -125,19 +104,15 @@ namespace Dashboard
             btnDashbord.BackColor = Color.FromArgb(24, 30, 54);
         }
 
-        private void btnAnalytics_Leave(object sender, EventArgs e)
-        {
-            btnAnalytics.BackColor = Color.FromArgb(24, 30, 54);
-        }
 
         private void btnCalender_Leave(object sender, EventArgs e)
         {
-            btnCalender.BackColor = Color.FromArgb(24, 30, 54);
+            btnWatchlist.BackColor = Color.FromArgb(24, 30, 54);
         }
 
         private void btnContactUs_Leave(object sender, EventArgs e)
         {
-            btnContactUs.BackColor = Color.FromArgb(24, 30, 54);
+            btnAccount.BackColor = Color.FromArgb(24, 30, 54);
         }
 
         private void btnsettings_Leave(object sender, EventArgs e)
@@ -162,36 +137,12 @@ namespace Dashboard
             logger.Show();
         }
 
-        // Kevin's DRAG BAR BLOCK
-
-        public bool mouseDown;
-        public Point lastLocation;
-
-        private void smdTopbar_MouseDown(object sender, MouseEventArgs e)
-        {
-            mouseDown = true;
-            lastLocation = e.Location;
-        }
-
-        private void smdTopbar_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (mouseDown)
-            {
-                this.Location = new Point((this.Location.X - lastLocation.X) + e.X, (this.Location.Y - lastLocation.Y) + e.Y);
-
-                this.Update();
-            }
-        }
-
-        private void smdTopbar_MouseUp(object sender, MouseEventArgs e)
-        {
-            mouseDown = false;
-        }
-
-        // Kevin's DRAG BAR BLOCK END
-
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+            pnlNav.Height = btnAccount.Height;
+            pnlNav.Top = btnAccount.Top;
+            btnAccount.BackColor = Color.FromArgb(46, 51, 73);
         }
+
     }
 }
