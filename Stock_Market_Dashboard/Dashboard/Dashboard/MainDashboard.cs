@@ -42,7 +42,8 @@ namespace Dashboard
 
         private void Form1_Load(object sender, EventArgs e)
         {
-  
+            //Passes the username in our settings field to the form label Username and displays it. 
+            lblUsername.Text = Properties.Settings.Default.UserName;
         }
 
         void AddDocumentManager()
@@ -187,6 +188,16 @@ namespace Dashboard
         private void smdTopbar_MouseUp(object sender, MouseEventArgs e)
         {
             mouseDown = false;
+        }
+
+        private void lblUsername_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+        
         }
 
         private void smdTopbar_MouseDown(object sender, MouseEventArgs e)

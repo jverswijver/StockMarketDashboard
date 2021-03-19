@@ -43,6 +43,7 @@ namespace Dashboard
             this.smdLogo = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.Button();
             this.smdTopbar = new System.Windows.Forms.Button();
+            this.rememberMeBox1 = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.smdLogo)).BeginInit();
             this.SuspendLayout();
@@ -89,7 +90,7 @@ namespace Dashboard
             this.btnSignin.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.btnSignin.ForeColor = System.Drawing.Color.White;
             this.btnSignin.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnSignin.Location = new System.Drawing.Point(127, 309);
+            this.btnSignin.Location = new System.Drawing.Point(127, 323);
             this.btnSignin.Margin = new System.Windows.Forms.Padding(2);
             this.btnSignin.Name = "btnSignin";
             this.btnSignin.Size = new System.Drawing.Size(104, 29);
@@ -115,6 +116,7 @@ namespace Dashboard
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.rememberMeBox1);
             this.panel1.Controls.Add(this.btnSignup);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.lblWelcome);
@@ -140,7 +142,7 @@ namespace Dashboard
             this.btnSignup.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSignup.ForeColor = System.Drawing.Color.White;
             this.btnSignup.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnSignup.Location = new System.Drawing.Point(235, 358);
+            this.btnSignup.Location = new System.Drawing.Point(245, 358);
             this.btnSignup.Margin = new System.Windows.Forms.Padding(1);
             this.btnSignup.Name = "btnSignup";
             this.btnSignup.Size = new System.Drawing.Size(85, 31);
@@ -195,19 +197,31 @@ namespace Dashboard
             // smdTopbar
             // 
             this.smdTopbar.BackColor = System.Drawing.Color.Transparent;
-            this.smdTopbar.FlatAppearance.BorderColor = Color.FromArgb(0, 255, 255, 255);
+            this.smdTopbar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.smdTopbar.FlatAppearance.BorderSize = 0;
-            this.smdTopbar.FlatAppearance.MouseDownBackColor = Color.FromArgb(0, 255, 255, 255);
-            this.smdTopbar.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 255, 255, 255);
+            this.smdTopbar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.smdTopbar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.smdTopbar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.smdTopbar.Location = new System.Drawing.Point(0, 1);
             this.smdTopbar.Name = "smdTopbar";
             this.smdTopbar.Size = new System.Drawing.Size(697, 23);
             this.smdTopbar.TabIndex = 40;
             this.smdTopbar.UseVisualStyleBackColor = false;
+            this.smdTopbar.Click += new System.EventHandler(this.smdTopbar_Click);
             this.smdTopbar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.smdTopbar_MouseDown);
             this.smdTopbar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.smdTopbar_MouseMove);
             this.smdTopbar.MouseUp += new System.Windows.Forms.MouseEventHandler(this.smdTopbar_MouseUp);
+            // 
+            // rememberMeBox1
+            // 
+            this.rememberMeBox1.AutoSize = true;
+            this.rememberMeBox1.Location = new System.Drawing.Point(83, 295);
+            this.rememberMeBox1.Name = "rememberMeBox1";
+            this.rememberMeBox1.Size = new System.Drawing.Size(95, 17);
+            this.rememberMeBox1.TabIndex = 17;
+            this.rememberMeBox1.Text = "Remember Me";
+            this.rememberMeBox1.UseVisualStyleBackColor = true;
+            this.rememberMeBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // Login
             // 
@@ -253,5 +267,6 @@ namespace Dashboard
         private System.Windows.Forms.PictureBox smdLogo;
         private System.Windows.Forms.Button btnExit;
         private Button smdTopbar;
+        private CheckBox rememberMeBox1;
     }
 }
