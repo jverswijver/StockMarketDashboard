@@ -41,10 +41,10 @@ namespace Dashboard
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.tbPortfolio = new System.Windows.Forms.TableLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.lblPrice = new System.Windows.Forms.Label();
             this.lblPercentage = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.tbPortfolio.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -130,22 +130,6 @@ namespace Dashboard
             this.tbPortfolio.Controls.Add(this.label1, 0, 0);
             this.tbPortfolio.Name = "tbPortfolio";
             // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Name = "label1";
-            // 
-            // label2
-            // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Name = "label2";
-            // 
             // lblPrice
             // 
             resources.ApplyResources(this.lblPrice, "lblPrice");
@@ -161,6 +145,22 @@ namespace Dashboard
             this.lblPercentage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblPercentage.ForeColor = System.Drawing.Color.White;
             this.lblPercentage.Name = "lblPercentage";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Name = "label2";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Name = "label1";
             // 
             // PorfolioWidget
             // 

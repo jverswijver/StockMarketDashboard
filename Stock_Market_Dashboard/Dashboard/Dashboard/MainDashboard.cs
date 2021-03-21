@@ -75,6 +75,13 @@ namespace Dashboard
             count++;
         }
 
+        void AddWatchlist()
+        {
+            Document document = view.AddDocument(new WatchlistWidget()) as Document;
+            document.MaximizedControl = new ucMaximizedContent();
+            count++;
+        }
+
         private void btnDashbord_Click(object sender, EventArgs e)
         {
             pnlNav.Height = btnDashbord.Height;
@@ -155,6 +162,9 @@ namespace Dashboard
             pnlNav.Height = btnAccount.Height;
             pnlNav.Top = btnAccount.Top;
             btnAccount.BackColor = Color.FromArgb(46, 51, 73);
+            AddDocumentManager();
+            AddWatchlist();
+            group2.Items.AddRange(new Document[] { view.Documents[0] as Document });
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -205,10 +215,7 @@ namespace Dashboard
             mouseDown = true;
             lastLocation = e.Location;
         }
-
-
-
-        // Kevin's DRAG BAR BLOCK END
+      // Kevin's DRAG BAR BLOCK END
 
     }
 }

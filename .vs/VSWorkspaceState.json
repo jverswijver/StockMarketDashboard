@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Stock_Market_Dashboard",
+    "\\Stock_Market_Dashboard\\Dashboard",
+    "\\Stock_Market_Dashboard\\Dashboard\\Dashboard"
   ],
-  "SelectedNode": "\\Dashboard.sln (Stock_Market_Dashboard\\Dashboard\\Dashboard.sln)",
+  "SelectedNode": "\\Stock_Market_Dashboard\\Dashboard\\Dashboard\\Login.cs",
   "PreviewInSolutionExplorer": false
 }
