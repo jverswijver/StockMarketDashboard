@@ -228,8 +228,10 @@ namespace Dashboard
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Location = new System.Drawing.Point(285, 320);
             this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.dateTimePicker1.Size = new System.Drawing.Size(203, 20);
             this.dateTimePicker1.TabIndex = 36;
+            this.dateTimePicker1.Value = new System.DateTime(2021, 3, 18, 0, 0, 0, 0);
             // 
             // btnExit
             // 
@@ -336,10 +338,10 @@ namespace Dashboard
         private System.Windows.Forms.Label lblReenterPass;
         private System.Windows.Forms.Label lblDOB;
         private System.Windows.Forms.Label lblOptional;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label lblGoBack;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox smdLogo;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
