@@ -16,9 +16,7 @@ namespace Dashboard
 {
     public partial class PorfolioWidget : Dashboard.ucPreview
     {
-
-        WidgetView view;
-        StackGroup group1, group2;
+        //public virtual System.Windows.Forms.AnchorStyles Anchor { get; set; }
 
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
@@ -30,42 +28,17 @@ namespace Dashboard
             int nWidthEllipse, // width of ellipse
             int nHeightEllipse // height of ellipse
         );
-
-        public FlowDocumentCollection FlowLayoutItems { get; }
         public PorfolioWidget()
         {
             InitializeComponent();
+
         }
 
 
-        void AddDocumentManager()
-        {
-            DocumentManager dM = new DocumentManager(components);
-            view = new WidgetView();
-            dM.View = view;
-            view.AllowDocumentStateChangeAnimation = DevExpress.Utils.DefaultBoolean.True;
-            group1 = new StackGroup();
-            group2 = new StackGroup();
-            group1.Length.UnitType = LengthUnitType.Star;
-            group1.Length.UnitValue = 2;
-            view.StackGroups.AddRange(new StackGroup[] { group1, group2 });
-            dM.ContainerControl = this;
-        }
-
-        int count = 1;
-        void AddDocumentPosition()
-        {
-            Document document = view.AddDocument(new AddPositions()) as Document;
-            
-                //view.Controller.Dock(view.Documents[1] as Document, group2);
-
-            //document.MaximizedControl = new ucMaximizedContent();
-            count++;
-        }
         private void PorfolioWidget_Load(object sender, EventArgs e)
         {
-            btnAdd.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnAdd.Width, btnAdd.Height, 15, 15));
-            btnDelete.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnAdd.Width, btnAdd.Height, 15, 15));
+            btnAdd.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnAdd.Width, btnAdd.Height, 10, 10));
+            btnDelete.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnAdd.Width, btnAdd.Height, 10, 10));
 
             btnAdd.Anchor = (AnchorStyles.Top | AnchorStyles.Left);
             lblTotalNum.Anchor = (AnchorStyles.Top | AnchorStyles.Left);
@@ -80,16 +53,5 @@ namespace Dashboard
 
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-            AddDocumentManager();
-            for (int i = 0; i < 1; i++)
-            {
-                AddDocumentPosition();
-            }
-
-            group1.Items.AddRange(new Document[] { view.Documents[0] as Document });
-            
-        }
     }
 }

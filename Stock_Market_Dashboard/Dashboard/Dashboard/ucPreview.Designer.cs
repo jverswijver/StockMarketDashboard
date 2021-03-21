@@ -38,7 +38,7 @@ namespace Dashboard
             this.AutoScroll = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.Name = "ucPreview";
-            this.Size = new System.Drawing.Size(508, 351);
+            this.Size = new System.Drawing.Size(487, 379);
             this.ResumeLayout(false);
 
         }

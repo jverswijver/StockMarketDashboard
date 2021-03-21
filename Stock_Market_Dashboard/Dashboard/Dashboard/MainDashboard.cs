@@ -11,17 +11,12 @@ using System.Runtime.InteropServices;
 using DevExpress.XtraBars.Docking2010;
 using DevExpress.XtraBars.Docking2010.Views.Widget;
 using DevExpress.XtraEditors;
-using DevExpress.Utils.Serializing;
-using DevExpress.Utils.Serializing.Helpers;
 
 namespace Dashboard
 {
     public partial class MainDashboard : Form
     {
         WidgetView view;
-
-        [XtraSerializableProperty(XtraSerializationVisibility.Content)]
-        public FreeLayoutProperties freelayout { get; }
         StackGroup group1, group2;
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
 
@@ -34,8 +29,6 @@ namespace Dashboard
                int nWidthEllipse,
                int nHeightEllipse
          );
-
-         
 
         public MainDashboard()
         {
@@ -57,7 +50,6 @@ namespace Dashboard
         {
             DocumentManager dM = new DocumentManager(components);
             view = new WidgetView();
-            
             dM.View = view;
             view.AllowDocumentStateChangeAnimation = DevExpress.Utils.DefaultBoolean.True;
             group1 = new StackGroup();

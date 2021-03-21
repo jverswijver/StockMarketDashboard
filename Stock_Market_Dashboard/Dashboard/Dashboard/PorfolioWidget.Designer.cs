@@ -108,17 +108,14 @@ namespace Dashboard
             // btnAdd
             // 
             this.btnAdd.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnAdd.FlatAppearance.BorderSize = 0;
             this.btnAdd.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
             resources.ApplyResources(this.btnAdd, "btnAdd");
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnDelete
             // 
             this.btnDelete.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnDelete.FlatAppearance.BorderSize = 0;
             this.btnDelete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
             resources.ApplyResources(this.btnDelete, "btnDelete");
             this.btnDelete.Name = "btnDelete";
@@ -137,8 +134,7 @@ namespace Dashboard
             // 
             resources.ApplyResources(this.lblPrice, "lblPrice");
             this.lblPrice.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.lblPrice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblPrice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblPrice.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblPrice.ForeColor = System.Drawing.Color.White;
             this.lblPrice.Name = "lblPrice";
             // 
@@ -146,8 +142,7 @@ namespace Dashboard
             // 
             resources.ApplyResources(this.lblPercentage, "lblPercentage");
             this.lblPercentage.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.lblPercentage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblPercentage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblPercentage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblPercentage.ForeColor = System.Drawing.Color.White;
             this.lblPercentage.Name = "lblPercentage";
             // 
@@ -155,8 +150,7 @@ namespace Dashboard
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Name = "label2";
             // 
@@ -164,15 +158,13 @@ namespace Dashboard
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Name = "label1";
             // 
             // PorfolioWidget
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
-            resources.ApplyResources(this, "$this");
             this.BackColor = System.Drawing.Color.Transparent;
             this.BackgroundImage = global::Dashboard.Properties.Resources.SMD_LoginBG;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -188,6 +180,7 @@ namespace Dashboard
             this.Controls.Add(this.TotalValue);
             this.Controls.Add(this.lblPortfolio);
             this.DoubleBuffered = true;
+            resources.ApplyResources(this, "$this");
             this.Name = "PorfolioWidget";
             this.Load += new System.EventHandler(this.PorfolioWidget_Load);
             this.tbPortfolio.ResumeLayout(false);
