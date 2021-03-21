@@ -761,3 +761,12 @@ C:\Users\livew\source\repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboar
 C:\Users\livew\source\repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\System.Buffers.xml
 C:\Users\livew\source\repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\System.Memory.xml
 C:\Users\livew\source\repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\FuNkiN\source\repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\ServiceStack.Text.dll
+C:\Users\FuNkiN\source\repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\System.Buffers.dll
+C:\Users\FuNkiN\source\repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\System.Memory.dll
+C:\Users\FuNkiN\source\repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\FuNkiN\source\repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\ServiceStack.Text.xml
+C:\Users\FuNkiN\source\repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\System.Buffers.xml
+C:\Users\FuNkiN\source\repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\System.Memory.xml
+C:\Users\FuNkiN\source\repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\FuNkiN\source\repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.WatchlistWidget.resources
