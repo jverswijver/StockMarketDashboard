@@ -107,13 +107,13 @@ namespace Dashboard
         public bool mouseDown;
         public Point lastLocation;
 
-        private void smdTopbar_MouseDown(object sender, MouseEventArgs e)
+        private void Login_MouseDown(object sender, MouseEventArgs e)
         {
             mouseDown = true;
             lastLocation = e.Location;
         }
 
-        private void smdTopbar_MouseMove(object sender, MouseEventArgs e)
+        private void Login_MouseMove(object sender, MouseEventArgs e)
         {
             if (mouseDown)
             {
@@ -123,21 +123,10 @@ namespace Dashboard
             }
         }
 
-        private void smdTopbar_MouseUp(object sender, MouseEventArgs e)
+        private void Login_MouseUp(object sender, MouseEventArgs e)
         {
             mouseDown = false;
         }
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void smdTopbar_Click(object sender, EventArgs e)
-        {
-
-        }
-
         // Kevin's DRAG BAR BLOCK END
     }
 }

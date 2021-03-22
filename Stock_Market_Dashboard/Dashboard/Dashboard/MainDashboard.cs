@@ -189,7 +189,7 @@ namespace Dashboard
         public Point lastLocation;
 
 
-        private void smdTopbar_MouseMove(object sender, MouseEventArgs e)
+        private void MainDashboard_MouseMove(object sender, MouseEventArgs e)
         {
             if (mouseDown)
             {
@@ -199,22 +199,11 @@ namespace Dashboard
             }
         }
 
-        private void smdTopbar_MouseUp(object sender, MouseEventArgs e)
+        private void MainDashboard_MouseUp(object sender, MouseEventArgs e)
         {
             mouseDown = false;
         }
-
-        private void lblUsername_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-        
-        }
-
-        private void smdTopbar_MouseDown(object sender, MouseEventArgs e)
+        private void MainDashboard_MouseDown(object sender, MouseEventArgs e)
         {
             mouseDown = true;
             lastLocation = e.Location;

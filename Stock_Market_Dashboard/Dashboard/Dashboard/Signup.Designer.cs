@@ -313,9 +313,9 @@ namespace Dashboard
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.SignupPage_Load);
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.smdTopbar_MouseDown);
-            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.smdTopbar_MouseMove);
-            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.smdTopbar_MouseUp);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Signup_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Signup_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Signup_MouseUp);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.smdLogo)).EndInit();
             this.ResumeLayout(false);
