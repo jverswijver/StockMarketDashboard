@@ -11,6 +11,7 @@ using System.Runtime.InteropServices;
 using DevExpress.XtraBars.Docking2010;
 using DevExpress.XtraBars.Docking2010.Views.Widget;
 using DevExpress.XtraEditors;
+using DevExpress.XtraBars.Docking;
 
 namespace Dashboard
 {
@@ -147,14 +148,14 @@ namespace Dashboard
             pnlNav.Top = btnAccount.Top;
             btnAccount.BackColor = Color.FromArgb(46, 51, 73);
 
-            AddDocumentManager();
-            for (int i = 0; i < 1; i++)
-            {
-                AddPortfolio();
-            }
+            
 
+
+            AddDocumentManager();
+            AddPortfolio();
             group1.Items.AddRange(new Document[] { view.Documents[0] as Document });
             Console.WriteLine("Just click the Portfolio");
+
         }
 
         private void btnWatchlist_Click(object sender, EventArgs e)

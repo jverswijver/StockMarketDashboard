@@ -29,7 +29,23 @@ namespace Dashboard
 
         private void AddPositions_Load(object sender, EventArgs e)
         {
-            btnSubmit.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnSubmit.Width, btnSubmit.Height, 15, 15));
+            //btnSubmit.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnSubmit.Width, btnSubmit.Height, 15, 15));
         }
+
+        private void txtSymbol_Click(object sender, EventArgs e)
+        {
+            txtSymbol.Text = "";
+        }
+
+        private void txtQuantity_Click(object sender, EventArgs e)
+        {
+            txtQuantity.Text = "";
+        }
+
+        private void txtPrice_Click(object sender, EventArgs e)
+        {
+            txtPrice.Text = "";
+        }
+
     }
 }

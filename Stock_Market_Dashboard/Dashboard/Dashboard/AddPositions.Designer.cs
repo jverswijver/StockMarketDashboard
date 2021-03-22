@@ -140,6 +140,7 @@ namespace Dashboard
             this.txtSymbol.TabIndex = 6;
             this.txtSymbol.Text = "Symbol  ";
             this.txtSymbol.WordWrap = false;
+            this.txtSymbol.Click += new System.EventHandler(this.txtSymbol_Click);
             // 
             // txtQuantity
             // 
@@ -153,6 +154,7 @@ namespace Dashboard
             this.txtQuantity.TabIndex = 7;
             this.txtQuantity.Text = "Quantity";
             this.txtQuantity.WordWrap = false;
+            this.txtQuantity.Click += new System.EventHandler(this.txtQuantity_Click);
             // 
             // txtPrice
             // 
@@ -166,12 +168,16 @@ namespace Dashboard
             this.txtPrice.TabIndex = 8;
             this.txtPrice.Text = "Price";
             this.txtPrice.WordWrap = false;
+            this.txtPrice.Click += new System.EventHandler(this.txtPrice_Click);
             // 
             // comboBoxType
             // 
             this.comboBoxType.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
+            this.comboBoxType.DropDownHeight = 150;
+            this.comboBoxType.DropDownWidth = 100;
             this.comboBoxType.FormattingEnabled = true;
+            this.comboBoxType.IntegralHeight = false;
             this.comboBoxType.Items.AddRange(new object[] {
             "Buy",
             "Sell"});
@@ -197,11 +203,11 @@ namespace Dashboard
             this.btnSubmit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSubmit.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit.Location = new System.Drawing.Point(64, 240);
+            this.btnSubmit.Location = new System.Drawing.Point(75, 240);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(103, 28);
+            this.btnSubmit.Size = new System.Drawing.Size(73, 28);
             this.btnSubmit.TabIndex = 11;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = false;

@@ -770,3 +770,4 @@ C:\Users\FuNkiN\source\repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboa
 C:\Users\FuNkiN\source\repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\System.Memory.xml
 C:\Users\FuNkiN\source\repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\FuNkiN\source\repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.WatchlistWidget.resources
+C:\Users\FuNkiN\source\repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.AddPositions.resources

@@ -34,17 +34,16 @@ namespace Dashboard
             this.TotalValue = new System.Windows.Forms.Label();
             this.TodayGainLoss = new System.Windows.Forms.Label();
             this.lblTotalNum = new System.Windows.Forms.Label();
-            this.lblUsername = new System.Windows.Forms.Label();
             this.lblTodayGain = new System.Windows.Forms.Label();
             this.lblTotalGain = new System.Windows.Forms.Label();
             this.TotalGainLoss = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.tbPortfolio = new System.Windows.Forms.TableLayoutPanel();
-            this.lblPrice = new System.Windows.Forms.Label();
             this.lblPercentage = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblPrice = new System.Windows.Forms.Label();
             this.tbPortfolio.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -77,13 +76,6 @@ namespace Dashboard
             this.lblTotalNum.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.lblTotalNum.Name = "lblTotalNum";
             // 
-            // lblUsername
-            // 
-            resources.ApplyResources(this.lblUsername, "lblUsername");
-            this.lblUsername.BackColor = System.Drawing.Color.Transparent;
-            this.lblUsername.ForeColor = System.Drawing.Color.White;
-            this.lblUsername.Name = "lblUsername";
-            // 
             // lblTodayGain
             // 
             resources.ApplyResources(this.lblTodayGain, "lblTodayGain");
@@ -108,14 +100,17 @@ namespace Dashboard
             // btnAdd
             // 
             this.btnAdd.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnAdd.FlatAppearance.BorderSize = 0;
             this.btnAdd.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
             resources.ApplyResources(this.btnAdd, "btnAdd");
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnDelete
             // 
             this.btnDelete.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnDelete.FlatAppearance.BorderSize = 0;
             this.btnDelete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
             resources.ApplyResources(this.btnDelete, "btnDelete");
             this.btnDelete.Name = "btnDelete";
@@ -124,43 +119,43 @@ namespace Dashboard
             // tbPortfolio
             // 
             resources.ApplyResources(this.tbPortfolio, "tbPortfolio");
-            this.tbPortfolio.Controls.Add(this.lblPrice, 2, 0);
             this.tbPortfolio.Controls.Add(this.lblPercentage, 3, 0);
-            this.tbPortfolio.Controls.Add(this.label2, 1, 0);
-            this.tbPortfolio.Controls.Add(this.label1, 0, 0);
+            this.tbPortfolio.Controls.Add(this.label1, 1, 0);
+            this.tbPortfolio.Controls.Add(this.label2, 0, 0);
+            this.tbPortfolio.Controls.Add(this.lblPrice, 2, 0);
             this.tbPortfolio.Name = "tbPortfolio";
-            // 
-            // lblPrice
-            // 
-            resources.ApplyResources(this.lblPrice, "lblPrice");
-            this.lblPrice.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.lblPrice.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblPrice.ForeColor = System.Drawing.Color.White;
-            this.lblPrice.Name = "lblPrice";
             // 
             // lblPercentage
             // 
             resources.ApplyResources(this.lblPercentage, "lblPercentage");
             this.lblPercentage.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.lblPercentage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblPercentage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblPercentage.ForeColor = System.Drawing.Color.White;
             this.lblPercentage.Name = "lblPercentage";
-            // 
-            // label2
-            // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Name = "label2";
             // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Name = "label1";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Name = "label2";
+            // 
+            // lblPrice
+            // 
+            resources.ApplyResources(this.lblPrice, "lblPrice");
+            this.lblPrice.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.lblPrice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblPrice.ForeColor = System.Drawing.Color.White;
+            this.lblPrice.Name = "lblPrice";
             // 
             // PorfolioWidget
             // 
@@ -174,7 +169,6 @@ namespace Dashboard
             this.Controls.Add(this.lblTotalGain);
             this.Controls.Add(this.TotalGainLoss);
             this.Controls.Add(this.lblTodayGain);
-            this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.lblTotalNum);
             this.Controls.Add(this.TodayGainLoss);
             this.Controls.Add(this.TotalValue);
@@ -196,7 +190,6 @@ namespace Dashboard
         private System.Windows.Forms.Label TotalValue;
         private System.Windows.Forms.Label TodayGainLoss;
         private System.Windows.Forms.Label lblTotalNum;
-        private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.Label lblTodayGain;
         private System.Windows.Forms.Label lblTotalGain;
         private System.Windows.Forms.Label TotalGainLoss;
