@@ -19,8 +19,10 @@ namespace Dashboard
     {
         WidgetView view;
         StackGroup group1, group2;
+        
+        //code for rounded corners
+        /*
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
-
         private static extern IntPtr CreateRoundRectRgn
          (
                int nLeftRect,
@@ -30,11 +32,12 @@ namespace Dashboard
                int nWidthEllipse,
                int nHeightEllipse
          );
-
+        */
         public MainDashboard()
         {
             InitializeComponent();
-            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
+            //code for rounded corners
+            //Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
             pnlNav.Height = btnDashbord.Height;
             pnlNav.Top = btnDashbord.Top;
             pnlNav.Left = btnDashbord.Left;
