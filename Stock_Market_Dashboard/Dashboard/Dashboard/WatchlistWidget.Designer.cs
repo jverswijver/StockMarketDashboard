@@ -36,6 +36,9 @@
             this.Price = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.change = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.percentChange = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Open = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.High = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Low = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // btnAddStock
@@ -46,7 +49,7 @@
             this.btnAddStock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddStock.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold);
             this.btnAddStock.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnAddStock.Location = new System.Drawing.Point(164, 14);
+            this.btnAddStock.Location = new System.Drawing.Point(222, 14);
             this.btnAddStock.Margin = new System.Windows.Forms.Padding(1);
             this.btnAddStock.Name = "btnAddStock";
             this.btnAddStock.Size = new System.Drawing.Size(83, 33);
@@ -65,7 +68,7 @@
             this.btnDeleteStock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDeleteStock.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold);
             this.btnDeleteStock.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnDeleteStock.Location = new System.Drawing.Point(250, 14);
+            this.btnDeleteStock.Location = new System.Drawing.Point(317, 14);
             this.btnDeleteStock.Margin = new System.Windows.Forms.Padding(1);
             this.btnDeleteStock.Name = "btnDeleteStock";
             this.btnDeleteStock.Size = new System.Drawing.Size(82, 33);
@@ -76,7 +79,7 @@
             // txtSymbol
             // 
             this.txtSymbol.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtSymbol.Location = new System.Drawing.Point(80, 23);
+            this.txtSymbol.Location = new System.Drawing.Point(124, 23);
             this.txtSymbol.Name = "txtSymbol";
             this.txtSymbol.Size = new System.Drawing.Size(80, 20);
             this.txtSymbol.TabIndex = 22;
@@ -88,16 +91,19 @@
             this.lvWatchlist.BackgroundImage = global::Dashboard.Properties.Resources.SMD_LoginBG;
             this.lvWatchlist.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.Symbol,
+            this.Open,
+            this.High,
+            this.Low,
             this.Price,
             this.change,
             this.percentChange});
             this.lvWatchlist.ForeColor = System.Drawing.Color.White;
             this.lvWatchlist.GridLines = true;
             this.lvWatchlist.HideSelection = false;
-            this.lvWatchlist.Location = new System.Drawing.Point(0, 49);
+            this.lvWatchlist.Location = new System.Drawing.Point(3, 51);
             this.lvWatchlist.Name = "lvWatchlist";
             this.lvWatchlist.Scrollable = false;
-            this.lvWatchlist.Size = new System.Drawing.Size(352, 333);
+            this.lvWatchlist.Size = new System.Drawing.Size(427, 333);
             this.lvWatchlist.TabIndex = 23;
             this.lvWatchlist.UseCompatibleStateImageBehavior = false;
             this.lvWatchlist.View = System.Windows.Forms.View.Details;
@@ -110,17 +116,30 @@
             // Price
             // 
             this.Price.Text = "Price";
-            this.Price.Width = 94;
+            this.Price.Width = 55;
             // 
             // change
             // 
             this.change.Text = "chg.";
-            this.change.Width = 76;
+            this.change.Width = 49;
             // 
             // percentChange
             // 
             this.percentChange.Text = "%Chg.";
-            this.percentChange.Width = 103;
+            this.percentChange.Width = 59;
+            // 
+            // Open
+            // 
+            this.Open.Text = "Open";
+            this.Open.Width = 69;
+            // 
+            // High
+            // 
+            this.High.Text = "High";
+            // 
+            // Low
+            // 
+            this.Low.Text = "Low";
             // 
             // WatchlistWidget
             // 
@@ -132,7 +151,7 @@
             this.Controls.Add(this.btnDeleteStock);
             this.Controls.Add(this.btnAddStock);
             this.Name = "WatchlistWidget";
-            this.Size = new System.Drawing.Size(335, 382);
+            this.Size = new System.Drawing.Size(433, 382);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -148,5 +167,8 @@
         private System.Windows.Forms.ColumnHeader Price;
         private System.Windows.Forms.ColumnHeader change;
         private System.Windows.Forms.ColumnHeader percentChange;
+        private System.Windows.Forms.ColumnHeader Open;
+        private System.Windows.Forms.ColumnHeader High;
+        private System.Windows.Forms.ColumnHeader Low;
     }
 }
