@@ -40,10 +40,6 @@
             this.btnWatchlist = new System.Windows.Forms.Button();
             this.btnPortfolio = new System.Windows.Forms.Button();
             this.btnDashbord = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.lblUserId = new System.Windows.Forms.Label();
-            this.lblUsername = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.lbltitle = new System.Windows.Forms.Label();
@@ -70,9 +66,11 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblUsername = new System.Windows.Forms.Label();
+            this.lblUserId = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -82,6 +80,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // defaultLookAndFeel1
@@ -238,54 +238,6 @@
             this.btnDashbord.UseVisualStyleBackColor = true;
             this.btnDashbord.Click += new System.EventHandler(this.btnDashbord_Click);
             this.btnDashbord.Leave += new System.EventHandler(this.btnDashbord_Leave);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.Controls.Add(this.lblUserId);
-            this.panel2.Controls.Add(this.lblUsername);
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(165, 154);
-            this.panel2.TabIndex = 0;
-            // 
-            // lblUserId
-            // 
-            this.lblUserId.AutoSize = true;
-            this.lblUserId.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUserId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.lblUserId.Location = new System.Drawing.Point(21, 128);
-            this.lblUserId.Name = "lblUserId";
-            this.lblUserId.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblUserId.Size = new System.Drawing.Size(128, 13);
-            this.lblUserId.TabIndex = 2;
-            this.lblUserId.Text = "Some User Text Here";
-            this.lblUserId.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblUsername
-            // 
-            this.lblUsername.AutoSize = true;
-            this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.lblUsername.Location = new System.Drawing.Point(48, 97);
-            this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(86, 16);
-            this.lblUsername.TabIndex = 1;
-            this.lblUsername.Text = "User Name";
-            this.lblUsername.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lblUsername.Click += new System.EventHandler(this.lblUsername_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Dashboard.Properties.Resources.Untitled_11;
-            this.pictureBox1.Location = new System.Drawing.Point(60, 22);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(63, 63);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // btnExit
             // 
@@ -602,6 +554,53 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Earnings";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Dashboard.Properties.Resources.Untitled_11;
+            this.pictureBox1.Location = new System.Drawing.Point(60, 22);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(63, 63);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // lblUsername
+            // 
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.lblUsername.Location = new System.Drawing.Point(48, 97);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(86, 16);
+            this.lblUsername.TabIndex = 1;
+            this.lblUsername.Text = "User Name";
+            this.lblUsername.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lblUserId
+            // 
+            this.lblUserId.AutoSize = true;
+            this.lblUserId.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.lblUserId.Location = new System.Drawing.Point(21, 128);
+            this.lblUserId.Name = "lblUserId";
+            this.lblUserId.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblUserId.Size = new System.Drawing.Size(128, 13);
+            this.lblUserId.TabIndex = 2;
+            this.lblUserId.Text = "Some User Text Here";
+            this.lblUserId.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.Controls.Add(this.lblUserId);
+            this.panel2.Controls.Add(this.lblUsername);
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(165, 154);
+            this.panel2.TabIndex = 0;
+            // 
             // MainDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -624,13 +623,10 @@
             this.Name = "MainDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.smdTopbar_MouseDown);
-            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.smdTopbar_MouseMove);
-            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.smdTopbar_MouseUp);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MainDashboard_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MainDashboard_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MainDashboard_MouseUp);
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel7.ResumeLayout(false);
@@ -646,6 +642,9 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -655,8 +654,6 @@
         private DevExpress.LookAndFeel.DefaultLookAndFeel defaultLookAndFeel1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnDashbord;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnsettings;
         private System.Windows.Forms.Button btnAccount;
         private System.Windows.Forms.Button btnWatchlist;
@@ -688,10 +685,12 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
-        public System.Windows.Forms.Label lblUsername;
-        public System.Windows.Forms.Label lblUserId;
         private System.Windows.Forms.Button btnQuit;
         private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Panel panel2;
+        public System.Windows.Forms.Label lblUserId;
+        public System.Windows.Forms.Label lblUsername;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

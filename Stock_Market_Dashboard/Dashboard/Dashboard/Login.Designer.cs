@@ -38,12 +38,11 @@ namespace Dashboard
             this.btnSignin = new System.Windows.Forms.Button();
             this.lblWelcome = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.rememberMeBox1 = new System.Windows.Forms.CheckBox();
             this.btnSignup = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.smdLogo = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.Button();
-            this.smdTopbar = new System.Windows.Forms.Button();
-            this.rememberMeBox1 = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.smdLogo)).BeginInit();
             this.SuspendLayout();
@@ -131,6 +130,16 @@ namespace Dashboard
             this.panel1.Size = new System.Drawing.Size(359, 409);
             this.panel1.TabIndex = 19;
             // 
+            // rememberMeBox1
+            // 
+            this.rememberMeBox1.AutoSize = true;
+            this.rememberMeBox1.Location = new System.Drawing.Point(83, 295);
+            this.rememberMeBox1.Name = "rememberMeBox1";
+            this.rememberMeBox1.Size = new System.Drawing.Size(95, 17);
+            this.rememberMeBox1.TabIndex = 17;
+            this.rememberMeBox1.Text = "Remember Me";
+            this.rememberMeBox1.UseVisualStyleBackColor = true;
+            // 
             // btnSignup
             // 
             this.btnSignup.BackColor = System.Drawing.Color.Transparent;
@@ -194,35 +203,6 @@ namespace Dashboard
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // smdTopbar
-            // 
-            this.smdTopbar.BackColor = System.Drawing.Color.Transparent;
-            this.smdTopbar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.smdTopbar.FlatAppearance.BorderSize = 0;
-            this.smdTopbar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.smdTopbar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.smdTopbar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.smdTopbar.Location = new System.Drawing.Point(0, 1);
-            this.smdTopbar.Name = "smdTopbar";
-            this.smdTopbar.Size = new System.Drawing.Size(697, 23);
-            this.smdTopbar.TabIndex = 40;
-            this.smdTopbar.UseVisualStyleBackColor = false;
-            this.smdTopbar.Click += new System.EventHandler(this.smdTopbar_Click);
-            this.smdTopbar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.smdTopbar_MouseDown);
-            this.smdTopbar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.smdTopbar_MouseMove);
-            this.smdTopbar.MouseUp += new System.Windows.Forms.MouseEventHandler(this.smdTopbar_MouseUp);
-            // 
-            // rememberMeBox1
-            // 
-            this.rememberMeBox1.AutoSize = true;
-            this.rememberMeBox1.Location = new System.Drawing.Point(83, 295);
-            this.rememberMeBox1.Name = "rememberMeBox1";
-            this.rememberMeBox1.Size = new System.Drawing.Size(95, 17);
-            this.rememberMeBox1.TabIndex = 17;
-            this.rememberMeBox1.Text = "Remember Me";
-            this.rememberMeBox1.UseVisualStyleBackColor = true;
-            this.rememberMeBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
-            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -233,7 +213,6 @@ namespace Dashboard
             this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(733, 552);
             this.ControlBox = false;
-            this.Controls.Add(this.smdTopbar);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -245,9 +224,9 @@ namespace Dashboard
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.TopMost = true;
             this.Load += new System.EventHandler(this.LoginPage_Load);
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.smdTopbar_MouseDown);
-            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.smdTopbar_MouseMove);
-            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.smdTopbar_MouseUp);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Login_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Login_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Login_MouseUp);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.smdLogo)).EndInit();
@@ -266,7 +245,6 @@ namespace Dashboard
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox smdLogo;
         private System.Windows.Forms.Button btnExit;
-        private Button smdTopbar;
         private CheckBox rememberMeBox1;
     }
 }
