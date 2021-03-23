@@ -51,9 +51,9 @@ namespace Dashboard
 
         public List<AlphaVantageData> GetQuoteEndpoint(string symbol)
         {
-            const string FUNCTION = "GLOBAL_QUOTE";
-            string connectionString = "https://" + $@"www.alphavantage.co/query?function={FUNCTION}&symbol={symbol}&apikey={this._apiKey}&datatype=csv";
-            List<AlphaVantageData> prices = connectionString.GetStringFromUrl().FromCsv<List<AlphaVantageData>>();
+                const string FUNCTION = "GLOBAL_QUOTE";
+                string connectionString = "https://" + $@"www.alphavantage.co/query?function={FUNCTION}&symbol={symbol}&apikey={this._apiKey}&datatype=csv";
+                List<AlphaVantageData> prices = connectionString.GetStringFromUrl().FromCsv<List<AlphaVantageData>>();
             return prices;
         }
     }

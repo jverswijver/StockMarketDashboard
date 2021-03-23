@@ -33,12 +33,13 @@
             this.txtSymbol = new System.Windows.Forms.TextBox();
             this.lvWatchlist = new System.Windows.Forms.ListView();
             this.Symbol = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Price = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.change = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.percentChange = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Open = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.High = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Low = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Price = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.change = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.percentChange = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lblError = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnAddStock
@@ -113,6 +114,19 @@
             this.Symbol.Text = "Symbol";
             this.Symbol.Width = 84;
             // 
+            // Open
+            // 
+            this.Open.Text = "Open";
+            this.Open.Width = 69;
+            // 
+            // High
+            // 
+            this.High.Text = "High";
+            // 
+            // Low
+            // 
+            this.Low.Text = "Low";
+            // 
             // Price
             // 
             this.Price.Text = "Price";
@@ -128,30 +142,29 @@
             this.percentChange.Text = "%Chg.";
             this.percentChange.Width = 59;
             // 
-            // Open
+            // lblError
             // 
-            this.Open.Text = "Open";
-            this.Open.Width = 69;
-            // 
-            // High
-            // 
-            this.High.Text = "High";
-            // 
-            // Low
-            // 
-            this.Low.Text = "Low";
+            this.lblError.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblError.AutoSize = true;
+            this.lblError.ForeColor = System.Drawing.Color.Red;
+            this.lblError.Location = new System.Drawing.Point(131, 7);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(0, 13);
+            this.lblError.TabIndex = 24;
             // 
             // WatchlistWidget
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoScroll = true;
             this.BackgroundImage = global::Dashboard.Properties.Resources.SMD_LoginBG;
+            this.Controls.Add(this.lblError);
             this.Controls.Add(this.lvWatchlist);
             this.Controls.Add(this.txtSymbol);
             this.Controls.Add(this.btnDeleteStock);
             this.Controls.Add(this.btnAddStock);
             this.Name = "WatchlistWidget";
             this.Size = new System.Drawing.Size(433, 382);
+            this.Load += new System.EventHandler(this.WatchlistWidget_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -170,5 +183,6 @@
         private System.Windows.Forms.ColumnHeader Open;
         private System.Windows.Forms.ColumnHeader High;
         private System.Windows.Forms.ColumnHeader Low;
+        private System.Windows.Forms.Label lblError;
     }
 }
