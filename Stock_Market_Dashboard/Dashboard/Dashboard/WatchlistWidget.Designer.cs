@@ -76,6 +76,7 @@
             this.btnDeleteStock.TabIndex = 21;
             this.btnDeleteStock.Text = "- Delete";
             this.btnDeleteStock.UseVisualStyleBackColor = false;
+            this.btnDeleteStock.Click += new System.EventHandler(this.btnDeleteStock_Click);
             // 
             // txtSymbol
             // 
