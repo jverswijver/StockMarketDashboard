@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnAddStock = new System.Windows.Forms.Button();
             this.btnDeleteStock = new System.Windows.Forms.Button();
             this.txtSymbol = new System.Windows.Forms.TextBox();
@@ -40,6 +41,8 @@
             this.change = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.percentChange = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lblError = new System.Windows.Forms.Label();
+            this.WatchlistTimer = new System.Windows.Forms.Timer(this.components);
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // btnAddStock
@@ -153,6 +156,11 @@
             this.lblError.Size = new System.Drawing.Size(0, 13);
             this.lblError.TabIndex = 24;
             // 
+            // WatchlistTimer
+            // 
+            this.WatchlistTimer.Interval = 30000;
+            this.WatchlistTimer.Tick += new System.EventHandler(this.WatchlistTimer_Tick);
+            // 
             // WatchlistWidget
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -185,5 +193,7 @@
         private System.Windows.Forms.ColumnHeader High;
         private System.Windows.Forms.ColumnHeader Low;
         private System.Windows.Forms.Label lblError;
+        private System.Windows.Forms.Timer WatchlistTimer;
+        private System.Windows.Forms.Timer timer1;
     }
 }

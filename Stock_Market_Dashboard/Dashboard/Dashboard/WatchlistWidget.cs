@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using System.Timers;
 using DevExpress.XtraBars.Utils;
 using System.Globalization;
+using System.Diagnostics.SymbolStore;
+
 
 namespace Dashboard
 {
@@ -23,14 +25,7 @@ namespace Dashboard
         }
         private void WatchlistWidget_Load(object sender, EventArgs e)
         {
-            System.Timers.Timer timer = new System.Timers.Timer();
-            timer.Interval = 30000;
-            timer.Elapsed += timer_Elapsed;
-            timer.Start();
-        }
-        private void timer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
-        {
-            UpdateWatchlist();
+            WatchlistTimer.Enabled = true;
         }
 
 
@@ -41,23 +36,17 @@ namespace Dashboard
             txtSymbol.Text = "";
         }
 
-       public void UpdateWatchlist()
-        {
-          for(int i =0;i<watchlistCounter; i++)
-            {
-               String symbol = lvWatchlist.Items[i].SubItems[0].Text;
-               String [] row = GetWatchlistData(symbol);
-                for (int j = 0; j < lvWatchlist.Columns.Count; j++)
-                {
-                    lvWatchlist.Items[i].SubItems[j].Text = row[j];
-                }
-            }
-        }
+    
         public void NewWatchListRow(String symbol)
         {
             String [] row = GetWatchlistData(symbol);
-            var lvi = new ListViewItem(row);
-            lvWatchlist.Items.Add(lvi);
+            if (row != null)
+            {
+                var lvi = new ListViewItem(row);
+                lvWatchlist.Items.Add(lvi);
+                watchlistCounter++;
+            }
+
         }
 
        public string [] GetWatchlistData(String symbol)
@@ -91,6 +80,24 @@ namespace Dashboard
         }
 
         private void btnDeleteStock_Click(object sender, EventArgs e)
+        {
+            foreach (ListViewItem eachItem in lvWatchlist.SelectedItems) { lvWatchlist.Items.Remove(eachItem); }
+
+        }
+        public void UpdateWatchlist()
+        {
+            for (int i = 0; i < watchlistCounter; i++)
+            {
+                String symbol = lvWatchlist.Items[i].SubItems[0].Text;
+                String[] row = GetWatchlistData(symbol);
+                for (int j = 0; j < lvWatchlist.Columns.Count; j++)
+                {
+                    lvWatchlist.Items[i].SubItems[j].Text = row[j].ToString();
+                }
+            }
+        }
+
+        private void WatchlistTimer_Tick(object sender, EventArgs e)
         {
             UpdateWatchlist();
         }
