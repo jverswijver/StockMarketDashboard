@@ -1113,3 +1113,4 @@ C:\Users\livew\Source\Repos\StockMarketDashboard3\Stock_Market_Dashboard\Dashboa
 C:\Users\livew\Source\Repos\StockMarketDashboard3\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.csproj.CopyComplete
 C:\Users\livew\Source\Repos\StockMarketDashboard3\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.exe
 C:\Users\livew\Source\Repos\StockMarketDashboard3\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.pdb
+C:\Users\livew\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.AddPositions.resources

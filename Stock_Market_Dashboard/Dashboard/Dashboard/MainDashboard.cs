@@ -48,6 +48,7 @@ namespace Dashboard
         {
             //Passes the username in our settings field to the form label Username and displays it. 
             lblUsername.Text = Properties.Settings.Default.UserName;
+            AddDocumentManager();
         }
 
         void AddDocumentManager()
@@ -150,11 +151,6 @@ namespace Dashboard
             pnlNav.Height = btnAccount.Height;
             pnlNav.Top = btnAccount.Top;
             btnAccount.BackColor = Color.FromArgb(46, 51, 73);
-
-            
-
-
-            AddDocumentManager();
             AddPortfolio();
             group1.Items.AddRange(new Document[] { view.Documents[0] as Document });
             Console.WriteLine("Just click the Portfolio");
@@ -166,7 +162,6 @@ namespace Dashboard
             pnlNav.Height = btnAccount.Height;
             pnlNav.Top = btnAccount.Top;
             btnAccount.BackColor = Color.FromArgb(46, 51, 73);
-            AddDocumentManager();
             AddWatchlist();
             group2.Items.AddRange(new Document[] { view.Documents[0] as Document });
         }
