@@ -50,11 +50,26 @@ namespace Dashboard
 
         private void btnSignup_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            if (txtPassword.Text == "" || txtReenterPass.Text == "" || txtUsername.Text == "")
+            {
+                MessageBox.Show("All fields must be filled");
+            }
+            else if (txtPassword.Text != txtReenterPass.Text)
+            {
+                MessageBox.Show("Passwords must match");
+            }
+            else
+            {
+                UserModel U = new UserModel();
+                U._UserName = txtUsername.Text.ToLower();
+                U._Password = txtPassword.Text;
+                SqliteDataAccess.SaveUser(U);
+            }
+            /*this.Hide();
             MainDashboard dashboard = new MainDashboard();
             dashboard.lblUsername.Text = txtUsername.Text; // Had to change dashboard.lblUsername to PUBLIC to make this work
             dashboard.lblUserId.Text = txtPassword.Text; // Had to change dashboard.lblUserId to PUBLIC to make this work
-            dashboard.Show();
+            dashboard.Show();*/
         }
 
         // Kevin's DRAG BAR BLOCK

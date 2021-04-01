@@ -1114,3 +1114,8 @@ C:\Users\livew\Source\Repos\StockMarketDashboard3\Stock_Market_Dashboard\Dashboa
 C:\Users\livew\Source\Repos\StockMarketDashboard3\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.exe
 C:\Users\livew\Source\Repos\StockMarketDashboard3\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.pdb
 C:\Users\livew\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.AddPositions.resources
+C:\Users\livew\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\UserDB.db
+C:\Users\livew\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\Dapper.dll
+C:\Users\livew\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\System.Data.SQLite.dll
+C:\Users\livew\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\Dapper.xml
+C:\Users\livew\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\System.Data.SQLite.xml

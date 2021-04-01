@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
@@ -36,11 +37,11 @@ namespace Dashboard
             
             
             //IF the fields in property are empty, itll display empty username and password fields on load up.
-            if (Properties.Settings.Default.UserName != string.Empty)
+           /* if (Properties.Settings.Default.UserName != string.Empty)
             {
                 txtUsername.Text = Properties.Settings.Default.UserName;
                 txtPassword.Text = Properties.Settings.Default.Password;
-            }
+            }*/
         }
 
         private void txtUsername_MouseClick(object sender, MouseEventArgs e)
@@ -72,8 +73,20 @@ namespace Dashboard
 
         private void btnSignin_Click(object sender, EventArgs e)
         {
+            List<UserModel> users = new List<UserModel>();
+            users = SqliteDataAccess.LoadUsers();
+            foreach(var user in users)
+            {
+                if (user._UserName == txtUsername.Text.ToLower() && user._Password == txtPassword.Text.ToLower())
+                {
+                    this.Hide();
+                    MainDashboard dashboard = new MainDashboard();
+                    dashboard.Show();
+                    break;
+                }
+            }
             //Checks to see if the remember me check box is checked if so, set the default username and password field in settings to whats being entered.
-            if (rememberMeBox1.Checked == true)
+            /*if (rememberMeBox1.Checked == true)
             {
                 this.Hide();
                 MainDashboard dashboard = new MainDashboard();
@@ -99,7 +112,7 @@ namespace Dashboard
             //MainDashboard dashboard = new MainDashboard();
             //dashboard.lblUsername.Text = txtUsername.Text; // Had to change dashboard.lblUsername to PUBLIC to make this work
             //dashboard.lblUserId.Text = txtPassword.Text; // Had to change dashboard.lblUserId to PUBLIC to make this work
-            //dashboard.Show();
+            //dashboard.Show();*/
         }
 
         // Kevin's DRAG BAR BLOCK
