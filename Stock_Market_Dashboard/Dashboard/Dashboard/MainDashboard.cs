@@ -53,6 +53,7 @@ namespace Dashboard
         {
             //Passes the username in our settings field to the form label Username and displays it. 
             //lblUsername.Text = Properties.Settings.Default.UserName;
+            
             AddDocumentManager();
            
         }

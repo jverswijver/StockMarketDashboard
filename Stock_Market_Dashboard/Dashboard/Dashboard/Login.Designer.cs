@@ -133,6 +133,8 @@ namespace Dashboard
             // rememberMeBox1
             // 
             this.rememberMeBox1.AutoSize = true;
+            this.rememberMeBox1.Checked = true;
+            this.rememberMeBox1.CheckState = System.Windows.Forms.CheckState.Checked;
             this.rememberMeBox1.Location = new System.Drawing.Point(83, 295);
             this.rememberMeBox1.Name = "rememberMeBox1";
             this.rememberMeBox1.Size = new System.Drawing.Size(95, 17);

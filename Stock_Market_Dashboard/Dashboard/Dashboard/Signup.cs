@@ -49,15 +49,31 @@ namespace Dashboard
             logger.Show();
         }
         
-
-        private void btnSignup_Click(object sender, EventArgs e)
+        private  bool CheckUserExsist()
         {
-            lblAccCreateStatus.ForeColor = Color.Red;
             List<UserModel> users = new List<UserModel>();
             users = SqliteDataAccess.LoadUsers();
             foreach (var user in users)
-            { }
-                if (txtPassword.Text == "" || txtReenterPass.Text == "" || txtUsername.Text == "")
+            {
+                if (user._UserName == txtUsername.Text)
+                {
+                    lblAccCreateStatus.Text = "User name alreay used";
+                    return true;
+                }
+                if (user._Password == txtPassword.Text)
+                {
+                    lblAccCreateStatus.Text = "Password already used";
+                    return true;
+                }
+            }
+            return false;
+            
+        }
+        private void btnSignup_Click(object sender, EventArgs e)
+        {
+            lblAccCreateStatus.ForeColor = Color.Red;
+           
+            if (txtPassword.Text == "" || txtReenterPass.Text == "" || txtUsername.Text == "")
             {
                 lblAccCreateStatus.Text =  "All fields must be filled";
             }
@@ -65,7 +81,7 @@ namespace Dashboard
             {
                 lblAccCreateStatus.Text = "Password must match";
             }
-            else
+            else if(CheckUserExsist() == false)
             {
                 lblAccCreateStatus.ForeColor = Color.Green;
                 lblAccCreateStatus.Text = "Account Created Succsseful";
@@ -73,8 +89,8 @@ namespace Dashboard
                 U._UserName = txtUsername.Text.ToLower();
                 U._Password = txtPassword.Text;
                 SqliteDataAccess.SaveUser(U);
-                
             }
+            
             /*this.Hide();
             MainDashboard dashboard = new MainDashboard();
             dashboard.lblUsername.Text = txtUsername.Text; // Had to change dashboard.lblUsername to PUBLIC to make this work
