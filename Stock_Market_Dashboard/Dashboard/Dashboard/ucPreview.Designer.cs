@@ -29,16 +29,14 @@ namespace Dashboard
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucPreview));
             this.SuspendLayout();
             // 
             // ucPreview
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
-            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.Name = "ucPreview";
-            this.Size = new System.Drawing.Size(487, 379);
             this.ResumeLayout(false);
 
         }

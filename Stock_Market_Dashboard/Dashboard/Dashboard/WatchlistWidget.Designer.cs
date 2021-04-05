@@ -53,7 +53,7 @@
             this.btnAddStock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddStock.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold);
             this.btnAddStock.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnAddStock.Location = new System.Drawing.Point(222, 14);
+            this.btnAddStock.Location = new System.Drawing.Point(223, 14);
             this.btnAddStock.Margin = new System.Windows.Forms.Padding(1);
             this.btnAddStock.Name = "btnAddStock";
             this.btnAddStock.Size = new System.Drawing.Size(83, 33);
@@ -72,7 +72,7 @@
             this.btnDeleteStock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDeleteStock.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold);
             this.btnDeleteStock.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnDeleteStock.Location = new System.Drawing.Point(317, 14);
+            this.btnDeleteStock.Location = new System.Drawing.Point(318, 14);
             this.btnDeleteStock.Margin = new System.Windows.Forms.Padding(1);
             this.btnDeleteStock.Name = "btnDeleteStock";
             this.btnDeleteStock.Size = new System.Drawing.Size(82, 33);
@@ -84,7 +84,7 @@
             // txtSymbol
             // 
             this.txtSymbol.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtSymbol.Location = new System.Drawing.Point(124, 23);
+            this.txtSymbol.Location = new System.Drawing.Point(125, 23);
             this.txtSymbol.Name = "txtSymbol";
             this.txtSymbol.Size = new System.Drawing.Size(80, 20);
             this.txtSymbol.TabIndex = 22;
@@ -105,7 +105,7 @@
             this.lvWatchlist.ForeColor = System.Drawing.Color.White;
             this.lvWatchlist.GridLines = true;
             this.lvWatchlist.HideSelection = false;
-            this.lvWatchlist.Location = new System.Drawing.Point(3, 51);
+            this.lvWatchlist.Location = new System.Drawing.Point(4, 51);
             this.lvWatchlist.Name = "lvWatchlist";
             this.lvWatchlist.Scrollable = false;
             this.lvWatchlist.Size = new System.Drawing.Size(427, 333);
@@ -151,7 +151,7 @@
             this.lblError.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblError.AutoSize = true;
             this.lblError.ForeColor = System.Drawing.Color.Red;
-            this.lblError.Location = new System.Drawing.Point(131, 7);
+            this.lblError.Location = new System.Drawing.Point(132, 7);
             this.lblError.Name = "lblError";
             this.lblError.Size = new System.Drawing.Size(0, 13);
             this.lblError.TabIndex = 24;
@@ -166,13 +166,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoScroll = true;
             this.BackgroundImage = global::Dashboard.Properties.Resources.SMD_LoginBG;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.lblError);
             this.Controls.Add(this.lvWatchlist);
             this.Controls.Add(this.txtSymbol);
             this.Controls.Add(this.btnDeleteStock);
             this.Controls.Add(this.btnAddStock);
+            this.DoubleBuffered = true;
             this.Name = "WatchlistWidget";
-            this.Size = new System.Drawing.Size(433, 382);
+            this.Size = new System.Drawing.Size(434, 382);
             this.Load += new System.EventHandler(this.WatchlistWidget_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -1238,3 +1238,10 @@ D:\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Das
 D:\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.csproj.CopyComplete
 D:\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.exe
 D:\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.pdb
+C:\Users\FuNkiN\source\repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\UserDB.db
+C:\Users\FuNkiN\source\repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\Dapper.dll
+C:\Users\FuNkiN\source\repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\System.Data.SQLite.dll
+C:\Users\FuNkiN\source\repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\Dapper.xml
+C:\Users\FuNkiN\source\repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\System.Data.SQLite.xml
+C:\Users\FuNkiN\source\repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\Newtonsoft.Json.dll
+C:\Users\FuNkiN\source\repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\Newtonsoft.Json.xml

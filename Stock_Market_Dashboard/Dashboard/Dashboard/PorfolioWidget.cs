@@ -13,13 +13,15 @@ using DevExpress.XtraEditors;
 
 
 
+
 namespace Dashboard
 {
-    public partial class PorfolioWidget : Dashboard.ucPreview
+    public partial class PorfolioWidget : UserControl
     {
 
         WidgetView view;
         StackGroup group1, group2;
+        
 
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
@@ -32,12 +34,6 @@ namespace Dashboard
             int nHeightEllipse // height of ellipse
         );
 
-        public FlowDocumentCollection FlowLayoutItems { get; }
-        public LengthUnitType UnitType { get; set; }
-        public ContainerControl ContainerControl { get; set; }
-
-        public System.Windows.Forms.FormWindowState WindowState { get; set; }
-
 
         public PorfolioWidget()
         {
@@ -49,20 +45,28 @@ namespace Dashboard
         {
             DocumentManager dM = new DocumentManager(components);
             view = new WidgetView();
+
             dM.View = view;
             view.AllowDocumentStateChangeAnimation = DevExpress.Utils.DefaultBoolean.True;
-            group1 = new StackGroup();
-            group2 = new StackGroup();
-            group1.Length.UnitType = LengthUnitType.Star;
-            group1.Length.UnitValue = 2;
-            view.StackGroups.AddRange(new StackGroup[] { group1, group2 });
+            view.AllowResizeAnimation = DevExpress.Utils.DefaultBoolean.True;
             dM.ContainerControl = this;
-        }
+            view.LayoutMode = LayoutMode.FreeLayout;
+            view.DocumentSpacing = 3;
 
+         
+
+            
+            
+        }
+         
         int count = 1;
         void AddDocumentPosition()
         {
-            Document document = view.AddDocument(new AddPositions()) as Document;
+           // Document portfolioDocument = view.AddFloatDocument(new AddPositions(),new Point(259, 152), new Size(246, 281)) as Document;
+            Document portfolioDocument = view.AddDocument(new AddPositions()) as Document;
+           // portfolioDocument.DockTo(new PorfolioWidget(), Orientation.Vertical, true);
+            // portfolioDocument.FloatLocation = new Point(0, 0);
+            //portfolioDocument.FloatSize = new Size(405, 525);
 
             //view.Controller.Dock(view.Documents[1] as Document, group2);
 
@@ -71,38 +75,23 @@ namespace Dashboard
         }
         private void PorfolioWidget_Load(object sender, EventArgs e)
         {
+
             //btnAdd.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnAdd.Width, btnAdd.Height, 15, 15));
             //btnDelete.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnAdd.Width, btnAdd.Height, 10, 10));
 
-            btnAdd.Anchor = (AnchorStyles.Top | AnchorStyles.Left);
-            lblTotalNum.Anchor = (AnchorStyles.Top | AnchorStyles.Left);
-            lblPortfolio.Anchor = (AnchorStyles.Top | AnchorStyles.Left);
-            TotalValue.Anchor = (AnchorStyles.Top | AnchorStyles.Left);
-            TodayGainLoss.Anchor = (AnchorStyles.Top | AnchorStyles.Left);
-            lblTodayGain.Anchor = (AnchorStyles.Top | AnchorStyles.Left);
-            TotalGainLoss.Anchor = (AnchorStyles.Top | AnchorStyles.Left);
-            lblTotalGain.Anchor = (AnchorStyles.Top | AnchorStyles.Left);
+            //btnAdd.Anchor = (AnchorStyles.Top | AnchorStyles.Left);
+            //lblTotalNum.Anchor = (AnchorStyles.Top | AnchorStyles.Left);
+            //lblPortfolio.Anchor = (AnchorStyles.Top | AnchorStyles.Left);
+            //TotalValue.Anchor = (AnchorStyles.Top | AnchorStyles.Left);
+            //TodayGainLoss.Anchor = (AnchorStyles.Top | AnchorStyles.Left);
+            //lblTodayGain.Anchor = (AnchorStyles.Top | AnchorStyles.Left);
+            //TotalGainLoss.Anchor = (AnchorStyles.Top | AnchorStyles.Left);
+            //lblTotalGain.Anchor = (AnchorStyles.Top | AnchorStyles.Left);
+        }
 
 
-        }
-        private void CreateMyTopMostForm(Form C)
-        {
-            // Create lower form to display.
-            Form bottomForm = new Form();
-            // Display the lower form Maximized to demonstrate effect of TopMost property.
-            bottomForm.WindowState = FormWindowState.Maximized;
-            // Display the bottom form.
-            bottomForm.Show();
-            // Create the top most form.
-            Form topMostForm = new Form();
-            // Set the size of the form larger than the default size.
-            topMostForm.Size = new Size(300, 300);
-            // Set the position of the top most form to center of screen.
-            topMostForm.StartPosition = FormStartPosition.CenterScreen;
-            // Display the form as top most form.
-            topMostForm.TopMost = true;
-            topMostForm.Show();
-        }
+
+
 
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -110,7 +99,7 @@ namespace Dashboard
             AddDocumentManager();
             AddDocumentPosition();
             
-            group1.Items.AddRange(new Document[] { view.Documents[0] as Document });
+
 
         }
     }

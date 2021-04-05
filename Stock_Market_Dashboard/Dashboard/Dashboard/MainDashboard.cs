@@ -19,7 +19,9 @@ namespace Dashboard
     {
         WidgetView view;
         StackGroup group1, group2;
-        
+        LayoutMode LayoutMode { get; set; }
+        FlowDirection FlowDirection { get; set; }
+
         //code for rounded corners
         /*
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
@@ -36,12 +38,15 @@ namespace Dashboard
         public MainDashboard()
         {
             InitializeComponent();
+
             //code for rounded corners
             //Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
-            pnlNav.Height = btnDashbord.Height;
-            pnlNav.Top = btnDashbord.Top;
-            pnlNav.Left = btnDashbord.Left;
-            btnDashbord.BackColor = Color.FromArgb(46, 51, 73);
+            //pnlNav.Height = btnDashbord.Height;
+            //pnlNav.Top = btnDashbord.Top;
+            //pnlNav.Left = btnDashbord.Left;
+            //btnDashbord.BackColor = Color.FromArgb(46, 51, 73);
+
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -49,6 +54,7 @@ namespace Dashboard
             //Passes the username in our settings field to the form label Username and displays it. 
             //lblUsername.Text = Properties.Settings.Default.UserName;
             AddDocumentManager();
+           
         }
 
         void AddDocumentManager()
@@ -56,28 +62,51 @@ namespace Dashboard
             DocumentManager dM = new DocumentManager(components);
             view = new WidgetView();
             dM.View = view;
-            view.AllowDocumentStateChangeAnimation = DevExpress.Utils.DefaultBoolean.True;
+            //view.AllowDocumentStateChangeAnimation = DevExpress.Utils.DefaultBoolean.True;
+            //view.AllowResizeAnimation = DevExpress.Utils.DefaultBoolean.True;
+            //view.AllowStartupAnimation = DevExpress.Utils.DefaultBoolean.True;
             group1 = new StackGroup();
             group2 = new StackGroup();
             group1.Length.UnitType = LengthUnitType.Star;
-            group1.Length.UnitValue = 2;
+            group1.Length.UnitValue = 5;
             view.StackGroups.AddRange(new StackGroup[] { group1, group2 });
+            
             dM.ContainerControl = this;
+            view.LayoutMode = LayoutMode.FreeLayout;
+            
+            
+            view.DocumentSpacing = 3;
+            
+           
+            // view.FlowLayoutProperties.FlowDirection = FlowDirection.LeftToRight;
+
         }
 
         int count = 1;
-        void AddDocuments()
-        {
-            Document document = view.AddDocument(new ucPreview()) as Document;
-            document.MaximizedControl = new ucMaximizedContent();
-            count++;
-        }
+        //void AddDocuments()
+        //{
+        //    Document document = view.AddDocument(new ucPreview()) as Document;
+        //    document.MaximizedControl = new ucMaximizedContent();
+        //    count++;
+        //}
 
         void AddPortfolio()
         {
-            Document document = view.AddDocument(new PorfolioWidget()) as Document;
-            document.MaximizedControl = new ucMaximizedContent();
-            count++;
+
+            Document portfolioDocument = view.AddDocument(new PorfolioWidget())as Document;
+            
+            //Document portfolioDocument = view.AddFloatDocument(new PorfolioWidget(), new Point(0, 0), new Size(405, 525)) as Document;
+
+
+
+
+            // Document portfolioDocumentl = view.AddDocument(new PorfolioWidget()) as Document;
+            //portfolioDocument.FloatLocation = new Point(0, 0);
+            //portfolioDocument.FloatSize = new Size(405, 525);
+            //portfolioDocument.Properties.AllowClose = DevExpress.Utils.DefaultBoolean.True;
+            //portfolioDocument.Properties.AllowFloat = DevExpress.Utils.DefaultBoolean.True;
+
+            // count++;
         }
 
         void AddWatchlist()
@@ -152,8 +181,9 @@ namespace Dashboard
             pnlNav.Top = btnAccount.Top;
             btnAccount.BackColor = Color.FromArgb(46, 51, 73);
             AddPortfolio();
-            group1.Items.AddRange(new Document[] { view.Documents[0] as Document });
-            Console.WriteLine("Just click the Portfolio");
+            //group1.Items.AddRange(new Document[] { view.Documents[0] as Document });
+
+            Console.WriteLine("Open Portfolio Widget");
 
         }
 
@@ -163,7 +193,7 @@ namespace Dashboard
             pnlNav.Top = btnAccount.Top;
             btnAccount.BackColor = Color.FromArgb(46, 51, 73);
             AddWatchlist();
-            group2.Items.AddRange(new Document[] { view.Documents[0] as Document });
+           // group2.Items.AddRange(new Document[] { view.Documents[0] as Document });
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -184,6 +214,7 @@ namespace Dashboard
         public Point lastLocation;
 
 
+
         private void MainDashboard_MouseMove(object sender, MouseEventArgs e)
         {
             if (mouseDown)
@@ -194,16 +225,19 @@ namespace Dashboard
             }
         }
 
-        private void MainDashboard_MouseUp(object sender, MouseEventArgs e)
-        {
-            mouseDown = false;
-        }
         private void MainDashboard_MouseDown(object sender, MouseEventArgs e)
         {
             mouseDown = true;
             lastLocation = e.Location;
         }
-      // Kevin's DRAG BAR BLOCK END
+
+        private void MainDashboard_MouseUp(object sender, MouseEventArgs e)
+        {
+            mouseDown = false;
+        }
+
+
+        // Kevin's DRAG BAR BLOCK END
 
     }
 }
