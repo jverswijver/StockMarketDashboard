@@ -96,6 +96,7 @@
             // 
             // btnQuit
             // 
+            this.btnQuit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnQuit.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnQuit.FlatAppearance.BorderSize = 0;
             this.btnQuit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -122,6 +123,7 @@
             // 
             // btnsettings
             // 
+            this.btnsettings.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnsettings.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnsettings.FlatAppearance.BorderSize = 0;
             this.btnsettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -158,6 +160,7 @@
             // 
             // btnWatchlist
             // 
+            this.btnWatchlist.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnWatchlist.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnWatchlist.FlatAppearance.BorderSize = 0;
             this.btnWatchlist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -176,6 +179,7 @@
             // 
             // btnPortfolio
             // 
+            this.btnPortfolio.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnPortfolio.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnPortfolio.FlatAppearance.BorderSize = 0;
             this.btnPortfolio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -318,7 +322,7 @@
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = global::Dashboard.Properties.Resources.SMD_LoginBG;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.CancelButton = this.btnExit;
+            this.CancelButton = this.btnQuit;
             this.ClientSize = new System.Drawing.Size(1178, 743);
             this.Controls.Add(this.searchPanel);
             this.Controls.Add(this.menuPanel);
@@ -329,6 +333,7 @@
             this.Name = "MainDashboard";
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MainDashboard_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MainDashboard_MouseMove);

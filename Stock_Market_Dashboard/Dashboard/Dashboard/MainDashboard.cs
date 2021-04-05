@@ -237,7 +237,11 @@ namespace Dashboard
         }
 
 
-        // Kevin's DRAG BAR BLOCK END
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
 
+        // Kevin's DRAG BAR BLOCK END
     }
 }
