@@ -1244,3 +1244,12 @@ C:\Users\livew\Source\Repos\StockMarketDashboard2\Stock_Market_Dashboard\Dashboa
 C:\Users\livew\Source\Repos\StockMarketDashboard2\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\System.Data.SQLite.xml
 C:\Users\livew\Source\Repos\StockMarketDashboard2\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\x64\SQLite.Interop.dll
 C:\Users\livew\Source\Repos\StockMarketDashboard2\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\x86\SQLite.Interop.dll
+C:\Users\jeroen\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\UserDB.db
+C:\Users\jeroen\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\x64\SQLite.Interop.dll
+C:\Users\jeroen\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\x86\SQLite.Interop.dll
+C:\Users\jeroen\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\Dapper.dll
+C:\Users\jeroen\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\Newtonsoft.Json.dll
+C:\Users\jeroen\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\System.Data.SQLite.dll
+C:\Users\jeroen\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\Dapper.xml
+C:\Users\jeroen\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\Newtonsoft.Json.xml
+C:\Users\jeroen\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\System.Data.SQLite.xml
