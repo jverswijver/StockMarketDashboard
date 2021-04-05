@@ -34,6 +34,7 @@ namespace Dashboard
             txtPassword.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, txtPassword.Width, txtPassword.Height, 15, 15));
             txtReenterPass.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, txtReenterPass.Width, txtReenterPass.Height, 15, 15));
             btnSignup.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnSignup.Width, btnSignup.Height, 15, 15));
+            this.lblAccCreateStatus.BackColor = System.Drawing.Color.Transparent;
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -43,27 +44,36 @@ namespace Dashboard
 
         private void btnGoBack_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             Login logger = new Login();
             logger.Show();
         }
+        
 
         private void btnSignup_Click(object sender, EventArgs e)
         {
-            if (txtPassword.Text == "" || txtReenterPass.Text == "" || txtUsername.Text == "")
+            lblAccCreateStatus.ForeColor = Color.Red;
+            List<UserModel> users = new List<UserModel>();
+            users = SqliteDataAccess.LoadUsers();
+            foreach (var user in users)
+            { }
+                if (txtPassword.Text == "" || txtReenterPass.Text == "" || txtUsername.Text == "")
             {
-                MessageBox.Show("All fields must be filled");
+                lblAccCreateStatus.Text =  "All fields must be filled";
             }
             else if (txtPassword.Text != txtReenterPass.Text)
             {
-                MessageBox.Show("Passwords must match");
+                lblAccCreateStatus.Text = "Password must match";
             }
             else
             {
+                lblAccCreateStatus.ForeColor = Color.Green;
+                lblAccCreateStatus.Text = "Account Created Succsseful";
                 UserModel U = new UserModel();
                 U._UserName = txtUsername.Text.ToLower();
                 U._Password = txtPassword.Text;
                 SqliteDataAccess.SaveUser(U);
+                
             }
             /*this.Hide();
             MainDashboard dashboard = new MainDashboard();

@@ -1273,3 +1273,7 @@ C:\Users\Luka\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard
 C:\Users\Luka\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.AddPositions.resources
 C:\Users\Luka\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.PorfolioWidget.resources
 C:\Users\Luka\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.WatchlistWidget.resources
+D:\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\x64\SQLite.Interop.dll
+D:\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\x86\SQLite.Interop.dll
+D:\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\Newtonsoft.Json.dll
+D:\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\Newtonsoft.Json.xml

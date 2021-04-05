@@ -81,7 +81,7 @@ namespace Dashboard
 
         private void btnDeleteStock_Click(object sender, EventArgs e)
         {
-            foreach (ListViewItem eachItem in lvWatchlist.SelectedItems) { lvWatchlist.Items.Remove(eachItem); }
+            foreach (ListViewItem eachItem in lvWatchlist.SelectedItems) { lvWatchlist.Items.Remove(eachItem); watchlistCounter--; }
 
         }
         public void UpdateWatchlist()
@@ -93,6 +93,7 @@ namespace Dashboard
                 for (int j = 0; j < lvWatchlist.Columns.Count; j++)
                 {
                     lvWatchlist.Items[i].SubItems[j].Text = row[j].ToString();
+                   
                 }
             }
         }

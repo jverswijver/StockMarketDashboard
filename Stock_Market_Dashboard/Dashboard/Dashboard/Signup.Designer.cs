@@ -47,6 +47,7 @@ namespace Dashboard
             this.lblGoBack = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.smdLogo = new System.Windows.Forms.PictureBox();
+            this.lblAccCreateStatus = new System.Windows.Forms.Label();
             btnGoBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.smdLogo)).BeginInit();
@@ -281,6 +282,17 @@ namespace Dashboard
             this.smdLogo.TabIndex = 41;
             this.smdLogo.TabStop = false;
             // 
+            // lblAccCreateStatus
+            // 
+            this.lblAccCreateStatus.AutoSize = true;
+            this.lblAccCreateStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAccCreateStatus.ForeColor = System.Drawing.Color.Red;
+            this.lblAccCreateStatus.Location = new System.Drawing.Point(298, 360);
+            this.lblAccCreateStatus.Name = "lblAccCreateStatus";
+            this.lblAccCreateStatus.Size = new System.Drawing.Size(0, 16);
+            this.lblAccCreateStatus.TabIndex = 43;
+            this.lblAccCreateStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Signup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -289,6 +301,7 @@ namespace Dashboard
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(717, 513);
             this.ControlBox = false;
+            this.Controls.Add(this.lblAccCreateStatus);
             this.Controls.Add(btnGoBack);
             this.Controls.Add(this.smdLogo);
             this.Controls.Add(this.lblGoBack);
@@ -341,5 +354,6 @@ namespace Dashboard
         private System.Windows.Forms.Label lblGoBack;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox smdLogo;
+        private System.Windows.Forms.Label lblAccCreateStatus;
     }
 }

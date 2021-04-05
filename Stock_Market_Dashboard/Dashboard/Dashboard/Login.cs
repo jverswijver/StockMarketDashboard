@@ -85,6 +85,12 @@ namespace Dashboard
                     dashboard.Show();
                     break;
                 }
+                else
+                {
+                    MessageBox.Show("Incorect Username and Password");
+                    txtPassword.Text = "";
+                    break;
+                }
             }
             //Checks to see if the remember me check box is checked if so, set the default username and password field in settings to whats being entered.
             /*if (rememberMeBox1.Checked == true)
