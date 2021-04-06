@@ -237,6 +237,23 @@ namespace Dashboard
             mouseDown = false;
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            {
+                //Allows user to upload an image by clicking on user image box and selecting file
+                //Currently image only last until program is closed
+                //Will need to store it somehow
+                OpenFileDialog fileOpen = new OpenFileDialog();
+                fileOpen.Title = "Open Image file";
+                fileOpen.Filter = "JPG Files (*.jpg)| *.jpg";
+
+                if (fileOpen.ShowDialog() == DialogResult.OK)
+                {
+                    pictureBox1.Image = Image.FromFile(fileOpen.FileName);
+                }
+                fileOpen.Dispose();
+            }
+        }
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
@@ -244,5 +261,6 @@ namespace Dashboard
         }
 
         // Kevin's DRAG BAR BLOCK END
+
     }
 }
