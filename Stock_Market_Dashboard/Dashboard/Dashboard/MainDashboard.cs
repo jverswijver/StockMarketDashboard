@@ -12,6 +12,7 @@ using DevExpress.XtraBars.Docking2010;
 using DevExpress.XtraBars.Docking2010.Views.Widget;
 using DevExpress.XtraEditors;
 using DevExpress.XtraBars.Docking;
+using DevExpress.XtraEditors;
 
 namespace Dashboard
 {
@@ -84,36 +85,18 @@ namespace Dashboard
         }
 
         int count = 1;
-        //void AddDocuments()
-        //{
-        //    Document document = view.AddDocument(new ucPreview()) as Document;
-        //    document.MaximizedControl = new ucMaximizedContent();
-        //    count++;
-        //}
 
         void AddPortfolio()
         {
 
-            Document portfolioDocument = view.AddDocument(new PorfolioWidget())as Document;
-            
-            //Document portfolioDocument = view.AddFloatDocument(new PorfolioWidget(), new Point(0, 0), new Size(405, 525)) as Document;
-
-
-
-
-            // Document portfolioDocumentl = view.AddDocument(new PorfolioWidget()) as Document;
-            //portfolioDocument.FloatLocation = new Point(0, 0);
-            //portfolioDocument.FloatSize = new Size(405, 525);
-            //portfolioDocument.Properties.AllowClose = DevExpress.Utils.DefaultBoolean.True;
-            //portfolioDocument.Properties.AllowFloat = DevExpress.Utils.DefaultBoolean.True;
-
-            // count++;
+            Document portfolioDocument = view.AddDocument(new PortfolioWidget()) as Document;
+       
         }
 
         void AddWatchlist()
         {
             Document document = view.AddDocument(new WatchlistWidget()) as Document;
-            document.MaximizedControl = new ucMaximizedContent();
+            //document.MaximizedControl = new ucMaximizedContent();
             count++;
         }
 
@@ -184,7 +167,7 @@ namespace Dashboard
             AddPortfolio();
             //group1.Items.AddRange(new Document[] { view.Documents[0] as Document });
 
-            Console.WriteLine("Open Portfolio Widget");
+            Console.WriteLine("Opened Portfolio Widget");
 
         }
 
@@ -208,6 +191,14 @@ namespace Dashboard
             pnlNav.Top = btnAccount.Top;
             btnAccount.BackColor = Color.FromArgb(46, 51, 73);
         }
+
+
+        private void txtSearch_Click(object sender, EventArgs e)
+        {
+            txtSearch.Text = "  ";
+            txtSearch.ForeColor = Color.White;
+        }
+
 
         // Kevin's DRAG BAR BLOCK
 
@@ -255,6 +246,7 @@ namespace Dashboard
             }
         }
 
+ 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();

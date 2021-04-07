@@ -543,7 +543,6 @@ C:\Users\Luka\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard
 C:\Users\Luka\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.csproj.CopyComplete
 C:\Users\Luka\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.exe
 C:\Users\Luka\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.pdb
-C:\Users\FuNkiN\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.PorfolioWidget.resources
 C:\Users\manuel\Source\Repos\jverswijver\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.csprojAssemblyReference.cache
 C:\Users\manuel\Source\Repos\jverswijver\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.MainDashboard.resources
 C:\Users\manuel\Source\Repos\jverswijver\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.Login.resources
@@ -1296,3 +1295,13 @@ C:\Users\manuel\Source\Repos\jverswijver\StockMarketDashboard\Stock_Market_Dashb
 C:\Users\manuel\Source\Repos\jverswijver\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\System.Data.SQLite.xml
 C:\Users\manuel\Source\Repos\jverswijver\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\System.Memory.xml
 C:\Users\manuel\Source\Repos\jverswijver\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\FuNkiN\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\UserDB.db
+C:\Users\FuNkiN\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\x64\SQLite.Interop.dll
+C:\Users\FuNkiN\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\x86\SQLite.Interop.dll
+C:\Users\FuNkiN\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\Dapper.dll
+C:\Users\FuNkiN\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\Newtonsoft.Json.dll
+C:\Users\FuNkiN\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\System.Data.SQLite.dll
+C:\Users\FuNkiN\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\Dapper.xml
+C:\Users\FuNkiN\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\Newtonsoft.Json.xml
+C:\Users\FuNkiN\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\System.Data.SQLite.xml
+C:\Users\FuNkiN\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.PortfolioWidget.resources

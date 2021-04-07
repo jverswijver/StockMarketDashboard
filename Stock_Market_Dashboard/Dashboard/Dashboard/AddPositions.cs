@@ -9,23 +9,13 @@ using System.Runtime.InteropServices;
 using Newtonsoft.Json;
 using System.Net;
 using System.Text.RegularExpressions;
-
+using System.Linq;
+using ServiceStack;
 
 namespace Dashboard
 {
     public partial class AddPositions : UserControl
     {
-
-        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
-        private static extern IntPtr CreateRoundRectRgn
-(
-        int nLeftRect,     // x-coordinate of upper-left corner
-        int nTopRect,      // y-coordinate of upper-left corner
-        int nRightRect,    // x-coordinate of lower-right corner
-        int nBottomRect,   // y-coordinate of lower-right corner
-        int nWidthEllipse, // width of ellipse
-        int nHeightEllipse // height of ellipse
-);
         public AddPositions()
         {
             InitializeComponent();
@@ -54,9 +44,14 @@ namespace Dashboard
             txtPrice.ForeColor = Color.Black;
         }
 
+
         private void btnSubmit_Click(object sender, EventArgs e)
         {
             //if(txtSymbol != null && txtQuantity != null && txtPrice != null && comboBoxType.SelectedIndex == 0)
+
+            GetPortfolioData data = new GetPortfolioData();
+            AlphaVantageData stockdata = new AlphaVantageData();
+
 
             string symbolPattern = "^[a-zA-Z][^0-9]+";
             string quantityPattern = @"[+-]?([0-9]*[.])?[0-9]+";
@@ -70,14 +65,15 @@ namespace Dashboard
             {
                 errorSymbol.Text = "*Symbol is required!";
                 errorSymbol.Visible = true;
-                //MessageBox.Show("Please enter Symbol!");
             }
-            else if(txtSymbol.Text != "" && symbolIsValid)
+            else if (txtSymbol.Text != "" && symbolIsValid)
             {
                 errorSymbol.Visible = false;
+                data.Symbol = this.txtSymbol.Text.ToUpper();
+                //Console.WriteLine(data.Symbol);
             }
 
-        
+
             if (txtQuantity.Text == "" || !quantityIsValid)
             {
                 errorQuantity.Text = "*Quantity is required!";
@@ -87,6 +83,8 @@ namespace Dashboard
             else if (txtQuantity.Text != "" && quantityIsValid)
             {
                 errorQuantity.Visible = false;
+                data.Quantity = this.txtQuantity.Text;
+               // Console.WriteLine(data.Quantity);
             }
 
 
@@ -99,17 +97,58 @@ namespace Dashboard
             else if (txtPrice.Text != "" && priceIsValid)
             {
                 errorPrice.Visible = false;
+                data.AvgPrice = this.txtPrice.Text;
+               // Console.WriteLine(data.AvgPrice);
             }
 
+            if (comboBoxType.SelectedItem == null)
+            {
+                MessageBox.Show("Please select type!");
+            }
             else
             {
-               
-                //MessageBox.Show("Name should not be left blank!");
+                data.Type = comboBoxType.Text;
+              //  Console.WriteLine(comboBoxType.Text);
             }
+
+            // addposition.Dispose();
+
+
+            //Find Gain&Loss Percentage
+            var CalculatePercentage = (Convert.ToDouble(getMarketPrice(txtSymbol.Text.ToUpper())) - (Convert.ToDouble(txtPrice.Text)) / (Convert.ToDouble(txtPrice.Text)) * 100);
+                var percentGL = Math.Round(CalculatePercentage, 2) + "%";
+                data.PercentChange = percentGL.ToString();
+
+            data.MarketPrice = getMarketPrice(txtSymbol.Text.ToUpper());
+
+            String[] row = new string[]{ this.txtSymbol.Text.ToUpper(), this.txtQuantity.Text, this.txtPrice.Text, data.MarketPrice.ToString(), data.PercentChange.ToString() };
+           
+            //Close AddPositions Window
+            Form addposition = this.FindForm();
+                addposition.Close();
+
+            data.getPositionRow = row;
+           // data.getPositionRow = String.Join(" ", row);
+
+           // addposition.Dispose();
+            Console.WriteLine(String.Join(" ", data.getPositionRow));
         }
 
+   
+        public string getMarketPrice (string symbol)
+        {
+            AVConnection connection = new AVConnection();
+            List<AlphaVantageData> prices = connection.GetQuoteEndpoint(symbol);
+            var currentPrice = prices.FirstOrDefault().Price;
 
-      
+            return currentPrice.ToString();
+        }
+
     }
 }
+
+
+
+        
+
 

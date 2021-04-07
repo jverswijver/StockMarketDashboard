@@ -92,7 +92,7 @@ namespace Dashboard
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(-1, -1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(247, 53);
+            this.panel1.Size = new System.Drawing.Size(230, 53);
             this.panel1.TabIndex = 4;
             // 
             // label1

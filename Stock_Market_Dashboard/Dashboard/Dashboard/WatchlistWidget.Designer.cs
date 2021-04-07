@@ -116,7 +116,7 @@
             // Symbol
             // 
             this.Symbol.Text = "Symbol";
-            this.Symbol.Width = 84;
+            this.Symbol.Width = 73;
             // 
             // Open
             // 

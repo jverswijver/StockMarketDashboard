@@ -48,10 +48,12 @@
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.lbltitle = new System.Windows.Forms.Label();
             this.searchPanel = new System.Windows.Forms.Panel();
+            this.searchPic = new System.Windows.Forms.PictureBox();
             this.menuPanel.SuspendLayout();
             this.userPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.searchPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.searchPic)).BeginInit();
             this.SuspendLayout();
             // 
             // defaultLookAndFeel1
@@ -166,7 +168,7 @@
             this.btnWatchlist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnWatchlist.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnWatchlist.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnWatchlist.Image = global::Dashboard.Properties.Resources.calendar;
+            this.btnWatchlist.Image = global::Dashboard.Properties.Resources.watchlist;
             this.btnWatchlist.Location = new System.Drawing.Point(0, 238);
             this.btnWatchlist.Name = "btnWatchlist";
             this.btnWatchlist.Size = new System.Drawing.Size(165, 42);
@@ -263,13 +265,14 @@
             // 
             // btnExit
             // 
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnExit.BackColor = System.Drawing.Color.Transparent;
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnExit.FlatAppearance.BorderSize = 0;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.White;
-            this.btnExit.Location = new System.Drawing.Point(973, 3);
+            this.btnExit.Location = new System.Drawing.Point(972, 3);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(25, 25);
             this.btnExit.TabIndex = 12;
@@ -279,41 +282,53 @@
             // 
             // txtSearch
             // 
+            this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(79)))), ((int)(((byte)(99)))));
             this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.ForeColor = System.Drawing.Color.White;
-            this.txtSearch.Location = new System.Drawing.Point(617, 20);
+            this.txtSearch.ForeColor = System.Drawing.Color.LightGray;
+            this.txtSearch.Location = new System.Drawing.Point(616, 20);
             this.txtSearch.Multiline = true;
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(292, 25);
             this.txtSearch.TabIndex = 11;
             this.txtSearch.Text = "  Search for something...\r\n";
+            this.txtSearch.Click += new System.EventHandler(this.txtSearch_Click);
             // 
             // lbltitle
             // 
             this.lbltitle.AutoSize = true;
             this.lbltitle.BackColor = System.Drawing.Color.Transparent;
-            this.lbltitle.Font = new System.Drawing.Font("Impact", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltitle.Font = new System.Drawing.Font("Impact", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.lbltitle.Location = new System.Drawing.Point(23, 10);
+            this.lbltitle.Location = new System.Drawing.Point(51, 9);
             this.lbltitle.Name = "lbltitle";
-            this.lbltitle.Size = new System.Drawing.Size(140, 35);
+            this.lbltitle.Size = new System.Drawing.Size(160, 39);
             this.lbltitle.TabIndex = 10;
             this.lbltitle.Text = "Dashboard";
             // 
             // searchPanel
             // 
-            this.searchPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.searchPanel.BackColor = System.Drawing.Color.Black;
+            this.searchPanel.Controls.Add(this.searchPic);
             this.searchPanel.Controls.Add(this.lbltitle);
             this.searchPanel.Controls.Add(this.btnExit);
             this.searchPanel.Controls.Add(this.txtSearch);
-            this.searchPanel.Location = new System.Drawing.Point(164, 0);
+            this.searchPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.searchPanel.Location = new System.Drawing.Point(165, 0);
             this.searchPanel.Name = "searchPanel";
-            this.searchPanel.Size = new System.Drawing.Size(1014, 54);
+            this.searchPanel.Size = new System.Drawing.Size(1013, 54);
             this.searchPanel.TabIndex = 13;
+            // 
+            // searchPic
+            // 
+            this.searchPic.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.searchPic.Image = global::Dashboard.Properties.Resources.search;
+            this.searchPic.Location = new System.Drawing.Point(576, 20);
+            this.searchPic.Name = "searchPic";
+            this.searchPic.Size = new System.Drawing.Size(24, 25);
+            this.searchPic.TabIndex = 13;
+            this.searchPic.TabStop = false;
             // 
             // MainDashboard
             // 
@@ -345,6 +360,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.searchPanel.ResumeLayout(false);
             this.searchPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.searchPic)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -368,6 +384,7 @@
         public System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel searchPanel;
+        private System.Windows.Forms.PictureBox searchPic;
     }
 }
 

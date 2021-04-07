@@ -1,7 +1,7 @@
 ﻿
 namespace Dashboard
 {
-    partial class PorfolioWidget
+    partial class PortfolioWidget
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,7 @@ namespace Dashboard
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblPortfolio = new System.Windows.Forms.Label();
             this.TotalValue = new System.Windows.Forms.Label();
             this.TodayGainLoss = new System.Windows.Forms.Label();
@@ -43,6 +44,7 @@ namespace Dashboard
             this.Shares = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Price = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Change = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.PortfolioTimer = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // lblPortfolio
@@ -216,7 +218,11 @@ namespace Dashboard
             this.Change.Text = "Change(%)";
             this.Change.Width = 139;
             // 
-            // PorfolioWidget
+            // PortfolioTimer
+            // 
+            this.PortfolioTimer.Tick += new System.EventHandler(this.PortfolioTimer_Tick);
+            // 
+            // PortfolioWidget
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -235,7 +241,7 @@ namespace Dashboard
             this.Controls.Add(this.TotalValue);
             this.Controls.Add(this.lblPortfolio);
             this.DoubleBuffered = true;
-            this.Name = "PorfolioWidget";
+            this.Name = "PortfolioWidget";
             this.Size = new System.Drawing.Size(405, 520);
             this.Load += new System.EventHandler(this.PorfolioWidget_Load);
             this.ResumeLayout(false);
@@ -254,10 +260,11 @@ namespace Dashboard
         private System.Windows.Forms.Label TotalGainLoss;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.ListView PortfolioListView;
         private System.Windows.Forms.ColumnHeader Symbol;
         private System.Windows.Forms.ColumnHeader Shares;
         private System.Windows.Forms.ColumnHeader Price;
         private System.Windows.Forms.ColumnHeader Change;
+        private System.Windows.Forms.Timer PortfolioTimer;
+        private System.Windows.Forms.ListView PortfolioListView;
     }
 }

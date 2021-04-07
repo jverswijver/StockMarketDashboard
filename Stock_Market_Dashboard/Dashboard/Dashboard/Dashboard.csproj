@@ -110,6 +110,7 @@
       <DependentUpon>AddPositions.cs</DependentUpon>
     </Compile>
     <Compile Include="AlphaVantageData.cs" />
+    <Compile Include="GetPortfolioData.cs" />
     <Compile Include="SqliteDataAccess.cs" />
     <Compile Include="MainDashboard.cs">
       <SubType>Form</SubType>
@@ -123,11 +124,11 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="PorfolioWidget.cs">
+    <Compile Include="PortfolioWidget.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="PorfolioWidget.Designer.cs">
-      <DependentUpon>PorfolioWidget.cs</DependentUpon>
+    <Compile Include="PortfolioWidget.Designer.cs">
+      <DependentUpon>PortfolioWidget.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -170,8 +171,8 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PorfolioWidget.resx">
-      <DependentUpon>PorfolioWidget.cs</DependentUpon>
+    <EmbeddedResource Include="PortfolioWidget.resx">
+      <DependentUpon>PortfolioWidget.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -200,6 +201,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\search.png" />
+    <None Include="Resources\watchlist.png" />
     <Content Include="UserDB.db">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
