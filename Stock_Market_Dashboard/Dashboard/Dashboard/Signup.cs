@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using System.IO;
+using System.Diagnostics;
+using System.Reflection;
 
 namespace Dashboard
 {
@@ -122,6 +125,41 @@ namespace Dashboard
         private void Signup_MouseUp(object sender, MouseEventArgs e)
         {
             mouseDown = false;
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            Do_Checked();
+        }
+        private void Do_Checked()
+            {
+                btnSignup.Enabled = checkBox1.Checked;
+            }
+
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            //Need to figure out how to call it from a filepath in the repository since this is user specific at the moment
+            
+            Process.Start(Path.Combine(Application.StartupPath, "C:\\Users\\manuel\\Source\\Repos\\jverswijver\\StockMarketDashboard\\Stock_Market_Dashboard\\Dashboard\\Dashboard\\Resources\\termsAndConditions.txt"));
+
+
+            //string file_name = "C:\\termsAndConditions.txt";
+
+            //System.IO.StreamReader objReader;
+            //objReader = new System.IO.StreamReader(file_name);
+
+            //textBox1.Text = objReader.ReadToEnd();
+
+            //objReader.Close()
+
+
+        
+            // Determine path
+
+
+
+
         }
 
         // Kevin's DRAG BAR BLOCK END

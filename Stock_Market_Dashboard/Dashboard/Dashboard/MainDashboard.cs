@@ -246,7 +246,16 @@ namespace Dashboard
             }
         }
 
- 
+        private void lblUserId_Click(object sender, EventArgs e)
+        {
+            lblUserId.Text = "It's Time To Invest!";
+        }
+
+        private void lblUsername_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
