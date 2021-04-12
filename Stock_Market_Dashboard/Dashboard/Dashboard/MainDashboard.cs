@@ -20,6 +20,8 @@ namespace Dashboard
     {
         WidgetView view;
         StackGroup group1, group2;
+        LayoutMode LayoutMode { get; set; }
+        FlowDirection FlowDirection { get; set; }
 
         //code for rounded corners
         /*
@@ -244,7 +246,12 @@ namespace Dashboard
             }
         }
 
-        private void MainDashboard_MaximumSizeChanged(object sender, EventArgs e)
+        private void lblUserId_Click(object sender, EventArgs e)
+        {
+            lblUserId.Text = "It's Time To Invest!";
+        }
+
+        private void lblUsername_Click(object sender, EventArgs e)
         {
 
         }

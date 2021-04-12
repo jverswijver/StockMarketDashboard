@@ -239,6 +239,7 @@
             this.lblUserId.TabIndex = 2;
             this.lblUserId.Text = "Some User Text Here";
             this.lblUserId.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblUserId.Click += new System.EventHandler(this.lblUserId_Click);
             // 
             // lblUsername
             // 
@@ -251,6 +252,7 @@
             this.lblUsername.TabIndex = 1;
             this.lblUsername.Text = "User Name";
             this.lblUsername.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblUsername.Click += new System.EventHandler(this.lblUsername_Click);
             // 
             // pictureBox1
             // 

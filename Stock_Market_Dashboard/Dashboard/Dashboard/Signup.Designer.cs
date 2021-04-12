@@ -48,6 +48,8 @@ namespace Dashboard
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.smdLogo = new System.Windows.Forms.PictureBox();
             this.lblAccCreateStatus = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             btnGoBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.smdLogo)).BeginInit();
@@ -141,7 +143,7 @@ namespace Dashboard
             this.btnSignup.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSignup.ForeColor = System.Drawing.Color.Black;
             this.btnSignup.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnSignup.Location = new System.Drawing.Point(285, 389);
+            this.btnSignup.Location = new System.Drawing.Point(285, 441);
             this.btnSignup.Name = "btnSignup";
             this.btnSignup.Size = new System.Drawing.Size(200, 32);
             this.btnSignup.TabIndex = 25;
@@ -293,6 +295,29 @@ namespace Dashboard
             this.lblAccCreateStatus.TabIndex = 43;
             this.lblAccCreateStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(285, 392);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(15, 14);
+            this.checkBox1.TabIndex = 44;
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel1.LinkColor = System.Drawing.Color.White;
+            this.linkLabel1.Location = new System.Drawing.Point(306, 393);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(157, 13);
+            this.linkLabel1.TabIndex = 45;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Agree To Terms And Conditions";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // Signup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -301,6 +326,8 @@ namespace Dashboard
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(717, 513);
             this.ControlBox = false;
+            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.lblAccCreateStatus);
             this.Controls.Add(btnGoBack);
             this.Controls.Add(this.smdLogo);
@@ -355,5 +382,7 @@ namespace Dashboard
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox smdLogo;
         private System.Windows.Forms.Label lblAccCreateStatus;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }

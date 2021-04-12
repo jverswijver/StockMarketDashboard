@@ -203,6 +203,7 @@
     </Compile>
     <None Include="Resources\search.png" />
     <None Include="Resources\watchlist.png" />
+    <EmbeddedResource Include="Resources\termsAndConditions.txt" />
     <Content Include="UserDB.db">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
