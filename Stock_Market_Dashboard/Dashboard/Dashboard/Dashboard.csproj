@@ -103,12 +103,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddPositions.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="AddPositions.Designer.cs">
-      <DependentUpon>AddPositions.cs</DependentUpon>
-    </Compile>
     <Compile Include="AlphaVantageData.cs" />
     <Compile Include="GetPortfolioData.cs" />
     <Compile Include="SqliteDataAccess.cs" />
@@ -162,9 +156,6 @@
     <Compile Include="WatchlistWidget.Designer.cs">
       <DependentUpon>WatchlistWidget.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AddPositions.resx">
-      <DependentUpon>AddPositions.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="MainDashboard.resx">
       <DependentUpon>MainDashboard.cs</DependentUpon>
     </EmbeddedResource>
