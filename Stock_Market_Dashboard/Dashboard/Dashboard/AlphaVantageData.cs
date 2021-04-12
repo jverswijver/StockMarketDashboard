@@ -28,20 +28,6 @@ namespace Dashboard
         public String ChangePercent { get; set; }
 
 
-        public class SearchResult
-        {
-            public List<BestMatch> bestMatches { get; set; }
-        }
-
-        public class BestMatch
-        {
-
-            public string Symbol { get; set; }
-
-            public string Name { get; set; }
-
-            public string Currency { get; set; }
-        }
 
     }
 
@@ -52,7 +38,7 @@ namespace Dashboard
 
             public AVConnection()
             {
-                this._apiKey = "HYAS7FLTSGPVNL2R";
+            this._apiKey = "829GEJEKQI58VPR4";//"HYAS7FLTSGPVNL2R";
             }
 
             public List<AlphaVantageData> GetIntraDayPrices(string symbol)

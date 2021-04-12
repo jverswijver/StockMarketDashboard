@@ -10,120 +10,64 @@ using System.Runtime.InteropServices;
 using DevExpress.XtraBars.Docking2010;
 using DevExpress.XtraBars.Docking2010.Views.Widget;
 using DevExpress.XtraEditors;
-
-
-
+using System.Collections;
+using System.Text.RegularExpressions;
+using System.Net;
+using Newtonsoft.Json;
+using ServiceStack;
 
 namespace Dashboard
 {
     public partial class PortfolioWidget : UserControl
     {
 
-        WidgetView view;
         private int PositionCount = 0;
+
+        // private AddPositions addPositions;
 
         public PortfolioWidget()
         {
             InitializeComponent();
-        }
-
-
-        void AddDocumentManager()
-        {
-            DocumentManager dM = new DocumentManager(components);
-            view = new WidgetView();
-
-            dM.View = view;
-            view.AllowDocumentStateChangeAnimation = DevExpress.Utils.DefaultBoolean.True;
-            view.AllowResizeAnimation = DevExpress.Utils.DefaultBoolean.True;
-
-            var portfolio = new PortfolioWidget();
-            dM.ContainerControl = portfolio;
-            view.LayoutMode = LayoutMode.FreeLayout;
-            view.DocumentSpacing = 3;  
-        }
-         
-       // int count = 1;
-        AddPositions childForm;
-        void AddDocumentPosition()
-        {
-           // Document portfolioDocument = view.AddDocument(new AddPositions()) as Document;
-           
-            //Add child form
-            var positionWindow = new AddPositions();
-            childForm = positionWindow;
-            view.AddFloatDocument(positionWindow, new Point(600, 200), new Size(230, 308));
-
-        }
-        private void PorfolioWidget_Load(object sender, EventArgs e)
-        {
-    
-            
+            addPositionPanel.Hide();
+            PortfolioListView.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            PortfolioListView.Location = new Point(1, 175); //
         }
 
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            AddDocumentManager();
-            AddDocumentPosition();
-           
+            addPositionPanel.Show();
+            PortfolioListView.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            PortfolioListView.Location = new Point(229, 335);  //(220, 296); //221, 295); 275, 295
 
         }
 
-        public void PortfolioListRow(string[] getPositionRow)
+
+        private void btnDelete_Click(object sender, EventArgs e)
         {
-            GetPortfolioData data = new GetPortfolioData();
-            
-            String[] row = data.getPositionRow; 
-            if (row != null)
-            {
-                var ListItems = new ListViewItem(row);
-                PortfolioListView.Items.Add(ListItems);
-                PositionCount++;
+            addPositionPanel.Hide();
+            PortfolioListView.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            PortfolioListView.Location = new Point(229, 175);  //220, 175
+
+
+            foreach (ListViewItem eachItem in PortfolioListView.SelectedItems) 
+            { 
+                PortfolioListView.Items.Remove(eachItem); 
             }
-
         }
 
 
-        public string[] GetPositionData() //string symbol, string quantity, string avgPrice, string marketPrice, string percentChange
-        {
-
-            GetPortfolioData data = new GetPortfolioData();
-            var S = data.Symbol;
-            var Q = data.Quantity;
-            var A = data.AvgPrice;
-            var M = data.MarketPrice;
-            var P = data.PercentChange;
-
-
-           // PortfolioListRow(data.Symbol, data.Quantity, data.AvgPrice, data.MarketPrice, data.PercentChange);
-
-            var row = new string[] { S.ToString(), Q.ToString(), A.ToString(), M.ToString(), P.ToString() };
-            return row;
-
-        }
-
-
-        private void btnDeleteStock_Click(object sender, EventArgs e)
-        {
-            foreach (ListViewItem eachItem in PortfolioListView.SelectedItems) { PortfolioListView.Items.Remove(eachItem); }
-
-        }
         public void UpdatePosition()
         {
             for (int i = 0; i < PositionCount; i++)
             {
-                String symbol = PortfolioListView.Items[i].SubItems[0].Text;
-                String quantity = PortfolioListView.Items[i].SubItems[1].Text;
-                String avgPrice = PortfolioListView.Items[i].SubItems[2].Text;
-                String marketPrice = PortfolioListView.Items[i].SubItems[3].Text;
-                String percentChange = PortfolioListView.Items[i].SubItems[4].Text;
+                PortfolioList list = new PortfolioList();
 
-                String[] row = GetPositionData();
+                string[] resultRow = list.getPositionRow;
 
                 for (int j = 0; j < PortfolioListView.Columns.Count; j++)
                 {
-                    PortfolioListView.Items[i].SubItems[j].Text = row[j].ToString();
+                    PortfolioListView.Items[i].SubItems[j].Text = resultRow[j].ToString();
                 }
             }
         }
@@ -131,6 +75,184 @@ namespace Dashboard
         private void PortfolioTimer_Tick(object sender, EventArgs e)
         {
             UpdatePosition();
+        }
+
+
+        public string getMarketPrice(string symbol)
+        {
+            if (symbol == "")
+            {
+                return null;
+            }
+            else
+            {
+                AVConnection connection = new AVConnection();
+                List<AlphaVantageData> prices = connection.GetQuoteEndpoint(symbol);
+                if (prices.Count == 0)
+                {
+                    lblInvalid.Visible = true;
+                    return null;
+                }
+                else
+                {
+                    lblInvalid.Visible = false;
+                    return prices.FirstOrDefault().Price.ToString();
+                }
+            }
+
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+
+            PortfolioItems data = new PortfolioItems();
+            AlphaVantageData stockdata = new AlphaVantageData();
+
+            string symbolPattern = @"[a-zA-Z]{2,4}[^0-9]+";    //@"[A-Z][^0-9]+";
+            string quantityPattern = @"[+-]?([0-9]*[.])?[0-9]+";
+            string pricePattern = @"[+-]?([0-9]*[.])?[0-9]+";
+
+            bool symbolIsValid = Regex.IsMatch(txtSymbol.Text, symbolPattern);
+            bool quantityIsValid = Regex.IsMatch(txtQuantity.Text, quantityPattern);
+            bool priceIsValid = Regex.IsMatch(txtPrice.Text, pricePattern);
+
+            try
+            {
+                if (txtSymbol.Text == "" && txtQuantity.Text == "" && txtPrice.Text == "" )
+                {
+                    if (txtSymbol.Text == "" || txtQuantity.Text == "" || txtPrice.Text == "" || txtSymbol.Text == "" && txtQuantity.Text == "" 
+                        || txtSymbol.Text == "" && txtPrice.Text == "" || txtQuantity.Text == "" &&  txtPrice.Text == "")
+                    {
+                        MessageBox.Show("Please enter * all required fields!");
+                    }
+
+                }
+
+               else if (txtSymbol.Text != "" && txtQuantity.Text != "" && txtPrice.Text != "")
+                {
+
+                    if (txtSymbol.Text == "" && txtSymbol.Text == "Symbol" && !symbolIsValid)
+                    {
+                        //errorSymbol.Text = "*Symbol is required!";
+                        requiredSymbol.Visible = true;
+                    }
+                    else if (txtSymbol.Text != "" && txtSymbol.Text != "Symbol" && symbolIsValid)
+                    {
+                        requiredSymbol.Visible = false;
+                        data.Symbol = txtSymbol.Text.ToUpper(); //Symbol
+
+                        //Console.WriteLine(data.Symbol);
+                        // addposition.Dispose();
+
+                    }
+
+                    if (txtQuantity.Text == "" && !quantityIsValid)
+                    {
+                        // errorQuantity.Text = "*Quantity is required!";
+                        requiredQuantity.Visible = true;
+
+                    }
+                    else if (txtQuantity.Text != "" && quantityIsValid)
+                    {
+                        requiredQuantity.Visible = false; //Quantity
+                        data.Quantity = txtQuantity.Text.ToString();
+                        // Console.WriteLine(data.Quantity);
+                    }
+
+                    if (txtPrice.Text == "" && !priceIsValid)
+                    {
+                        //errorPrice.Text = "*Price is required!";
+                        requiredPrice.Visible = true;
+                    }
+
+                    else if (txtPrice.Text != "" && priceIsValid)
+                    {
+                        requiredPrice.Visible = false;
+                        data.AvgPrice = txtPrice.Text.ToString(); //AvgPrice
+                        // Console.WriteLine(data.AvgPrice);
+                    }
+
+
+                    if(txtSymbol.Text != null && txtSymbol.Text != "" && txtPrice.Text != "")
+                    {
+                        data.MarketPrice = getMarketPrice(this.txtSymbol.Text.ToUpper()); //MarketPrice
+
+                        //Find Gain&Loss Percentage
+                        var CalculatePercentage = (Convert.ToDouble(getMarketPrice(this.txtSymbol.Text.ToUpper())) - (Convert.ToDouble(this.txtPrice.Text))) / (Convert.ToDouble(this.txtPrice.Text)) * 100;
+                        var percentGL = Math.Round(CalculatePercentage, 2) + "%";
+                        data.PercentChange = percentGL.ToString(); //PercentageChange
+                    }
+
+                        String[] row = new string[] {this.txtSymbol.Text.ToUpper(), this.txtQuantity.Text, this.txtPrice.Text, data.MarketPrice.ToString(), data.PercentChange.ToString() };
+
+                        PortfolioList list = new PortfolioList();
+
+                        list.getPositionRow = row;
+                        var getP = list.getPositionRow;
+                        Console.WriteLine("From Get Position Row: " + String.Join(" ", row));
+
+                        //Add positions in listview
+                        var ListItems = new ListViewItem(row);
+                        PortfolioListView.Items.Add(ListItems);
+                        PositionCount++;
+
+                        addPositionPanel.Hide();
+                        txtSymbol.Text = ""; requiredSymbol.Visible = true;
+                        txtQuantity.Text = ""; requiredQuantity.Visible = true;
+                        txtPrice.Text = ""; requiredPrice.Visible = true;
+                       
+                    }
+  
+                else
+                {
+
+                    MessageBox.Show("Please enter * all required fields!");
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Please enter * all required fields!");
+                Console.WriteLine(ex.Message);
+            }
+        }
+
+
+
+        private void txtSymbol_Click(object sender, EventArgs e)
+        {
+            txtSymbol.Text = null;
+            txtSymbol.ForeColor = Color.Black;
+        }
+
+        private void txtPrice_Click(object sender, EventArgs e)
+        {
+            txtPrice.Text = null;
+            txtPrice.ForeColor = Color.Black;
+        }
+
+        private void txtQuantity_Click(object sender, EventArgs e)
+        {
+            txtQuantity.Text = null;
+            txtQuantity.ForeColor = Color.Black;
+        }
+
+
+        private void PortfolioWidget_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
+        public bool mouseDown;
+        public Point lastLocation;
+
+        private void PortfolioWidget_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseDown = true;
+            lastLocation = e.Location;
+            Console.WriteLine(lastLocation);
         }
     }
 }

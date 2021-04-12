@@ -33,6 +33,10 @@ namespace Dashboard
                 cnn.Execute("insert into User(_UserName, _Password) values (@_UserName, @_Password)", user);
             }
         }
+
+
+
+
     }
 
 

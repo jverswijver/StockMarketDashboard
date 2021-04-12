@@ -34,7 +34,7 @@ namespace Dashboard
             this.lblAvgPrice = new System.Windows.Forms.Label();
             this.lblType = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblAddPosition = new System.Windows.Forms.Label();
             this.txtSymbol = new System.Windows.Forms.TextBox();
             this.txtQuantity = new System.Windows.Forms.TextBox();
             this.txtPrice = new System.Windows.Forms.TextBox();
@@ -89,21 +89,21 @@ namespace Dashboard
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.lblAddPosition);
             this.panel1.Location = new System.Drawing.Point(-1, -1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(230, 53);
             this.panel1.TabIndex = 4;
             // 
-            // label1
+            // lblAddPosition
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(52, 17);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(128, 24);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Add Position";
+            this.lblAddPosition.AutoSize = true;
+            this.lblAddPosition.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddPosition.Location = new System.Drawing.Point(52, 17);
+            this.lblAddPosition.Name = "lblAddPosition";
+            this.lblAddPosition.Size = new System.Drawing.Size(128, 24);
+            this.lblAddPosition.TabIndex = 11;
+            this.lblAddPosition.Text = "Add Position";
             // 
             // txtSymbol
             // 
@@ -164,6 +164,7 @@ namespace Dashboard
             this.btnSubmit.Size = new System.Drawing.Size(102, 28);
             this.btnSubmit.TabIndex = 11;
             this.btnSubmit.Text = "Submit";
+            this.btnSubmit.UseCompatibleTextRendering = true;
             this.btnSubmit.UseVisualStyleBackColor = false;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
@@ -238,14 +239,14 @@ namespace Dashboard
         private System.Windows.Forms.Label lblAvgPrice;
         private System.Windows.Forms.Label lblType;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox txtSymbol;
-        private System.Windows.Forms.TextBox txtQuantity;
-        private System.Windows.Forms.TextBox txtPrice;
-        private System.Windows.Forms.ComboBox comboBoxType;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnSubmit;
+        private System.Windows.Forms.Label lblAddPosition;
         private System.Windows.Forms.Label errorSymbol;
         private System.Windows.Forms.Label errorQuantity;
         private System.Windows.Forms.Label errorPrice;
+        public System.Windows.Forms.Button btnSubmit;
+        public System.Windows.Forms.TextBox txtSymbol;
+        public System.Windows.Forms.TextBox txtQuantity;
+        public System.Windows.Forms.TextBox txtPrice;
+        public System.Windows.Forms.ComboBox comboBoxType;
     }
 }

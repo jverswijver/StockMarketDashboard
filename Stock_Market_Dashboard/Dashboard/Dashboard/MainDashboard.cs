@@ -20,8 +20,6 @@ namespace Dashboard
     {
         WidgetView view;
         StackGroup group1, group2;
-        LayoutMode LayoutMode { get; set; }
-        FlowDirection FlowDirection { get; set; }
 
         //code for rounded corners
         /*
@@ -246,7 +244,11 @@ namespace Dashboard
             }
         }
 
- 
+        private void MainDashboard_MaximumSizeChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();

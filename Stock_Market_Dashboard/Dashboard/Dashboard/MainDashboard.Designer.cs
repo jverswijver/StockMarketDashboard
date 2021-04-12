@@ -349,6 +349,7 @@
             this.Name = "MainDashboard";
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.MaximumSizeChanged += new System.EventHandler(this.MainDashboard_MaximumSizeChanged);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MainDashboard_MouseDown);
