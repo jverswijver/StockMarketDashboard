@@ -12,7 +12,7 @@ using DevExpress.XtraBars.Docking2010;
 using DevExpress.XtraBars.Docking2010.Views.Widget;
 using DevExpress.XtraEditors;
 using DevExpress.XtraBars.Docking;
-using DevExpress.XtraEditors;
+
 
 namespace Dashboard
 {
