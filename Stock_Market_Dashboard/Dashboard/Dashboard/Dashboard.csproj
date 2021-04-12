@@ -88,6 +88,7 @@
     <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\netstandard1.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -150,6 +151,12 @@
     <Compile Include="ucPreview.Designer.cs">
       <DependentUpon>ucPreview.cs</DependentUpon>
     </Compile>
+    <Compile Include="StockChartWidget.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockChartWidget.Designer.cs">
+      <DependentUpon>StockChartWidget.cs</DependentUpon>
+    </Compile>
     <Compile Include="WatchlistWidget.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -178,6 +185,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucPreview.resx">
       <DependentUpon>ucPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockChartWidget.resx">
+      <DependentUpon>StockChartWidget.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WatchlistWidget.resx">
       <DependentUpon>WatchlistWidget.cs</DependentUpon>

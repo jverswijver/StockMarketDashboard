@@ -93,6 +93,13 @@ namespace Dashboard
        
         }
 
+        void AddStockChart()
+        {
+
+            Document StockChartDocument = view.AddDocument(new StockChartWidget()) as Document;
+
+        }
+
         void AddWatchlist()
         {
             Document document = view.AddDocument(new WatchlistWidget()) as Document;
@@ -166,7 +173,7 @@ namespace Dashboard
             btnAccount.BackColor = Color.FromArgb(46, 51, 73);
             AddPortfolio();
             //group1.Items.AddRange(new Document[] { view.Documents[0] as Document });
-
+            
             Console.WriteLine("Opened Portfolio Widget");
 
         }
@@ -190,6 +197,7 @@ namespace Dashboard
             pnlNav.Height = btnAccount.Height;
             pnlNav.Top = btnAccount.Top;
             btnAccount.BackColor = Color.FromArgb(46, 51, 73);
+            AddStockChart();
         }
 
 
