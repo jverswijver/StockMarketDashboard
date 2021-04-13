@@ -43,13 +43,29 @@ namespace Dashboard
 
             public List<AlphaVantageData> GetIntraDayPrices(string symbol)
             {
-                const string FUNCTION = "TIME_SERIES_DAILY";
-                string connectionString = "https://" + $@"www.alphavantage.co/query?function={FUNCTION}&symbol={symbol}&apikey={this._apiKey}&datatype=csv";
+                const string FUNCTION = "TIME_SERIES_INTRADAY";
+                string connectionString = "https://" + $@"www.alphavantage.co/query?function={FUNCTION}&symbol={symbol}&interval=5min&outputsize=compact&apikey={this._apiKey}&datatype=csv";
                 List<AlphaVantageData> prices = connectionString.GetStringFromUrl().FromCsv<List<AlphaVantageData>>();
                 return prices;
             }
+        public List<AlphaVantageData> GetWeeklyPrices(string symbol)
+        {
+            const string FUNCTION = "TIME_SERIES_WEEKLY";
+            string connectionString = "https://" + $@"www.alphavantage.co/query?function={FUNCTION}&symbol={symbol}&apikey={this._apiKey}&datatype=csv";
+            List<AlphaVantageData> prices = connectionString.GetStringFromUrl().FromCsv<List<AlphaVantageData>>();
+            return prices;
+        }
+        public List<AlphaVantageData> GetMonthlyPrices(string symbol)
+        {
+            const string FUNCTION = "TIME_SERIES_MONTHLY";
+            string connectionString = "https://" + $@"www.alphavantage.co/query?function={FUNCTION}&symbol={symbol}&apikey={this._apiKey}&datatype=csv";
+            List<AlphaVantageData> prices = connectionString.GetStringFromUrl().FromCsv<List<AlphaVantageData>>();
+            return prices;
+        }
 
-            public List<AlphaVantageData> GetQuoteEndpoint(string symbol)
+       
+
+        public List<AlphaVantageData> GetQuoteEndpoint(string symbol)
             {
                 const string FUNCTION = "GLOBAL_QUOTE";
                 string connectionString = "https://" + $@"www.alphavantage.co/query?function={FUNCTION}&symbol={symbol}&apikey={this._apiKey}&datatype=csv";

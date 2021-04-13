@@ -29,7 +29,7 @@ namespace Dashboard
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             this.StockChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.lblStockChartDay = new System.Windows.Forms.Label();
             this.lblStockChartMonthly = new System.Windows.Forms.Label();
@@ -44,8 +44,8 @@ namespace Dashboard
             this.StockChart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea1.Name = "ChartArea1";
-            this.StockChart.ChartAreas.Add(chartArea1);
+            chartArea4.Name = "ChartArea1";
+            this.StockChart.ChartAreas.Add(chartArea4);
             this.StockChart.Location = new System.Drawing.Point(3, 40);
             this.StockChart.Name = "StockChart";
             this.StockChart.Size = new System.Drawing.Size(542, 293);
@@ -56,48 +56,59 @@ namespace Dashboard
             this.lblStockChartDay.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblStockChartDay.AutoSize = true;
+            this.lblStockChartDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStockChartDay.ForeColor = System.Drawing.Color.White;
             this.lblStockChartDay.Location = new System.Drawing.Point(508, 24);
             this.lblStockChartDay.Name = "lblStockChartDay";
-            this.lblStockChartDay.Size = new System.Drawing.Size(26, 13);
+            this.lblStockChartDay.Size = new System.Drawing.Size(29, 13);
             this.lblStockChartDay.TabIndex = 1;
             this.lblStockChartDay.Text = "Day";
-            this.lblStockChartDay.Click += new System.EventHandler(this.label1_Click);
+            this.lblStockChartDay.Click += new System.EventHandler(this.lblStockChartDay_Click);
             // 
             // lblStockChartMonthly
             // 
             this.lblStockChartMonthly.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblStockChartMonthly.AutoSize = true;
+            this.lblStockChartMonthly.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStockChartMonthly.ForeColor = System.Drawing.Color.White;
             this.lblStockChartMonthly.Location = new System.Drawing.Point(394, 24);
             this.lblStockChartMonthly.Name = "lblStockChartMonthly";
-            this.lblStockChartMonthly.Size = new System.Drawing.Size(37, 13);
+            this.lblStockChartMonthly.Size = new System.Drawing.Size(42, 13);
             this.lblStockChartMonthly.TabIndex = 2;
             this.lblStockChartMonthly.Text = "Month";
+            this.lblStockChartMonthly.Click += new System.EventHandler(this.lblStockChartMonthly_Click);
             // 
             // lblStockChartWeek
             // 
             this.lblStockChartWeek.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblStockChartWeek.AutoSize = true;
+            this.lblStockChartWeek.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStockChartWeek.ForeColor = System.Drawing.Color.White;
             this.lblStockChartWeek.Location = new System.Drawing.Point(453, 24);
             this.lblStockChartWeek.Name = "lblStockChartWeek";
-            this.lblStockChartWeek.Size = new System.Drawing.Size(36, 13);
+            this.lblStockChartWeek.Size = new System.Drawing.Size(40, 13);
             this.lblStockChartWeek.TabIndex = 3;
             this.lblStockChartWeek.Text = "Week";
+            this.lblStockChartWeek.Click += new System.EventHandler(this.lblStockChartWeek_Click);
             // 
             // lblStockChartYearly
             // 
             this.lblStockChartYearly.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblStockChartYearly.AutoSize = true;
+            this.lblStockChartYearly.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStockChartYearly.ForeColor = System.Drawing.Color.White;
             this.lblStockChartYearly.Location = new System.Drawing.Point(337, 24);
             this.lblStockChartYearly.Name = "lblStockChartYearly";
-            this.lblStockChartYearly.Size = new System.Drawing.Size(36, 13);
+            this.lblStockChartYearly.Size = new System.Drawing.Size(42, 13);
             this.lblStockChartYearly.TabIndex = 4;
             this.lblStockChartYearly.Text = "Yearly";
+            this.lblStockChartYearly.Click += new System.EventHandler(this.lblStockChartYearly_Click);
             // 
             // txtStockChartSymbol
             // 
-            this.txtStockChartSymbol.Location = new System.Drawing.Point(45, 17);
+            this.txtStockChartSymbol.Location = new System.Drawing.Point(54, 17);
             this.txtStockChartSymbol.Name = "txtStockChartSymbol";
-            this.txtStockChartSymbol.Size = new System.Drawing.Size(100, 20);
+            this.txtStockChartSymbol.Size = new System.Drawing.Size(125, 20);
             this.txtStockChartSymbol.TabIndex = 5;
             // 
             // StockChartWidget
