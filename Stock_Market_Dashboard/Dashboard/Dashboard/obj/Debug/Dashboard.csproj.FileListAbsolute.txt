@@ -1020,7 +1020,6 @@ D:\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\x64
 D:\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\x86\SQLite.Interop.dll
 D:\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\Newtonsoft.Json.dll
 D:\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\Newtonsoft.Json.xml
-C:\Users\manuel\Source\Repos\jverswijver\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.AddPositions.resources
 C:\Users\manuel\Source\Repos\jverswijver\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.WatchlistWidget.resources
 C:\Users\manuel\Source\Repos\jverswijver\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\UserDB.db
 C:\Users\manuel\Source\Repos\jverswijver\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\x64\SQLite.Interop.dll
@@ -1137,3 +1136,5 @@ C:\Users\FuNkiN\source\repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboa
 C:\Users\FuNkiN\source\repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\ru\DevExpress.Office.v20.2.Core.resources.dll
 D:\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.PortfolioWidget.resources
 D:\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.StockChartWidget.resources
+C:\Users\manuel\Source\Repos\jverswijver\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\DevExpress.XtraEditors.v20.2.dll
+C:\Users\manuel\Source\Repos\jverswijver\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.StockChartWidget.resources

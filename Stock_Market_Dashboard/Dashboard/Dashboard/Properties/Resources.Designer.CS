@@ -181,7 +181,12 @@ namespace Dashboard.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Revised April 07, 2021
+        ///Stock Market Dashboard Financial LLC &amp; Stock Market Dashboard Securities, LLC Customer Agreement
+        ///In consideration of Stock Market Dashboard Financial LLC, Stock Market Dashboard Securities, LLC, and their agents and assigns
+        ///(collectively, &quot;Stock Market Dashboard&quot;) opening one or more accounts on my behalf (&quot;My Account(s)&quot; or the
+        ///&quot;Account(s)&quot;) for the purchase, sale or carrying of securities or contracts relating thereto and/or the
+        ///borrowing of funds, which transactions are cleare [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string termsAndConditions {
             get {

@@ -137,30 +137,49 @@ namespace Dashboard
             }
 
 
+        //Link for terms and conditions
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            //Need to figure out how to call it from a filepath in the repository since this is user specific at the moment
-            
-            Process.Start(Path.Combine(Application.StartupPath, "C:\\Users\\manuel\\Source\\Repos\\jverswijver\\StockMarketDashboard\\Stock_Market_Dashboard\\Dashboard\\Dashboard\\Resources\\termsAndConditions.txt"));
-
-
-            //string file_name = "C:\\termsAndConditions.txt";
-
-            //System.IO.StreamReader objReader;
-            //objReader = new System.IO.StreamReader(file_name);
-
-            //textBox1.Text = objReader.ReadToEnd();
-
-            //objReader.Close()
-
-
-        
-            // Determine path
-
-
+            //creates a string named rtf which is set to termsandcondiitons file
+            //sets rich text box to contain text from file
+            //sets the text box to be visible
+            //makes the exit button for the text box to display
+            string rtf = Dashboard.Properties.Resources.termsAndConditions;
+            richTextBox1.Text = rtf;
+            richTextBox1.Visible = true;
+            button2.Visible = true;
 
 
         }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+            richTextBox1.Visible = false;
+            //makes text box not visible at start of program
+
+
+        }
+
+
+        //sets a boolean for button (exit) click to register if its been pressed
+        private bool button2WasClicked = false;
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //if exit button has been pressed
+            //set boolean to true
+            button2WasClicked = true;
+            //if boolean is true
+            if (button2WasClicked == true)
+            {
+                //close out the visibility of the 2
+                richTextBox1.Visible = false;
+                button2.Visible = false;
+
+            }
+        }
+
+       
 
         // Kevin's DRAG BAR BLOCK END
 
