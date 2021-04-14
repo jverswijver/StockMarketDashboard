@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainDashboard));
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             this.menuPanel = new System.Windows.Forms.Panel();
+            this.btn_Search = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
             this.btnQuit = new System.Windows.Forms.Button();
             this.pnlNav = new System.Windows.Forms.Panel();
@@ -45,15 +46,12 @@
             this.lblUsername = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.Button();
-            this.txtSearch = new System.Windows.Forms.TextBox();
             this.lbltitle = new System.Windows.Forms.Label();
             this.searchPanel = new System.Windows.Forms.Panel();
-            this.searchPic = new System.Windows.Forms.PictureBox();
             this.menuPanel.SuspendLayout();
             this.userPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.searchPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.searchPic)).BeginInit();
             this.SuspendLayout();
             // 
             // defaultLookAndFeel1
@@ -63,6 +61,7 @@
             // menuPanel
             // 
             this.menuPanel.BackColor = System.Drawing.Color.Black;
+            this.menuPanel.Controls.Add(this.btn_Search);
             this.menuPanel.Controls.Add(this.btnBack);
             this.menuPanel.Controls.Add(this.btnQuit);
             this.menuPanel.Controls.Add(this.pnlNav);
@@ -77,6 +76,23 @@
             this.menuPanel.Name = "menuPanel";
             this.menuPanel.Size = new System.Drawing.Size(165, 743);
             this.menuPanel.TabIndex = 0;
+            // 
+            // btn_Search
+            // 
+            this.btn_Search.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_Search.FlatAppearance.BorderSize = 0;
+            this.btn_Search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Search.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btn_Search.Image = global::Dashboard.Properties.Resources.search;
+            this.btn_Search.Location = new System.Drawing.Point(0, 322);
+            this.btn_Search.Name = "btn_Search";
+            this.btn_Search.Size = new System.Drawing.Size(165, 42);
+            this.btn_Search.TabIndex = 5;
+            this.btn_Search.Text = "Search";
+            this.btn_Search.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btn_Search.UseVisualStyleBackColor = true;
+            this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click);
             // 
             // btnBack
             // 
@@ -282,21 +298,6 @@
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // txtSearch
-            // 
-            this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(79)))), ((int)(((byte)(99)))));
-            this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.ForeColor = System.Drawing.Color.LightGray;
-            this.txtSearch.Location = new System.Drawing.Point(616, 20);
-            this.txtSearch.Multiline = true;
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(292, 25);
-            this.txtSearch.TabIndex = 11;
-            this.txtSearch.Text = "  Search for something...\r\n";
-            this.txtSearch.Click += new System.EventHandler(this.txtSearch_Click);
-            // 
             // lbltitle
             // 
             this.lbltitle.AutoSize = true;
@@ -312,25 +313,13 @@
             // searchPanel
             // 
             this.searchPanel.BackColor = System.Drawing.Color.Black;
-            this.searchPanel.Controls.Add(this.searchPic);
             this.searchPanel.Controls.Add(this.lbltitle);
             this.searchPanel.Controls.Add(this.btnExit);
-            this.searchPanel.Controls.Add(this.txtSearch);
             this.searchPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.searchPanel.Location = new System.Drawing.Point(165, 0);
             this.searchPanel.Name = "searchPanel";
             this.searchPanel.Size = new System.Drawing.Size(1013, 54);
             this.searchPanel.TabIndex = 13;
-            // 
-            // searchPic
-            // 
-            this.searchPic.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.searchPic.Image = global::Dashboard.Properties.Resources.search;
-            this.searchPic.Location = new System.Drawing.Point(576, 20);
-            this.searchPic.Name = "searchPic";
-            this.searchPic.Size = new System.Drawing.Size(24, 25);
-            this.searchPic.TabIndex = 13;
-            this.searchPic.TabStop = false;
             // 
             // MainDashboard
             // 
@@ -362,7 +351,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.searchPanel.ResumeLayout(false);
             this.searchPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.searchPic)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -377,7 +365,6 @@
         private System.Windows.Forms.Button btnPortfolio;
         private System.Windows.Forms.Panel pnlNav;
         private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Label lbltitle;
         private System.Windows.Forms.Button btnQuit;
         private System.Windows.Forms.Button btnBack;
@@ -386,7 +373,7 @@
         public System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel searchPanel;
-        private System.Windows.Forms.PictureBox searchPic;
+        private System.Windows.Forms.Button btn_Search;
     }
 }
 

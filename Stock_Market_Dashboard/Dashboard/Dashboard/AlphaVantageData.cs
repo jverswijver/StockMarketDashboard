@@ -72,6 +72,18 @@ namespace Dashboard
                 List<AlphaVantageData> prices = connectionString.GetStringFromUrl().FromCsv<List<AlphaVantageData>>();
                 return prices;
             }
+
+        // Kevin's SearchENDPOINT
+        public List<string> SearchEndpoint(string symbol)
+        {
+            const string FUNCTION = "SYMBOL_SEARCH";
+            string connectionString = "https://" + $@"www.alphavantage.co/query?function={FUNCTION}&keywords={symbol}&apikey={this._apiKey}&datatype=csv";
+            List<string> prices = connectionString.GetStringFromUrl().FromCsv<List<string>>();
+            return prices;
         }
+
+        // END
+
     }
+}
 

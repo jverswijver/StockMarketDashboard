@@ -200,14 +200,6 @@ namespace Dashboard
             AddStockChart();
         }
 
-
-        private void txtSearch_Click(object sender, EventArgs e)
-        {
-            txtSearch.Text = "  ";
-            txtSearch.ForeColor = Color.White;
-        }
-
-
         // Kevin's DRAG BAR BLOCK
 
         public bool mouseDown;
@@ -262,6 +254,12 @@ namespace Dashboard
         private void lblUsername_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_Search_Click(object sender, EventArgs e)
+        {
+            SearchForm Search = new SearchForm();
+            Search.Show();
         }
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
