@@ -138,6 +138,7 @@ namespace Dashboard
             // 
             this.btnSignup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(226)))), ((int)(((byte)(178)))));
             this.btnSignup.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnSignup.Enabled = false;
             this.btnSignup.FlatAppearance.BorderSize = 0;
             this.btnSignup.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MediumSeaGreen;
             this.btnSignup.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSeaGreen;
@@ -360,8 +361,8 @@ namespace Dashboard
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(717, 513);
             this.ControlBox = false;
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.lblAccCreateStatus);
