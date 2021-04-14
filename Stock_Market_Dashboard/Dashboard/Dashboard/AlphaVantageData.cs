@@ -38,7 +38,7 @@ namespace Dashboard
 
             public AVConnection()
             {
-            this._apiKey = "829GEJEKQI58VPR4";//"HYAS7FLTSGPVNL2R";
+            this._apiKey = "HYAS7FLTSGPVNL2R";
             }
 
             public List<AlphaVantageData> GetIntraDayPrices(string symbol)

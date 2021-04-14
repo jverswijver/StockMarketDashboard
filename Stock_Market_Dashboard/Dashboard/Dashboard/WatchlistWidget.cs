@@ -53,7 +53,7 @@ namespace Dashboard
         {
             if (symbol == "")
             {
-                lblError.Text = "stock Symbool needed";
+                lblError.Text = "Stock Symbol Needed";
                 return null;
             }
             else

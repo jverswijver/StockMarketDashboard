@@ -52,7 +52,7 @@ namespace Dashboard
             logger.Show();
         }
         
-        private  bool CheckUserExsist()
+        private  bool CheckUserExist()
         {
             List<UserModel> users = new List<UserModel>();
             users = SqliteDataAccess.LoadUsers();
@@ -84,10 +84,10 @@ namespace Dashboard
             {
                 lblAccCreateStatus.Text = "Password must match";
             }
-            else if(CheckUserExsist() == false)
+            else if(CheckUserExist() == false)
             {
                 lblAccCreateStatus.ForeColor = Color.Green;
-                lblAccCreateStatus.Text = "Account Created Succsseful";
+                lblAccCreateStatus.Text = "Account Created Successfully";
                 UserModel U = new UserModel();
                 U._UserName = txtUsername.Text.ToLower();
                 U._Password = txtPassword.Text;
