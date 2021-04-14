@@ -30,7 +30,7 @@ namespace Dashboard
             InitializeComponent();
             addPositionPanel.Hide();
             PortfolioListView.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
-            PortfolioListView.Location = new Point(1, 175); //
+            PortfolioListView.Location = new Point(1, 175); 
         }
 
 
@@ -38,7 +38,10 @@ namespace Dashboard
         {
             addPositionPanel.Show();
             PortfolioListView.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
-            PortfolioListView.Location = new Point(229, 335);  //(220, 296); //221, 295); 275, 295
+            PortfolioListView.Location = new Point(229, 335);
+            PortfolioListView.Parent = this;
+            PortfolioListView.Left = (this.ClientSize.Width - PortfolioListView.Width) / 2;
+            PortfolioListView.Top = ((this.ClientSize.Height + 490) - PortfolioListView.Height) / 2;
 
         }
 
@@ -47,7 +50,10 @@ namespace Dashboard
         {
             addPositionPanel.Hide();
             PortfolioListView.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
-            PortfolioListView.Location = new Point(229, 175);  //220, 175
+            PortfolioListView.Location = new Point(231, 175);
+            PortfolioListView.Parent = this;
+            PortfolioListView.Left = (this.ClientSize.Width - PortfolioListView.Width) / 2;
+            PortfolioListView.Top = ((this.ClientSize.Height + 175) - PortfolioListView.Height) / 2;
 
 
             foreach (ListViewItem eachItem in PortfolioListView.SelectedItems) 
@@ -200,8 +206,13 @@ namespace Dashboard
                         txtSymbol.Text = ""; requiredSymbol.Visible = true;
                         txtQuantity.Text = ""; requiredQuantity.Visible = true;
                         txtPrice.Text = ""; requiredPrice.Visible = true;
-                       
-                    }
+                        PortfolioListView.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+                        PortfolioListView.Location = new Point(1, 175);
+                        PortfolioListView.Parent = this;
+                        PortfolioListView.Left = (this.ClientSize.Width - PortfolioListView.Width) / 2;
+                        PortfolioListView.Top = ((this.ClientSize.Height + 175) - PortfolioListView.Height) / 2;
+
+                }
   
                 else
                 {

@@ -88,7 +88,7 @@ namespace Dashboard
                 }
                 else
                 {
-                    MessageBox.Show("Incorect Username and Password");
+                    MessageBox.Show("Incorrect Username and Password");
                     txtPassword.Text = "";
                     break;
                 }

@@ -1138,3 +1138,4 @@ D:\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Das
 D:\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.StockChartWidget.resources
 C:\Users\manuel\Source\Repos\jverswijver\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\DevExpress.XtraEditors.v20.2.dll
 C:\Users\manuel\Source\Repos\jverswijver\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.StockChartWidget.resources
+C:\Users\FuNkiN\source\repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.StockChartWidget.resources
