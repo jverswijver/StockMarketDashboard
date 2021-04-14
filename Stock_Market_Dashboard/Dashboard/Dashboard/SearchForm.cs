@@ -15,6 +15,7 @@ namespace Dashboard
         public SearchForm()
         {
             InitializeComponent();
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -27,5 +28,6 @@ namespace Dashboard
                 listBox1.Items.Add(x);
             }
         }
+
     }
 }
