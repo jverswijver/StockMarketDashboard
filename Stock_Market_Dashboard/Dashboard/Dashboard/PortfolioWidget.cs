@@ -65,6 +65,7 @@ namespace Dashboard
                 if (PortfolioListView.Items.Count == 0)
                 {
                     lblTotalNum.Text = "0.00";
+                    lblTotalGain.ForeColor = Color.Lime;
                     lblTotalGain.Text = "0.00 (0.00%)";
                 }
             }

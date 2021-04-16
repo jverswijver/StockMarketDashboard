@@ -91,11 +91,11 @@ namespace Dashboard
             this.lblTotalNum.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblTotalNum.AutoSize = true;
             this.lblTotalNum.BackColor = System.Drawing.Color.Transparent;
-            this.lblTotalNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalNum.ForeColor = System.Drawing.Color.White;
-            this.lblTotalNum.Location = new System.Drawing.Point(273, 55);
+            this.lblTotalNum.Location = new System.Drawing.Point(273, 58);
             this.lblTotalNum.Name = "lblTotalNum";
-            this.lblTotalNum.Size = new System.Drawing.Size(71, 31);
+            this.lblTotalNum.Size = new System.Drawing.Size(62, 29);
             this.lblTotalNum.TabIndex = 14;
             this.lblTotalNum.Text = "0.00";
             // 
@@ -371,11 +371,11 @@ namespace Dashboard
             this.lblTotalGain.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblTotalGain.AutoSize = true;
             this.lblTotalGain.BackColor = System.Drawing.Color.Transparent;
-            this.lblTotalGain.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalGain.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalGain.ForeColor = System.Drawing.Color.Lime;
-            this.lblTotalGain.Location = new System.Drawing.Point(275, 95);
+            this.lblTotalGain.Location = new System.Drawing.Point(275, 99);
             this.lblTotalGain.Name = "lblTotalGain";
-            this.lblTotalGain.Size = new System.Drawing.Size(124, 24);
+            this.lblTotalGain.Size = new System.Drawing.Size(111, 20);
             this.lblTotalGain.TabIndex = 18;
             this.lblTotalGain.Text = "0.00 (0.00%)";
             // 
