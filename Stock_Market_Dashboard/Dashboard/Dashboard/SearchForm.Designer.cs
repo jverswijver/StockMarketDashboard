@@ -41,6 +41,7 @@
             this.textBox1.Size = new System.Drawing.Size(205, 20);
             this.textBox1.TabIndex = 0;
             this.textBox1.Text = "Type here";
+            this.textBox1.WordWrap = false;
             // 
             // listBox1
             // 

@@ -965,7 +965,6 @@ C:\Users\FuNkiN\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboa
 C:\Users\FuNkiN\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.PortfolioWidget.resources
 C:\Users\manuel\Source\Repos\jverswijver\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.PortfolioWidget.resources
 C:\Users\FuNkiN\source\repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\DevExpress.Printing.v20.2.Core.dll
-C:\Users\FuNkiN\source\repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\DevExpress.XtraEditors.v20.2.dll
 C:\Users\FuNkiN\source\repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\DevExpress.XtraTreeList.v20.2.dll
 C:\Users\FuNkiN\source\repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\DevExpress.Dialogs.v20.2.Core.dll
 C:\Users\FuNkiN\source\repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\DevExpress.XtraLayout.v20.2.dll
@@ -1057,3 +1056,5 @@ C:\Users\Luka\Source\Repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard
 C:\Users\manuel\Source\Repos\jverswijver\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.SearchForm.resources
 C:\Users\manuel\Source\Repos\jverswijver\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\bin\Debug\DevExpress.XtraEditors.v20.2.dll
 C:\Users\manuel\Source\Repos\jverswijver\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.csprojAssemblyReference.cache
+C:\Users\FuNkiN\source\repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.SearchForm.resources
+C:\Users\FuNkiN\source\repos\StockMarketDashboard\Stock_Market_Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.StockChartWidget.resources

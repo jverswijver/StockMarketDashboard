@@ -32,10 +32,7 @@ namespace Dashboard
             this.components = new System.ComponentModel.Container();
             this.lblPortfolio = new System.Windows.Forms.Label();
             this.TotalValue = new System.Windows.Forms.Label();
-            this.TodayGainLoss = new System.Windows.Forms.Label();
             this.lblTotalNum = new System.Windows.Forms.Label();
-            this.lblTodayGain = new System.Windows.Forms.Label();
-            this.lblTotalGain = new System.Windows.Forms.Label();
             this.TotalGainLoss = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -58,6 +55,7 @@ namespace Dashboard
             this.txtSymbol = new System.Windows.Forms.TextBox();
             this.lblQuantity = new System.Windows.Forms.Label();
             this.lblTicker = new System.Windows.Forms.Label();
+            this.lblTotalGain = new System.Windows.Forms.Label();
             this.addPositionPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,11 +65,11 @@ namespace Dashboard
             this.lblPortfolio.AutoSize = true;
             this.lblPortfolio.BackColor = System.Drawing.Color.Transparent;
             this.lblPortfolio.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.lblPortfolio.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPortfolio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.lblPortfolio.Location = new System.Drawing.Point(79, 13);
+            this.lblPortfolio.Font = new System.Drawing.Font("Nirmala UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPortfolio.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.lblPortfolio.Location = new System.Drawing.Point(79, 18);
             this.lblPortfolio.Name = "lblPortfolio";
-            this.lblPortfolio.Size = new System.Drawing.Size(131, 24);
+            this.lblPortfolio.Size = new System.Drawing.Size(191, 40);
             this.lblPortfolio.TabIndex = 11;
             this.lblPortfolio.Text = "My Portfolio";
             // 
@@ -82,63 +80,24 @@ namespace Dashboard
             this.TotalValue.BackColor = System.Drawing.Color.Transparent;
             this.TotalValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.TotalValue.ForeColor = System.Drawing.Color.DarkGray;
-            this.TotalValue.Location = new System.Drawing.Point(173, 52);
+            this.TotalValue.Location = new System.Drawing.Point(173, 65);
             this.TotalValue.Name = "TotalValue";
-            this.TotalValue.Size = new System.Drawing.Size(86, 16);
+            this.TotalValue.Size = new System.Drawing.Size(92, 16);
             this.TotalValue.TabIndex = 12;
-            this.TotalValue.Text = "Total Value : ";
-            // 
-            // TodayGainLoss
-            // 
-            this.TodayGainLoss.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.TodayGainLoss.AutoSize = true;
-            this.TodayGainLoss.BackColor = System.Drawing.Color.Transparent;
-            this.TodayGainLoss.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.TodayGainLoss.ForeColor = System.Drawing.Color.DarkGray;
-            this.TodayGainLoss.Location = new System.Drawing.Point(119, 79);
-            this.TodayGainLoss.Name = "TodayGainLoss";
-            this.TodayGainLoss.Size = new System.Drawing.Size(147, 16);
-            this.TodayGainLoss.TabIndex = 13;
-            this.TodayGainLoss.Text = "Today Gain/ Loss (%) : ";
+            this.TotalValue.Text = "Total Value   : ";
             // 
             // lblTotalNum
             // 
             this.lblTotalNum.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblTotalNum.AutoSize = true;
             this.lblTotalNum.BackColor = System.Drawing.Color.Transparent;
-            this.lblTotalNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
-            this.lblTotalNum.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.lblTotalNum.Location = new System.Drawing.Point(273, 45);
+            this.lblTotalNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalNum.ForeColor = System.Drawing.Color.White;
+            this.lblTotalNum.Location = new System.Drawing.Point(273, 55);
             this.lblTotalNum.Name = "lblTotalNum";
-            this.lblTotalNum.Size = new System.Drawing.Size(137, 25);
+            this.lblTotalNum.Size = new System.Drawing.Size(71, 31);
             this.lblTotalNum.TabIndex = 14;
-            this.lblTotalNum.Text = "lblTotalNum";
-            // 
-            // lblTodayGain
-            // 
-            this.lblTodayGain.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lblTodayGain.AutoSize = true;
-            this.lblTodayGain.BackColor = System.Drawing.Color.Transparent;
-            this.lblTodayGain.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.lblTodayGain.ForeColor = System.Drawing.Color.White;
-            this.lblTodayGain.Location = new System.Drawing.Point(275, 77);
-            this.lblTodayGain.Name = "lblTodayGain";
-            this.lblTodayGain.Size = new System.Drawing.Size(129, 16);
-            this.lblTodayGain.TabIndex = 16;
-            this.lblTodayGain.Text = "lblTodayGain (%)";
-            // 
-            // lblTotalGain
-            // 
-            this.lblTotalGain.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lblTotalGain.AutoSize = true;
-            this.lblTotalGain.BackColor = System.Drawing.Color.Transparent;
-            this.lblTotalGain.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.lblTotalGain.ForeColor = System.Drawing.Color.White;
-            this.lblTotalGain.Location = new System.Drawing.Point(275, 105);
-            this.lblTotalGain.Name = "lblTotalGain";
-            this.lblTotalGain.Size = new System.Drawing.Size(120, 16);
-            this.lblTotalGain.TabIndex = 18;
-            this.lblTotalGain.Text = "lblTotalGain (%)";
+            this.lblTotalNum.Text = "0.00";
             // 
             // TotalGainLoss
             // 
@@ -147,7 +106,7 @@ namespace Dashboard
             this.TotalGainLoss.BackColor = System.Drawing.Color.Transparent;
             this.TotalGainLoss.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.TotalGainLoss.ForeColor = System.Drawing.Color.DarkGray;
-            this.TotalGainLoss.Location = new System.Drawing.Point(128, 107);
+            this.TotalGainLoss.Location = new System.Drawing.Point(128, 99);
             this.TotalGainLoss.Name = "TotalGainLoss";
             this.TotalGainLoss.Size = new System.Drawing.Size(138, 16);
             this.TotalGainLoss.TabIndex = 17;
@@ -198,7 +157,6 @@ namespace Dashboard
             | System.Windows.Forms.AnchorStyles.Right)));
             this.PortfolioListView.BackgroundImage = global::Dashboard.Properties.Resources.SMD_LoginBG;
             this.PortfolioListView.BackgroundImageTiled = true;
-            this.PortfolioListView.CheckBoxes = true;
             this.PortfolioListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.Symbol,
             this.Shares,
@@ -408,6 +366,19 @@ namespace Dashboard
             this.lblTicker.TabIndex = 14;
             this.lblTicker.Text = "Symbol : ";
             // 
+            // lblTotalGain
+            // 
+            this.lblTotalGain.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblTotalGain.AutoSize = true;
+            this.lblTotalGain.BackColor = System.Drawing.Color.Transparent;
+            this.lblTotalGain.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalGain.ForeColor = System.Drawing.Color.Lime;
+            this.lblTotalGain.Location = new System.Drawing.Point(275, 95);
+            this.lblTotalGain.Name = "lblTotalGain";
+            this.lblTotalGain.Size = new System.Drawing.Size(124, 24);
+            this.lblTotalGain.TabIndex = 18;
+            this.lblTotalGain.Text = "0.00 (0.00%)";
+            // 
             // PortfolioWidget
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -422,9 +393,7 @@ namespace Dashboard
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.lblTotalGain);
             this.Controls.Add(this.TotalGainLoss);
-            this.Controls.Add(this.lblTodayGain);
             this.Controls.Add(this.lblTotalNum);
-            this.Controls.Add(this.TodayGainLoss);
             this.Controls.Add(this.TotalValue);
             this.Controls.Add(this.lblPortfolio);
             this.DoubleBuffered = true;
@@ -432,7 +401,6 @@ namespace Dashboard
             this.Name = "PortfolioWidget";
             this.Size = new System.Drawing.Size(532, 725);
             this.Load += new System.EventHandler(this.PortfolioWidget_Load);
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PortfolioWidget_MouseDown);
             this.addPositionPanel.ResumeLayout(false);
             this.addPositionPanel.PerformLayout();
             this.ResumeLayout(false);
@@ -444,10 +412,7 @@ namespace Dashboard
 
         private System.Windows.Forms.Label lblPortfolio;
         private System.Windows.Forms.Label TotalValue;
-        private System.Windows.Forms.Label TodayGainLoss;
         private System.Windows.Forms.Label lblTotalNum;
-        private System.Windows.Forms.Label lblTodayGain;
-        private System.Windows.Forms.Label lblTotalGain;
         private System.Windows.Forms.Label TotalGainLoss;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.ColumnHeader Symbol;
@@ -470,5 +435,6 @@ namespace Dashboard
         private System.Windows.Forms.Label requiredSymbol;
         private System.Windows.Forms.Label lblInvalid;
         public System.Windows.Forms.ListView PortfolioListView;
+        private System.Windows.Forms.Label lblTotalGain;
     }
 }
