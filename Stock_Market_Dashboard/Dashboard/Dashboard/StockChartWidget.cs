@@ -67,12 +67,22 @@ namespace Dashboard
             Series ser2 = StockChart.Series.Add("line");
             ser2.ChartType = SeriesChartType.Line;
             ChartArea chartArea = StockChart.ChartAreas[0];
+            //set intial y axis
+            var minPrice = prices.FirstOrDefault().Close;
+            chartArea.AxisY.Minimum = Math.Round((double)minPrice - (double)minPrice * 0.005);
 
             foreach (var items in prices)
             {
+                //adjust the y axsis if value in new min
+                if(items.Close < minPrice)
+                {
+                    minPrice = items.Close;
+                    chartArea.AxisY.Minimum = Math.Round((double)minPrice - (double)minPrice * 0.005);
+
+                }
+                //set the points on chart
                 DateTime d = items.Timestamp;
                 decimal price = items.Close;
-                chartArea.AxisY.Minimum = Math.Round((double)(price - price * 0.1m));
                 ser2.Points.AddXY(d, price);
             }
         }
