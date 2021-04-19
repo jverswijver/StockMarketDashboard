@@ -203,7 +203,7 @@
             this.btnPortfolio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPortfolio.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPortfolio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnPortfolio.Image = global::Dashboard.Properties.Resources.diagram;
+            this.btnPortfolio.Image = global::Dashboard.Properties.Resources.Conact;
             this.btnPortfolio.Location = new System.Drawing.Point(0, 196);
             this.btnPortfolio.Name = "btnPortfolio";
             this.btnPortfolio.Size = new System.Drawing.Size(165, 42);
