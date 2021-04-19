@@ -165,12 +165,12 @@
             this.btnAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAccount.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnAccount.Image = global::Dashboard.Properties.Resources.Conact;
+            this.btnAccount.Image = global::Dashboard.Properties.Resources.diagram;
             this.btnAccount.Location = new System.Drawing.Point(0, 280);
             this.btnAccount.Name = "btnAccount";
             this.btnAccount.Size = new System.Drawing.Size(165, 42);
             this.btnAccount.TabIndex = 1;
-            this.btnAccount.Text = "Account";
+            this.btnAccount.Text = "Stock Graph";
             this.btnAccount.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnAccount.UseVisualStyleBackColor = true;
             this.btnAccount.Click += new System.EventHandler(this.btnAccount_Click);
