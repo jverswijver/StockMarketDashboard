@@ -76,7 +76,7 @@ namespace Dashboard
         {
             List<UserModel> users = new List<UserModel>();
             users = SqliteDataAccess.LoadUsers();
-            foreach(var user in users)
+            foreach (var user in users)
             {
                 if (user._UserName == txtUsername.Text.ToLower() && user._Password == txtPassword.Text.ToLower())
                 {
@@ -86,7 +86,7 @@ namespace Dashboard
                     dashboard.Show();
                     break;
                 }
-                else
+                else if((users.IndexOf(user) == users.Count - 1) && user._UserName != txtUsername.Text.ToLower() && user._Password != txtPassword.Text.ToLower())
                 {
                     MessageBox.Show("Incorrect Username and Password");
                     txtPassword.Text = "";
