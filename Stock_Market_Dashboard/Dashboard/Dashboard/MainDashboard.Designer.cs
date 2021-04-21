@@ -37,7 +37,7 @@
             this.btnQuit = new System.Windows.Forms.Button();
             this.pnlNav = new System.Windows.Forms.Panel();
             this.btnsettings = new System.Windows.Forms.Button();
-            this.btnAccount = new System.Windows.Forms.Button();
+            this.btnGraph = new System.Windows.Forms.Button();
             this.btnWatchlist = new System.Windows.Forms.Button();
             this.btnPortfolio = new System.Windows.Forms.Button();
             this.btnDashbord = new System.Windows.Forms.Button();
@@ -66,7 +66,7 @@
             this.menuPanel.Controls.Add(this.btnQuit);
             this.menuPanel.Controls.Add(this.pnlNav);
             this.menuPanel.Controls.Add(this.btnsettings);
-            this.menuPanel.Controls.Add(this.btnAccount);
+            this.menuPanel.Controls.Add(this.btnGraph);
             this.menuPanel.Controls.Add(this.btnWatchlist);
             this.menuPanel.Controls.Add(this.btnPortfolio);
             this.menuPanel.Controls.Add(this.btnDashbord);
@@ -158,23 +158,23 @@
             this.btnsettings.Click += new System.EventHandler(this.btnsettings_Click);
             this.btnsettings.Leave += new System.EventHandler(this.btnsettings_Leave);
             // 
-            // btnAccount
+            // btnGraph
             // 
-            this.btnAccount.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAccount.FlatAppearance.BorderSize = 0;
-            this.btnAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAccount.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnAccount.Image = global::Dashboard.Properties.Resources.diagram;
-            this.btnAccount.Location = new System.Drawing.Point(0, 280);
-            this.btnAccount.Name = "btnAccount";
-            this.btnAccount.Size = new System.Drawing.Size(165, 42);
-            this.btnAccount.TabIndex = 1;
-            this.btnAccount.Text = "Stock Graph";
-            this.btnAccount.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnAccount.UseVisualStyleBackColor = true;
-            this.btnAccount.Click += new System.EventHandler(this.btnAccount_Click);
-            this.btnAccount.Leave += new System.EventHandler(this.btnContactUs_Leave);
+            this.btnGraph.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnGraph.FlatAppearance.BorderSize = 0;
+            this.btnGraph.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGraph.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGraph.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnGraph.Image = global::Dashboard.Properties.Resources.diagram;
+            this.btnGraph.Location = new System.Drawing.Point(0, 280);
+            this.btnGraph.Name = "btnGraph";
+            this.btnGraph.Size = new System.Drawing.Size(165, 42);
+            this.btnGraph.TabIndex = 1;
+            this.btnGraph.Text = "Stock Graph";
+            this.btnGraph.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnGraph.UseVisualStyleBackColor = true;
+            this.btnGraph.Click += new System.EventHandler(this.btnAccount_Click);
+            this.btnGraph.Leave += new System.EventHandler(this.btnContactUs_Leave);
             // 
             // btnWatchlist
             // 
@@ -360,7 +360,7 @@
         private System.Windows.Forms.Panel menuPanel;
         private System.Windows.Forms.Button btnDashbord;
         private System.Windows.Forms.Button btnsettings;
-        private System.Windows.Forms.Button btnAccount;
+        private System.Windows.Forms.Button btnGraph;
         private System.Windows.Forms.Button btnWatchlist;
         private System.Windows.Forms.Button btnPortfolio;
         private System.Windows.Forms.Panel pnlNav;

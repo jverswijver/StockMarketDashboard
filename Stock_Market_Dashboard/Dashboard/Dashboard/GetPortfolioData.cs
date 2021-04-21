@@ -10,6 +10,7 @@ using System.Configuration;
 using Newtonsoft.Json;
 
 namespace Dashboard
+
 {
         class PortfolioItems
         {
@@ -35,31 +36,6 @@ namespace Dashboard
 
             public List<string> getPositionList { get; set; }
         }
-
-
-
-    public class SearchResult
-    {
-        [JsonProperty("bestMatches")]
-        public List<BestMatch> bestMatches { get; set; }
-
-    }
-
-
-    public class BestMatch
-    {
-        [JsonProperty("1. symbol")]
-        public string Symbol { get; set; }
-
-        [JsonProperty("2. name")]
-        public string Name { get; set; }
-
-        [JsonProperty("8. currency")]
-        public string Currency { get; set; }
-
-    }
-
-
 
 
 }

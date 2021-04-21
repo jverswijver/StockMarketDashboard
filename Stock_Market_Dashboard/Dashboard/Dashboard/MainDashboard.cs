@@ -146,7 +146,7 @@ namespace Dashboard
 
         private void btnContactUs_Leave(object sender, EventArgs e)
         {
-            btnAccount.BackColor = Color.FromArgb(24, 30, 54);
+            btnGraph.BackColor = Color.FromArgb(24, 30, 54);
         }
 
         private void btnsettings_Leave(object sender, EventArgs e)
@@ -168,9 +168,9 @@ namespace Dashboard
 
         private void btnPortfolio_Click(object sender, EventArgs e)
         {
-            pnlNav.Height = btnAccount.Height;
-            pnlNav.Top = btnAccount.Top;
-            btnAccount.BackColor = Color.FromArgb(46, 51, 73);
+            pnlNav.Height = btnGraph.Height;
+            pnlNav.Top = btnGraph.Top;
+            btnGraph.BackColor = Color.FromArgb(46, 51, 73);
             AddPortfolio();
             //group1.Items.AddRange(new Document[] { view.Documents[0] as Document });
             
@@ -180,9 +180,9 @@ namespace Dashboard
 
         private void btnWatchlist_Click(object sender, EventArgs e)
         {
-            pnlNav.Height = btnAccount.Height;
-            pnlNav.Top = btnAccount.Top;
-            btnAccount.BackColor = Color.FromArgb(46, 51, 73);
+            pnlNav.Height = btnGraph.Height;
+            pnlNav.Top = btnGraph.Top;
+            btnGraph.BackColor = Color.FromArgb(46, 51, 73);
             AddWatchlist();
            // group2.Items.AddRange(new Document[] { view.Documents[0] as Document });
         }
@@ -194,9 +194,9 @@ namespace Dashboard
 
         private void btnAccount_Click(object sender, EventArgs e)
         {
-            pnlNav.Height = btnAccount.Height;
-            pnlNav.Top = btnAccount.Top;
-            btnAccount.BackColor = Color.FromArgb(46, 51, 73);
+            pnlNav.Height = btnGraph.Height;
+            pnlNav.Top = btnGraph.Top;
+            btnGraph.BackColor = Color.FromArgb(46, 51, 73);
             AddStockChart();
         }
 

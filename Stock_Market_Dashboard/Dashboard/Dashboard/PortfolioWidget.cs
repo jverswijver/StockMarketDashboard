@@ -1,20 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
 using System.Windows.Forms;
-using System.Runtime.InteropServices;
-using DevExpress.XtraBars.Docking2010;
-using DevExpress.XtraBars.Docking2010.Views.Widget;
-using DevExpress.XtraEditors;
-using System.Collections;
 using System.Text.RegularExpressions;
-using System.Net;
-using Newtonsoft.Json;
-using ServiceStack;
 
 
 
@@ -237,11 +226,11 @@ namespace Dashboard
                 var GLtwoDec = Math.Round(gainLoss, 2);
                 var calculatePercentage = (totalMarketPriceCount - totalAvgPriceCount) / totalAvgPriceCount * 100;
                 var percentGL = Math.Round(calculatePercentage, 2) + "%";
-                var result = "$" + GLtwoDec.ToString() + " " + "(" + percentGL.ToString() + ")";
+                var result = "$" + GLtwoDec.ToString("N2") + " " + "(" + percentGL.ToString() + ")";
 
                 //Find Portfolio Total Value
                 var marketTotal = (totalAvgPriceCount * totalQuantityCount) + GLtwoDec;
-                var marketDec = "$" + Math.Round(marketTotal, 2);
+                var marketDec = "$" + marketTotal.ToString("N2");
                 lblTotalNum.Text = marketDec;
 
                 if (result.Contains("-"))
@@ -275,11 +264,11 @@ namespace Dashboard
                 var GLtwoDec = Math.Round(gainLoss, 2);
                 var calculatePercentage = (totalMarketPriceCount - totalAvgPriceCount) / totalAvgPriceCount * 100;
                 var percentGL = Math.Round(calculatePercentage, 2) + "%";
-                var result = "$" + GLtwoDec.ToString() + " " + "(" + percentGL.ToString() + ")";
+                var result = "$" + GLtwoDec.ToString("N2") + " " + "(" + percentGL.ToString() + ")";
 
                 //Find Portfolio Total Value
                 var marketTotal = (totalAvgPriceCount * totalQuantityCount) + GLtwoDec;
-                var marketDec = "$" + Math.Round(marketTotal, 2);
+                var marketDec = "$" + marketTotal.ToString("N2");
                 lblTotalNum.Text = marketDec;
 
                 if (result.Contains("-"))
