@@ -253,7 +253,7 @@ namespace Dashboard
 
         private void lblUsername_Click(object sender, EventArgs e)
         {
-
+            lblUsername.Text = Properties.Settings.Default.UserName;
         }
 
         private void btn_Search_Click(object sender, EventArgs e)
