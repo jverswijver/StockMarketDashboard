@@ -344,7 +344,7 @@ namespace Dashboard
             this.button2.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Black;
             this.button2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button2.Location = new System.Drawing.Point(285, 463);
+            this.button2.Location = new System.Drawing.Point(285, 477);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(200, 32);
             this.button2.TabIndex = 47;

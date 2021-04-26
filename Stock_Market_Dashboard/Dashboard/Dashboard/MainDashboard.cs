@@ -53,7 +53,7 @@ namespace Dashboard
         private void Form1_Load(object sender, EventArgs e)
         {
             //Passes the username in our settings field to the form label Username and displays it. 
-            //lblUsername.Text = Properties.Settings.Default.UserName;
+            lblUsername.Text = Properties.Settings.Default.UserName;
             
             AddDocumentManager();
            
@@ -246,10 +246,6 @@ namespace Dashboard
             }
         }
 
-        private void lblUserId_Click(object sender, EventArgs e)
-        {
-            lblUserId.Text = "It's Time To Invest!";
-        }
 
         private void lblUsername_Click(object sender, EventArgs e)
         {

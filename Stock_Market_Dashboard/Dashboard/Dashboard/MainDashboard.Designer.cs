@@ -42,10 +42,8 @@
             this.btnPortfolio = new System.Windows.Forms.Button();
             this.btnDashbord = new System.Windows.Forms.Button();
             this.userPanel = new System.Windows.Forms.Panel();
-            this.lblUserId = new System.Windows.Forms.Label();
             this.lblUsername = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnExit = new System.Windows.Forms.Button();
             this.lbltitle = new System.Windows.Forms.Label();
             this.searchPanel = new System.Windows.Forms.Panel();
             this.menuPanel.SuspendLayout();
@@ -234,7 +232,6 @@
             // userPanel
             // 
             this.userPanel.BackColor = System.Drawing.Color.Black;
-            this.userPanel.Controls.Add(this.lblUserId);
             this.userPanel.Controls.Add(this.lblUsername);
             this.userPanel.Controls.Add(this.pictureBox1);
             this.userPanel.Dock = System.Windows.Forms.DockStyle.Top;
@@ -242,20 +239,6 @@
             this.userPanel.Name = "userPanel";
             this.userPanel.Size = new System.Drawing.Size(165, 154);
             this.userPanel.TabIndex = 0;
-            // 
-            // lblUserId
-            // 
-            this.lblUserId.AutoSize = true;
-            this.lblUserId.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUserId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.lblUserId.Location = new System.Drawing.Point(21, 128);
-            this.lblUserId.Name = "lblUserId";
-            this.lblUserId.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblUserId.Size = new System.Drawing.Size(128, 13);
-            this.lblUserId.TabIndex = 2;
-            this.lblUserId.Text = "Some User Text Here";
-            this.lblUserId.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblUserId.Click += new System.EventHandler(this.lblUserId_Click);
             // 
             // lblUsername
             // 
@@ -281,23 +264,6 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // btnExit
-            // 
-            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExit.BackColor = System.Drawing.Color.Transparent;
-            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.ForeColor = System.Drawing.Color.White;
-            this.btnExit.Location = new System.Drawing.Point(972, 3);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(25, 25);
-            this.btnExit.TabIndex = 12;
-            this.btnExit.Text = "X";
-            this.btnExit.UseVisualStyleBackColor = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
             // lbltitle
             // 
             this.lbltitle.AutoSize = true;
@@ -314,7 +280,6 @@
             // 
             this.searchPanel.BackColor = System.Drawing.Color.Black;
             this.searchPanel.Controls.Add(this.lbltitle);
-            this.searchPanel.Controls.Add(this.btnExit);
             this.searchPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.searchPanel.Location = new System.Drawing.Point(165, 0);
             this.searchPanel.Name = "searchPanel";
@@ -364,12 +329,10 @@
         private System.Windows.Forms.Button btnWatchlist;
         private System.Windows.Forms.Button btnPortfolio;
         private System.Windows.Forms.Panel pnlNav;
-        private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label lbltitle;
         private System.Windows.Forms.Button btnQuit;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Panel userPanel;
-        public System.Windows.Forms.Label lblUserId;
         public System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel searchPanel;
